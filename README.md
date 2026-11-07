@@ -74,11 +74,15 @@ Scientists I know publish code with their papers. I asked each of them whether a
 - **Checked:** separate referee on independently downloaded pinned source, [verdicts](friends/salathe-covid-twitter-bert/VERDICTS.md).
 - **Sent:** November 7, first contact.
 
-### Victor Garcia — NK-CTL model
+### Victor Garcia — the NK-CTL model and a codon-rate preprint
 
-- **Who:** [Victor Garcia](https://www.ffhs.ch/), applied mathematics and infectious-disease modelling, Switzerland. Garcia, Bonhoeffer and Fu, *J. Theor. Biol.* 2020, [doi:10.1016/j.jtbi.2020.110185](https://doi.org/10.1016/j.jtbi.2020.110185), with the R script on Figshare.
-- **Found and sent:** the released script's line 35 uses `hg + T²` where equations 22 and 76 use `hg + T`; at one parameter point the two stable states become one. Referee: CONFIRMED WITH CAVEATS. Separately, global convergence and an exact bistability region for the same model (HOLDS), and a reduction of the NMDS stress in his 2025 codon-rate preprint from 34.8 to 16.97 (Fig 2B) and 23.4 to 13.48 (Fig 2C) on the same data and objective (HOLDS).
-- **Not published here yet:** he asked to talk it through first, so the evidence folder stays local until that call. The claim text above is only what he was already sent.
+- **Who:** Victor Garcia, mathematical modelling of immune responses and evolution, Switzerland. Garcia, Bonhoeffer and Fu, *J. Theor. Biol.* 2020, [doi:10.1016/j.jtbi.2020.110185](https://doi.org/10.1016/j.jtbi.2020.110185), with its R script on Figshare; the 2025 codon-rate preprint, [doi:10.1101/2025.06.03.657573](https://doi.org/10.1101/2025.06.03.657573).
+- **Found:**
+  - **The model (HOLDS, three separate referees):** global convergence and the exact bistability region of the NK-CTL model. [Note, checker and verdicts](friends/victor-garcia-nk-ctl/nk-ctl-note/).
+  - **The script (CONFIRMED WITH CAVEATS):** line 35 of the released R script uses `hg + T²` where equations 22 and 76 use `hg + T`. At σ = 1000, k = 10⁻⁵, c = 0.001 that change creates a stable tumor state the printed model doesn't have. The caveat: the paper doesn't pin σ and k for Fig. A2, and the corrected model can still be bistable elsewhere. [Bug, repro and verdict](friends/victor-garcia-nk-ctl/script-line-35/).
+  - **The preprint (HOLDS):** NMDS stress drops from 34.8 to 16.97 for Fig 2B and from 23.4 to 13.48 for Fig 2C, on the same data and the same objective. [Fig 2B](friends/victor-garcia-nk-ctl/nmds-fig2b/) · [Fig 2C](friends/victor-garcia-nk-ctl/nmds-fig2c/).
+  - **A later-data test of the Danish forecast (HOLDS WITH CAVEATS).** [Claim and verdict](friends/victor-garcia-nk-ctl/danish-forecast/).
+- **Sent:** November 2, 5 and 6.
 
 ### Not in this hub
 

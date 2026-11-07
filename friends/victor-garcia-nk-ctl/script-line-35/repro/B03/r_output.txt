@@ -1,0 +1,64 @@
+k=1e-05_N_1e5 before 502.4913496200666 
+k=1e-05_Eq22_residual_1e5 before 685.2079393919296 
+k=1e-05_c=1e-07_roots before         0.0000000 726310343.4961249 
+k=1e-05_c=1e-07_max_real_eig before  0.5138999999999999 -0.5434021159529774 
+k=1e-05_c=1e-07_stable_count before 1 
+k=1e-05_c=1e-07_dT_1e8 before 44318554.98620267 
+k=1e-05_c=0.001_roots before        0.00000000000    17404.73590489179 19762510.01781699061 
+k=1e-05_c=0.001_max_real_eig before -0.48599999999999999  0.01349023648955772 -0.01398846269637888 
+k=1e-05_c=0.001_stable_count before 2 
+k=1e-05_c=0.001_dT_1e8 before -5676695.362513701 
+k=1e-05_c=1_roots before 0 
+k=1e-05_c=1_max_real_eig before -0.9999999974752426 
+k=1e-05_c=1_stable_count before 1 
+k=1e-05_c=1_dT_1e8 before -49955926818.74252 
+k=1e-05_fold_T before 602078.2915351553 
+k=1e-05_fold_c before 0.001026288909134473 
+k=1e-05_N_1e5 after 1596.264367816092 
+k=1e-05_Eq22_residual_1e5 after 0 
+k=1e-05_c=1e-07_roots after         0.000000 408558364.138206 
+k=1e-05_c=1e-07_max_real_eig after  0.5138999999999999 -0.5002018870428869 
+k=1e-05_c=1e-07_stable_count after 1 
+k=1e-05_c=1e-07_dT_1e8 after 38804715.24915083 
+k=1e-05_c=0.001_roots after 0 
+k=1e-05_c=0.001_max_real_eig after -0.486 
+k=1e-05_c=0.001_stable_count after 1 
+k=1e-05_c=0.001_dT_1e8 after -161119311.9803616 
+k=1e-05_c=1_roots after 0 
+k=1e-05_c=1_max_real_eig after -0.9999999974752426 
+k=1e-05_c=1_stable_count after 1 
+k=1e-05_c=1_dT_1e8 after -199905196922.0243 
+k=1e-05_fold_T after 2132.569067448229 
+k=1e-05_fold_c after 0.0007283936875132853 
+k=1e-04_N_1e5 before 502.4913496200666 
+k=1e-04_Eq22_residual_1e5 before 685.2079393919296 
+k=1e-04_c=1e-07_roots before         0.0000000 217982663.1126729 
+k=1e-04_c=1e-07_max_real_eig before  0.5138999999999999 -0.6175078205511753 
+k=1e-04_c=1e-07_stable_count before 1 
+k=1e-04_c=1e-07_dT_1e8 before 27815750.08736311 
+k=1e-04_c=0.001_roots before       0.00000000000   17466.48344886435 5907029.64114461374 
+k=1e-04_c=0.001_max_real_eig before -0.48599999999999999  0.01341100467697487 -0.01393451518139788 
+k=1e-04_c=0.001_stable_count before 2 
+k=1e-04_c=0.001_dT_1e8 before -22179500.26135326 
+k=1e-04_c=1_roots before 0 
+k=1e-04_c=1_max_real_eig before -0.9999999974752426 
+k=1e-04_c=1_stable_count before 1 
+k=1e-04_c=1_dT_1e8 before -49972429623.64135 
+k=1e-04_fold_T before 329250.8735110685 
+k=1e-04_fold_c before 0.001024830365742858 
+k=1e-04_N_1e5 after 1596.264367816092 
+k=1e-04_Eq22_residual_1e5 after 0 
+k=1e-04_c=1e-07_roots after        0.00000000 65399548.66766315 
+k=1e-04_c=1e-07_max_real_eig after  0.5138999999999999 -0.5013494205286694 
+k=1e-04_c=1e-07_stable_count after 1 
+k=1e-04_c=1e-07_dT_1e8 after -27187697.88902322 
+k=1e-04_c=0.001_roots after 0 
+k=1e-04_c=0.001_max_real_eig after -0.486 
+k=1e-04_c=0.001_stable_count after 1 
+k=1e-04_c=0.001_dT_1e8 after -227111725.1185356 
+k=1e-04_c=1_roots after 0 
+k=1e-04_c=1_max_real_eig after -0.9999999974752426 
+k=1e-04_c=1_stable_count after 1 
+k=1e-04_c=1_dT_1e8 after -199971189335.1624 
+k=1e-04_fold_T after 2132.270892383779 
+k=1e-04_fold_c after 0.0007283780163980798 

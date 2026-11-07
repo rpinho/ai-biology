@@ -1,0 +1,11 @@
+--- a/analysis_FengNKCTL.R
++++ b/analysis_FengNKCTL.R
+@@ -32,7 +32,7 @@
+ 
+ ### This is the solution of the equlibrium of N of equation ii)
+ N.stab.nomut <- function(T_w, parameters){
+-	N.stimul = parameters$g*T_w/(parameters$hg + T_w^2)
++	N.stimul = parameters$g*T_w/(parameters$hg + T_w)
+ 	denominator = N.stimul - parameters$p*T_w/(parameters$hp + T_w) -parameters$dN
+ 	N = -parameters$sN/denominator
+ 	return(N)

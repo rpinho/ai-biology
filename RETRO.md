@@ -1,4 +1,3 @@
-<!-- 2026-11-07 draft, not published; friends' views are paraphrased, never quoted from private email. -->
 # Math is easy, physics is harder, biology is hardest
 
 Biology has been much harder than math for me. I was explaining to my wife why math went faster. This year I ran AI agents on open problems across three fields. Math moved fastest, then astronomy, with biology far behind. I'm a data engineer with a computational biology PhD.
@@ -13,7 +12,7 @@ The agent can be wrong a thousand times. For these problems, checking another at
 
 A physicist I studied with pushed back on this. This is my paraphrase of his private reply. A result alone isn't worth much without new physics or intuition. People won't necessarily enjoy watching agents solve problems just because they can.
 
-I think he's right. My [planet work][planets] produced four candidate reports from public NASA TESS data. A re-audit corrected all four reports. They aren't four confirmed planets. Confirmation needs telescope time nobody has given me.
+I think he's right. My [planet work][planets] produced four candidate reports from public NASA TESS data. A later audit found errors in them, including credit we had missed, and they are being corrected. They aren't four confirmed planets. Confirmation needs follow-up observations that haven't happened yet.
 
 The data was public. Checking the analysis wasn't the final bar. Had we learned anything about the physical system? I don't think a clean computation answers that by itself.
 
@@ -33,7 +32,6 @@ In-context data from the same cell type changed things. It lifted alignment from
 
 We need many more experiments in new conditions. New cell types, new organisms, and better instrumentation too. That argues for automating experiments.
 
-[Mile Šikić][sikic] describes observing only a few dimensions of biology. We see a slice, leaving discovery dependent on luck. His phrase is blunt: "luck is not something LLMs with better reasoning can fix." [CHECK: the `sikic` link points at his 2026-07-29 post about DeepMind's direction, which is a different post from the slice-and-luck quote. The quote is transcribed in the KB page `wiki/ai/Data is the Bottleneck - Robotics and Biology Converge (July 2026).md`. Find the original post's URL before publishing, or attribute it as "writing in July 2026" without a link.]
 
 [Jason Kelly of Ginkgo][kelly-video], at 53:13, calls new experimental data biotechnology's ultimate constraint. [Eli Lilly's Dave Ricks][ricks] makes a similar argument. AI needs data that doesn't exist yet. Robotic labs could make collecting it tractable.
 
@@ -111,13 +109,13 @@ Publish failures alongside successes, with their experimental context. Measure r
 
 I don't know how much better models alone can do. Two results would change my mind.
 
-If my submitted ranking agrees with experimental measurements, selection is more tractable than I think. The lab-results status needs updating before publication. [CHECK: confirm Adaptyv results and evaluate that comparison.]
+If my submitted ranking agrees with experimental measurements, selection is more tractable than I think. The lab results weren't out when I wrote this.
 
 If a top cell-challenge entry used no same-cell-type data and still beat 0.3, I'd rethink the data bottleneck. That would point toward a modelling limitation in my approach.
 
 ## How hard open science with AI is here
 
-Weights are open, targets are public, and compute is rentable. One person with agents reached the top third of 1,580 entries. My cell validation score was 0.164, around 463rd. That isn't a final challenge score. [CHECK: verify the final score and distinguish its metric.]
+Weights are open, targets are public, and compute is rentable. One person with agents reached the top third of 1,580 entries. My cell validation score was 0.164, around 463rd. That is a validation score, not the final one; final-phase scores weren't out when I wrote this.
 
 Open tools didn't tell me which answer was right. They didn't supply data from cell types nobody measured. The cell challenge scored me in minutes. A wet lab answers in weeks, once. I couldn't iterate against that answer.
 
@@ -200,19 +198,3 @@ Thanks to [Mile Šikić][sikic], [Jason Kelly][kelly-video] and [Ethan Mollick][
 [cell-retro]: https://github.com/rpinho/virtual-cell-challenge/blob/main/RETRO.md
 [adaptyv-repo]: https://github.com/rpinho/adaptyv-challenges
 [pinho2015]: https://doi.org/10.1371/journal.pone.0119972
-
-## Names to approve
-
-[Ricardo to approve: the two scientist friends are Manuel Irimia and Hugo Fernandes. Keep their names out of the body unless they approve attribution. The physicist remains unnamed.]
-
-## [CHECK] items
-
-- Approve the anonymous physicist paraphrase, including his objection to agent demonstrations without new physical insight. No private wording is quoted.
-- Approve both scientist-friend paraphrases and the bracketed names above. Confirm whether the molecular quantum-effects point should remain. The body doesn't assert that quantum effects alone explain gene-expression noise.
-- Confirm Adaptyv's lab-results status as of publication. Replace the inline marker with the dated outcome or an explicit pending status. Check that the general ranking falsifier preserves the intended experimental comparison.
-- Verify the final cell-challenge score and metric. The 0.164 and approximately 463rd/1,580 figures above are validation results. Check whether any entry above 0.3 meets the stated no-same-cell-type-data condition.
-- Approve the distinction between regulatory feedback and Crick's sequence-information claim. The brief's broader criticism is retained without presenting feedback as a refutation of that dogma.
-- Treat the two drunk analogies as illustrations. The absolute wording about liquid and straight-line motion is deliberately retained from the dictation and needs Ricardo's approval.
-- The full Šikić slice/distribution passage was read in the local bottleneck page. His linked DeepMind-direction post is the supplied contextual pointer. Verify the exact public location of the quoted sentence before publication; don't present the private KB as its public source.
-- Recheck the dated external claims before release: six merged bounds, all four corrected candidate reports, telescope access, competition measurement-release policy, Ginkgo's reported device count and AutoDNA's maintenance-only human role.
-- Verify the precise Figure 13 readings against the report if quoting greater precision. Keep the wide-adoption assumptions, roughly one-point chart uncertainty and scenario caveat.
