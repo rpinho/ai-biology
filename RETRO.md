@@ -1,6 +1,6 @@
 # Math is easy, physics is harder, biology is hardest
 
-I was explaining to my wife what I'm doing this year. Math, physics and biology. And why math is easier, physics is harder and biology is the hardest. This is that explanation, written down.
+I was explaining to someone what I'm doing this year. Math, physics and biology. And why math is easier, physics is harder and biology is the hardest. This is that explanation, written down.
 
 I ran AI agents on open problems in all three. I'm a data engineer. My PhD was on the evolution of gene regulatory networks, in Marcus Feldman's lab at Stanford. So evolutionary biology and population genetics. It was very theoretical. I was dealing with matrices, not real gene expression.
 
@@ -66,7 +66,7 @@ I agree with both. My [last paper][pinho2015] added random error. That's not the
 
 Watch the videos below. Everything is shaking. Everything is very tiny and inside a liquid. So nothing moves in a straight line. Even if the protein is right and it has to go somewhere, it won't go there in a straight line. Things hit and things miss, in timing and in location.
 
-I told my wife the molecules look drunk. She said the same thing. They also have to travel. They walk on the cell's highways, the microtubules and actin filaments. I'm not the first to see it. Harvard Medical School [described dynein][hms-dynein], one of these motors, as one that "staggers like a drunken sailor".
+The molecules look drunk. They also have to travel. They walk on the cell's highways, the microtubules and actin filaments. I'm not the first to see it. Harvard Medical School [described dynein][hms-dynein], one of these motors, as one that "staggers like a drunken sailor".
 
 Drug discovery is building keys. The right key for the right lock. Now picture a drunk guy coming home late from drinking with his buddies. He's trying to open the door. He's shaking. Even if the key is right, he might not get it in. Many times the key is wrong. And it's not just the key. The lock is shaking too, because the lock is also stochastic. Sometimes it's the wrong lock. Sometimes he's so drunk he went to the wrong house.
 
