@@ -6,7 +6,7 @@
 
 Everything I've run on biology with AI agents, in one place. Three sponsored challenges, two tools, and bug reports for scientists' published software. Each section links to the code and results, says how it was checked, and says where a result is still a candidate.
 
-I did my PhD in computational biology (gene regulatory networks, Marcus Feldman's lab at Stanford). I came back to it in 2026 with AI agents. Biology has been the hardest of the three fields I've worked in this year, after math and physics. Why, in the [field retro](RETRO.md).
+My PhD was on the evolution of gene regulatory networks, in Marcus Feldman's lab at Stanford: evolutionary biology and population genetics. I came back to it in 2026 with AI agents. Biology has been the hardest of the three fields I've worked in this year, after math and physics. Why, in the [field retro](RETRO.md).
 
 Sister hubs: [math](https://github.com/rpinho/math-certificates) · [physics](https://github.com/rpinho/ai-physics) · [astronomy](https://github.com/rpinho/planet-hunt)
 
@@ -108,6 +108,6 @@ Nothing here is from scratch. Each repository carries its own references; this l
 - Garcia, Bonhoeffer and Fu, *J. Theor. Biol.* 2020, [doi:10.1016/j.jtbi.2020.110185](https://doi.org/10.1016/j.jtbi.2020.110185).
 - pyglmnet, [glm-tools/pyglmnet](https://github.com/glm-tools/pyglmnet); multimedia, structSSI and miniLNM on CRAN.
 - Anthropic Economics, [AI for scientific discovery: how researchers use Claude](https://www.anthropic.com/research/how-researchers-use-claude), November 5, 2026 — the per-field numbers the retro uses.
-- Pinho, Garcia and Feldman, *PLOS ONE* 2015, [doi:10.1371/journal.pone.0119972](https://doi.org/10.1371/journal.pone.0119972); Pinho, Borenstein and Feldman, *PLoS Comput Biol* 2014, [doi:10.1371/journal.pcbi.1003595](https://doi.org/10.1371/journal.pcbi.1003595).
+- Pinho, Garcia and Feldman, *PLOS ONE* 2015, [doi:10.1371/journal.pone.0119972](https://doi.org/10.1371/journal.pone.0119972); Pinho, Garcia, Irimia and Feldman, *PLoS Comput Biol* 2014, [doi:10.1371/journal.pcbi.1003916](https://doi.org/10.1371/journal.pcbi.1003916).
 
 Thanks to Arc Institute, to Adaptyv Bio and Anthropic for funding experimental validation, and to the scientists above for letting an outsider's agents read their code.

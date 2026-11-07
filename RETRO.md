@@ -1,127 +1,148 @@
 # Math is easy, physics is harder, biology is hardest
 
-Biology has been much harder than math for me. I was explaining to my wife why math went faster. This year I ran AI agents on open problems across three fields. Math moved fastest, then astronomy, with biology far behind. I'm a data engineer with a computational biology PhD.
+I was explaining to my wife what I'm doing this year. Math, physics and biology. And why math is easier, physics is harder and biology is the hardest. This is that explanation, written down.
 
-## Math: exact certificates
+I ran AI agents on open problems in all three. I'm a data engineer. My PhD was on the evolution of gene regulatory networks, in Marcus Feldman's lab at Stanford. So evolutionary biology and population genetics. It was very theoretical. I was dealing with matrices, not real gene expression.
 
-The math results were the easiest to settle. Each bound has a number and a checking program. We used interval arithmetic, exact rationals, and two independent checkers. Six bounds were merged into [Terence Tao's public table][tao]. The [certificates are public too][certificates].
+The usage numbers Anthropic published by field show the same order. More on that below.
 
-The agent can be wrong a thousand times. For these problems, checking another attempt costs almost nothing. The check is exact and cheap. That's why this work moved fastest. Finding a bound was hard, but recognizing success wasn't.
+## Math is the easiest
+
+Each bound has a number and a program that checks it. Interval arithmetic, exact rationals and two independent checkers. Six bounds were merged into [Terence Tao's public table][tao]. The [certificates are public][certificates].
+
+The agent can be wrong a thousand times. Checking one more attempt costs almost nothing. Finding a better bound was hard. Knowing when we had one wasn't.
 
 ## Physics: is there new physics inside?
 
-A physicist I studied with pushed back on this. This is my paraphrase of his private reply. A result alone isn't worth much without new physics or intuition. People won't necessarily enjoy watching agents solve problems just because they can.
+A physicist I studied with replied to the math results. This is my paraphrase of his reply: math, cool, but is there new physics inside? If not, who cares?
 
-I think he's right. My [planet work][planets] produced four candidate reports from public NASA TESS data. A later audit found errors in them, including credit we had missed, and they are being corrected. They aren't four confirmed planets. Confirmation needs follow-up observations that haven't happened yet.
+I think he's right. My [planet work][planets] produced four candidate reports from public NASA TESS data. A later audit found errors in them, including credit we had missed, and they are being corrected. They aren't four confirmed planets. That needs follow-up observations that haven't happened yet.
 
-The data was public. Checking the analysis wasn't the final bar. Had we learned anything about the physical system? I don't think a clean computation answers that by itself.
+Even a perfect analysis is not the bar. The question is whether we learned anything about the physical system. I don't think a clean computation answers that by itself.
 
-## Biology: hardest
+## Biology is the hardest
 
-I came back to biology expecting more progress. My PhD studied Boolean gene regulatory networks in Marcus Feldman's Stanford lab. I knew some of these problems already.
+I came back to biology expecting more progress. I knew some of these problems from my PhD. It was still much harder than I thought.
 
-There are several camps on AI and biology. Some expect rapid progress toward curing most diseases. [Demis Hassabis][hassabis] puts a full virtual cell further out, with measurement still missing. Others think the cure claims outrun the evidence.
+People disagree a lot here. Some expect AI to cure most diseases soon. [Demis Hassabis][hassabis] puts a full virtual cell further out, with measurement still missing. Others think the cure claims outrun the evidence. My challenges don't settle that. On the bottleneck I'm closer to [Mile Šikić][sikic] and Jason Kelly. We need more experimental data.
 
-My challenges don't settle that argument. On the bottleneck, I land closer to Mile Šikić and Jason Kelly. We need more experimental data. I think there are five reasons biology is harder.
+I think there are five reasons biology is harder.
 
-### 1. Missing data
+### 1. We're missing data
 
-My [cell-challenge predictions][cell-retro] distinguished perturbations well: discrimination was 0.86. Alignment with their actual effects was only 0.084 mean cosine. Two halves of the same real cells agreed at 0.65. So the predictions missed much of the measurable response.
+We need many more experiments. Many, many more. New conditions, new cell types, new organisms. Better instruments and better measurements too. That's why we need to automate experiments.
 
-In-context data from the same cell type changed things. It lifted alignment from 0.115 to 0.42. The final phase withholds exactly that information.
+My own numbers show it. In the [cell challenge][cell-retro] my predictions could tell perturbations apart: discrimination was 0.86. But alignment with their real effects was only 0.084 mean cosine. Two halves of the same real cells agree at 0.65. So we missed most of the measurable response.
 
-We need many more experiments in new conditions. New cell types, new organisms, and better instrumentation too. That argues for automating experiments.
+Data from the same cell type changed that. It lifted alignment from 0.115 to 0.42. The final phase withholds exactly that data.
 
+[Jason Kelly of Ginkgo][kelly-video] calls new experimental data biotech's ultimate constraint, at 53:13. [Dave Ricks of Eli Lilly][ricks] makes a similar argument. AI needs data that doesn't exist yet, and robotic labs could make collecting it tractable. Ginkgo reports [160 devices running around the clock][ginkgo]. Nature's AutoDNA write-up describes [human effort limited to hardware maintenance][autodna]. [Purpose-built instruments][instruments] are another piece.
 
-[Jason Kelly of Ginkgo][kelly-video], at 53:13, calls new experimental data biotechnology's ultimate constraint. [Eli Lilly's Dave Ricks][ricks] makes a similar argument. AI needs data that doesn't exist yet. Robotic labs could make collecting it tractable.
+### 2. The data we have is stuck in labs
 
-Ginkgo reports [160 devices running around the clock][ginkgo]. Nature's AutoDNA write-up describes [human effort limited to hardware maintenance][autodna]. [Purpose-built instruments][instruments] look like another useful niche here.
+Think of every student, intern, PhD student and postdoc pipetting away for decades. Turkey, Portugal, the US, Russia, China. Most of that data isn't shared anywhere. A lot of it is in paper notebooks, not even on a computer. Negative results don't get published. All of that would be super helpful for AI.
 
-### 2. Siloed data and unpublished negative results
+Even that is not enough. We'd still need new data.
 
-Think of decades of students, interns, PhDs and postdocs pipetting. In every country, much stayed in paper notebooks. Experiments that failed often never became papers. All of that could help a model. Even all of it wouldn't be enough. We'd still need new experiments.
+Others are saying the same. [Liam Fedus's Periodic Labs announcement][periodic] mentions unpublished negative results. [Will DePue][depue] writes about knowledge stuck inside organizations and people's heads. Outside biology, [a published failure log][negative-log] helped a community move faster.
 
-[Liam Fedus's Periodic Labs announcement][periodic] explicitly mentions unpublished negative results. [Will DePue][depue] describes knowledge trapped inside organizations and people's heads. Outside biology, [a published failure log][negative-log] helped a community move faster.
+[The protein design competition I entered][adaptyv-repo] publishes every measurement, failures included. That's rare and good. The [competition][competition] also supplies the lab validation.
 
-[The protein design competition I entered][adaptyv-repo] publishes every measurement, including failures. That's rare and good. The [competition][competition] also supplies the experimental validation.
+Models can also mishandle the data we already have. A [November 5 benchmark write-up][kenbwork] found agents treating missing observations as negatives and mismatching records. They also mistook measurement artifacts for real signal.
 
-But models can mishandle the evidence we already have. A [November 5 benchmark finding][kenbwork] reports familiar mistakes. Agents treated missing observations as negatives and mismatched records. They also mistook measurement artifacts for real signal.
+### 3. There's no theory
 
-### 3. No general theory, so more dependence on data
+If you don't have a theory, your science is empirical. If it's empirical, you need data. AI is fine without a theory. But then it needs a lot of data.
 
-Biology doesn't have a predictive theory with physics' reach. It's much more empirical, so it runs on data. AI can work without an explicit theory. But it needs lots of examples. The two dependencies multiply.
+The closest thing to a theory is the central dogma. DNA makes RNA makes protein. It was criticized during my PhD, and the criticism is decades old. It's not one way. The three layers influence each other. And the protein is not the end. Having a protein doesn't mean you have a function, a phenotype or a disease.
 
-The central dogma is the closest shorthand people reach for. Its simplified version was already being criticized during my PhD. DNA, RNA and proteins regulate one another. A protein isn't a function, phenotype or disease.
+To be fair to [Crick][crick], his actual statement was narrower. It was about where sequence information can flow. It wasn't a claim that regulation only goes one way. [Shapiro's 2009 revisit][shapiro] covers the bigger picture. Neither gives us equations that predict a cell.
 
-But that feedback doesn't refute [Crick's actual statement][crick]. His dogma concerned the transfer of sequence information. It wasn't a claim that regulation only runs one way. [Shapiro's 2009 revisit][shapiro] discusses the broader picture. Neither gives us equations that predict a whole cell.
+### 4. Everything is stochastic
 
-### 4. Stochasticity
+Two scientist friends have pushed this on me for years. This is my paraphrase of their comments. One stresses noise, chaos and quantum effects at the molecular scale. The other has long argued that gene expression is stochastic. He thought my gene network models were too deterministic.
 
-Two friends, both scientists, have pushed this at me for years. This is a paraphrase of their private comments. One stresses noise, chaos and molecular-scale quantum effects. The other has long argued that gene expression is stochastic. He thought my gene-network models were too deterministic.
+I agree with both. My [last paper][pinho2015] added random error. That's not the same as building truly stochastic equations. I should have done more of that. We cited [Elowitz and colleagues][elowitz] and [Raj and van Oudenaarden][raj] in that paper.
 
-I agree with both about the noise. My [last paper][pinho2015] added random error. That isn't the same as building genuinely stochastic equations. I should have done more of that. We cited [Elowitz and colleagues][elowitz] and [Raj and van Oudenaarden][raj] in that paper.
+Watch the videos below. Everything is shaking. Everything is very tiny and inside a liquid. So nothing moves in a straight line. Even if the protein is right and it has to go somewhere, it won't go there in a straight line. Things hit and things miss, in timing and in location.
 
-The molecules are drunks. At that scale everything is liquid and shaking. Nothing travels in a straight line. Motors walk cargo along cytoskeleton highways, and timing and location are hit and miss.
+I told my wife the molecules look drunk. She said the same thing. They also have to travel. They walk on the cell's highways, the microtubules and actin filaments. I'm not the first to see it. Harvard Medical School [described dynein][hms-dynein], one of these motors, as one that "staggers like a drunken sailor".
 
-Drug discovery is a key and a lock, except the drunk coming home late cannot get the key in, and the lock is shaking too. Often it is the wrong key, the wrong lock, or the wrong house.
+Drug discovery is building keys. The right key for the right lock. Now picture a drunk guy coming home late from drinking with his buddies. He's trying to open the door. He's shaking. Even if the key is right, he might not get it in. Many times the key is wrong. And it's not just the key. The lock is shaking too, because the lock is also stochastic. Sometimes it's the wrong lock. Sometimes he's so drunk he went to the wrong house.
 
-### 5. Observability
+I think these analogies help. People may not realize how stochastic everything is.
 
-We know one street and one drunk. We are blind to the city, the country, the world, the galaxy.
+### 5. We can't see much
 
-In my math problems, the checked object is fully specified. In physics, we can often observe the relevant system. Biology gives us a sliver, usually through an indirect measurement. That's why I put it far behind the other two.
+We know one street and one drunk guy. We're blind to thousands of other streets. Maybe we know a city, but not the world. Maybe a planet, but not the solar system or the galaxy.
 
-## The usage statistics
+In math the object we check is fully specified. In physics we can often observe the system. In biology we get a sliver, usually through an indirect measurement. That's why I put biology so far behind math and physics.
 
-The ranking matches what I just lived through. I don't think it means models are inherently worse at biology. The physical steps remain.
+## The usage numbers
 
-[Anthropic's Economics team][anthropic] studied scientific Claude use on November 5. [Ethan Mollick's November 7 post][mollick] circulated the headline. With current capabilities and wide adoption, AI could take on 27–52% of researcher time per study. The median across 34 fields is 38%.
+[Anthropic's Economics team][anthropic] published how researchers use Claude on November 5. [Ethan Mollick][mollick] circulated the headline on November 7. With current models and wide adoption, AI could take on 27 to 52% of researcher time per study. The median across 34 fields is 38%.
 
-Figure 13 puts biology at 32%, biomedical sciences at 30–31%, and chemistry at 29%. Mathematics is 43%, physics and astronomy 40%. Life sciences rank 23rd to 27th of 34. These chart readings carry about one percentage point of error.
+Mathematics is at 43%. Physics and astronomy, 40%. Biology is 32%, biomedical sciences 30 to 31%, chemistry 29%. Life sciences rank 23rd to 27th of 34. Those come from Figure 13. I read them off the chart, so they're within about one point.
 
-Automating all non-physical steps gives formal sciences 15–16x output. Biology and chemistry reach roughly 3–4x. The authors write: “Absent automated labs, their physical steps, representing about 40% of researcher time, remain the bottleneck.” These are “illustrative scenarios, not forecasts.” They assume wide adoption, including extrapolations across fields.
+If all non-lab steps were automated, formal sciences would get 15 to 16x output. Biology and chemistry get roughly 3 to 4x. In their words: “Absent automated labs, their physical steps, representing about 40% of researcher time, remain the bottleneck.” They call these “illustrative scenarios, not forecasts.” They assume wide adoption, including extrapolations across fields.
 
-[OpenAI and Ligo's BioBasicsBench][biobasics] measures something different. Its 100 tasks test reading actual lab evidence. That includes gels, plates, microscopy and plate-reader exports. The best score is about two thirds of rubric credit. Higher scores don't yet establish reliable judgment in a lab. Anthropic measured researchers' use. OpenAI tested interpretation of experimental evidence.
+The order matches what I just lived through. I don't think it means models are worse at biology. The physical steps are still there.
 
-## Videos: see it for yourself
+[OpenAI and Ligo's BioBasicsBench][biobasics] tests something else. Its 100 tasks are about reading real lab evidence: gels, plates, microscopy, plate-reader exports. The best score is about two thirds of the rubric credit. I don't think that means reliable judgment in a lab yet.
 
-Animations are illustrations, not data. These three examples help explain what I mean.
+## Videos
 
-1. XVIVO's [Protein Packing][packing] shows molecular crowding and jitter. The [original Inner Life of the Cell][inner-life] gives the wider view.
-2. Drew Berry and Etsuko Uno's [DNA animation][dna] makes molecular motion visible. Berry's [TED talk][ted] explains depicting unseeable biology. More is in [WEHI's educational library][wehi].
-3. [Lattice light-sheet microscopy with adaptive optics][microscopy] shows real cells inside living organisms. These Janelia and Harvard movies are actual measurements. Even this view captures only a thin slice of events.
+Animations are illustrations, not data. The microscopy is real, but it only shows a thin slice. Both helped me explain the shaking.
 
-## What is easy and what is hard
+The highways are microtubules and actin filaments. Kinesin and dynein walk on microtubules. Myosin walks on actin.
 
-For these math bounds, exact checking made rejection easy. Finding something better still took search. In astronomy, producing candidates was easier than establishing their meaning. Confirmation needs observations I don't have.
+- Real cargo on the highways. Saikat Ghosh at NIH filmed [mitochondria and lysosomes moving along microtubule tracks in neurons][nikon]. Confocal microscopy, an honorable mention in Nikon's 2024 Small World in Motion.
+- A real motor walking. Toshio Ando's lab filmed [myosin V walking on actin][hsafm] with high-speed atomic force microscopy ([Kodera et al., Nature 2010][kodera]). It's the [molecule itself][kanazawa], not a fluorescent dot attached to it.
+- Kinesin, animated. Janet Iwasa's [kinesin stepping along a microtubule][iwasa-kinesin], made in 2021 for Erik Schäffer's lab. It's based on their [2021 Science measurements][sudhakar].
+- Dynein, the drunken sailor. Iwasa's [dynein animation for Harvard Medical School][dynein-video], from 2012.
+- DNA. Drew Berry and Etsuko Uno's [DNA animation][dna]. Berry's [TED talk][ted] is about showing biology nobody can see. More in [WEHI's library][wehi].
+- Inside living animals. [Lattice light-sheet microscopy with adaptive optics][microscopy], Janelia and Harvard, 2018. Real cells inside living organisms.
 
-In biology, generation was easier than ranking and validation. The models' confidence scores varied more across repeated runs of one design than across different designs. Ranking by those scores was close to random. Hardest was calibration: what probability does a score actually imply?
+In 2023 two groups tracked single kinesin steps with MINFLUX, about 16 nm each. [One worked outside cells][wolff]. [The other worked inside living cells][deguchi].
+
+## What was easy and what was hard
+
+Math: rejecting a wrong answer was easy. Finding a better one still took search.
+
+Astronomy: producing candidates was easy. Knowing what they mean was hard. Confirmation needs observations I don't have.
+
+Biology: generating designs was easy. Ranking them was hard. The models' confidence scores varied more across repeated runs of one design than across different designs. So ranking by those scores was close to random. Hardest was calibration. What probability does a score actually mean?
 
 ## What data is missing
 
-Measured failures, paired multi-condition data, matched controls and replicates. Replicates tell us the noise ceiling for each target. We need cheap assays too. Measuring many more candidates would let screening replace uncertain ranking.
+Measured failures. Paired data across many conditions. Matched controls. Replicates, because they tell you the noise ceiling for each target. And cheap assays. If we could measure many more candidates, we wouldn't need to rank so well.
 
 ## What would make it easier
 
-Publish failures alongside successes, with their experimental context. Measure responses across more cell types and conditions. Report repeatability before treating confidence scores as ranking rules. Automate experiments and improve the instruments that observe them.
+- Publish failures next to successes, with the experimental context.
+- Measure responses in more cell types and conditions.
+- Report how repeatable a confidence score is before ranking with it.
+- Automate experiments, and build better instruments to watch them.
 
 ## What is still open
 
 I don't know how much better models alone can do. Two results would change my mind.
 
-If my submitted ranking agrees with experimental measurements, selection is more tractable than I think. The lab results weren't out when I wrote this.
+If my submitted protein ranking agrees with the lab measurements, selection is easier than I think. Those results weren't out when I wrote this.
 
-If a top cell-challenge entry used no same-cell-type data and still beat 0.3, I'd rethink the data bottleneck. That would point toward a modelling limitation in my approach.
+If a top cell-challenge entry used no same-cell-type data and still beat 0.3, I'd rethink the data bottleneck. That would point to a modelling limit in my approach.
 
-## How hard open science with AI is here
+## Open science with AI, in biology
 
-Weights are open, targets are public, and compute is rentable. One person with agents reached the top third of 1,580 entries. My cell validation score was 0.164, around 463rd. That is a validation score, not the final one; final-phase scores weren't out when I wrote this.
+Weights are open, targets are public and compute is rentable. One person with agents got into the top third of 1,580 entries. My cell validation score was 0.164, around 463rd. That's a validation score, not the final one. Final scores weren't out when I wrote this.
 
-Open tools didn't tell me which answer was right. They didn't supply data from cell types nobody measured. The cell challenge scored me in minutes. A wet lab answers in weeks, once. I couldn't iterate against that answer.
+Open tools didn't tell me which answer was right. They didn't give me data from cell types nobody has measured. The cell challenge scored me in minutes. A wet lab answers in weeks, and once. I couldn't iterate against that.
 
 ## Credits and thanks
 
-Thanks to [Mile Šikić][sikic], [Jason Kelly][kelly-video] and [Ethan Mollick][mollick]. And to Anthropic Economics authors Johannes Hermle, Ben Jones and Lukas Althoff. Thanks to [Arc Institute for the cell challenge][cell-challenge], and Adaptyv Bio and Anthropic for funding experimental validation. Also to the two scientist friends whose comments I paraphrased.
+I'm not building anything from scratch. This is inspired by the posts below, by the replies to my emails, by the challenges and by my PhD.
+
+Thanks to Mile Šikić, Jason Kelly and Ethan Mollick. To the Anthropic Economics authors Johannes Hermle, Ben Jones and Lukas Althoff. To [Arc Institute for the cell challenge][cell-challenge], and to Adaptyv Bio and Anthropic for funding the lab validation. To Janet Iwasa, Drew Berry, Etsuko Uno, Saikat Ghosh and the Ando lab for the videos. And to the friends whose comments I paraphrased.
 
 ## References
 
@@ -133,6 +154,10 @@ Thanks to [Mile Šikić][sikic], [Jason Kelly][kelly-video] and [Ethan Mollick][
 - [Shapiro, Revisiting the Central Dogma in the 21st Century][shapiro]. Annals of the New York Academy of Sciences, 2009. DOI: 10.1111/j.1749-6632.2009.04990.x.
 - [Elowitz et al., Stochastic Gene Expression in a Single Cell][elowitz]. Science, 2002. DOI: 10.1126/science.1070919.
 - [Raj and van Oudenaarden, Nature, Nurture, or Chance][raj]. Cell, 2008. DOI: 10.1016/j.cell.2008.09.050.
+- [Kodera, Yamamoto, Ishikawa and Ando, Video imaging of walking myosin V by high-speed atomic force microscopy][kodera]. Nature, 2010. DOI: 10.1038/nature09450.
+- [Sudhakar et al., Germanium nanospheres for ultraresolution picotensiometry of kinesin motors][sudhakar]. Science, 2021. DOI: 10.1126/science.abd9944.
+- [Wolff et al., MINFLUX dissects the unimpeded walking of kinesin-1][wolff]. Science, 2023. DOI: 10.1126/science.ade2650.
+- [Deguchi et al., Direct observation of motor protein stepping in living cells using MINFLUX][deguchi]. Science, 2023. DOI: 10.1126/science.ade2676.
 - [Virtual Cell Challenge][cell-challenge], Arc Institute.
 - [Anthropic x Adaptyv competition][competition], including experimental measurement release.
 
@@ -153,7 +178,10 @@ Thanks to [Mile Šikić][sikic], [Jason Kelly][kelly-video] and [Ethan Mollick][
 
 - [Jason Kelly interview][kelly-video], experimental-data argument at 53:13.
 - [Demis Hassabis interview][hassabis], virtual cells and measurement.
-- [XVIVO for Harvard BioVisions, Protein Packing][packing], 2013–2014; [The Inner Life of the Cell][inner-life].
+- [Saikat Ghosh, Dynamic trafficking of mitochondria and lysosomes along microtubule tracks of neuronal highways][nikon]. Nikon Small World in Motion 2024, honorable mention.
+- [Ando, Uchihashi and Kodera, high-speed AFM supplemental video 4][hsafm], myosin V on actin. Annual Reviews, 2013. [Kanazawa University summary][kanazawa].
+- [Janet Iwasa for the Schäffer lab, rotational hand-over-hand kinesin stepping][iwasa-kinesin], 2021.
+- [Janet Iwasa for Harvard Medical School, dynein animation][dynein-video], 2012; [the HMS story][hms-dynein].
 - [Drew Berry and Etsuko Uno, WEHI DNA animation][dna]; [Berry's TED talk][ted]; [WEHI library][wehi].
 - [Janelia, new microscope captures detailed 3-D movies inside living systems][microscopy], April 2018. Betzig and collaborators, including Kirchhausen's Harvard laboratory; Science work described in the release.
 
@@ -172,6 +200,10 @@ Thanks to [Mile Šikić][sikic], [Jason Kelly][kelly-video] and [Ethan Mollick][
 [shapiro]: https://doi.org/10.1111/j.1749-6632.2009.04990.x
 [elowitz]: https://doi.org/10.1126/science.1070919
 [raj]: https://doi.org/10.1016/j.cell.2008.09.050
+[kodera]: https://doi.org/10.1038/nature09450
+[sudhakar]: https://doi.org/10.1126/science.abd9944
+[wolff]: https://doi.org/10.1126/science.ade2650
+[deguchi]: https://doi.org/10.1126/science.ade2676
 [cell-challenge]: https://virtualcellchallenge.org/
 [competition]: https://proteinbase.com/competitions/anthropic-adaptyv-2026
 [sikic]: https://x.com/msikic/status/2082404380578296045
@@ -186,8 +218,12 @@ Thanks to [Mile Šikić][sikic], [Jason Kelly][kelly-video] and [Ethan Mollick][
 [mollick]: https://x.com/emollick/status/2118859591798980657
 [kelly-video]: https://youtu.be/vvsdHs_3lRU
 [hassabis]: https://www.youtube.com/watch?v=JNyuX1zoOgU
-[packing]: https://www.youtube.com/watch?v=uHeTQLNFTgU
-[inner-life]: https://www.youtube.com/watch?v=wJyUtbn0O5Y
+[nikon]: https://www.nikonsmallworld.com/galleries/2024-small-world-in-motion-competition/dynamic-trafficking-of-mitochondria-and-lysosomes
+[hsafm]: https://www.youtube.com/watch?v=0B-NYEJtdkw
+[kanazawa]: https://www.kanazawa-u.ac.jp/research_bulletin/highlights_010.html
+[iwasa-kinesin]: https://www.youtube.com/watch?v=plvQCOE9s_k
+[dynein-video]: https://www.youtube.com/watch?v=-7AQVbrmzFw
+[hms-dynein]: https://hms.harvard.edu/news/molecular-motor-struts-drunken-sailor
 [dna]: https://www.youtube.com/watch?v=7Hk9jct2ozY
 [ted]: https://www.youtube.com/watch?v=WFCvkkDSfIU
 [wehi]: https://www.wehi.edu.au/wehi-tv/
