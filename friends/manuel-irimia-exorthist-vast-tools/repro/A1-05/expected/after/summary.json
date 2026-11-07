@@ -1,0 +1,40 @@
+{
+  "bug": "A1-05",
+  "correct": true,
+  "observed": {
+    "ascending": {
+      "exons": [
+        [
+          "exon_1",
+          "701-730"
+        ],
+        [
+          "exon_2",
+          "601-630"
+        ],
+        [
+          "exon_3",
+          "501-530"
+        ]
+      ],
+      "sequence": "MKKKKKKKKKDDDDDDDDDDWWWWWWWWWW"
+    },
+    "normal": {
+      "exons": [
+        [
+          "exon_1",
+          "701-730"
+        ],
+        [
+          "exon_2",
+          "601-630"
+        ],
+        [
+          "exon_3",
+          "501-530"
+        ]
+      ],
+      "sequence": "MKKKKKKKKKDDDDDDDDDDWWWWWWWWWW"
+    }
+  }
+}

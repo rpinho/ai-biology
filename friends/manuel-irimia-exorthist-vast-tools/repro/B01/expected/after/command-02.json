@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/C4_get_overlapping_EXs.pl",
+    "-i",
+    "counts.tsv",
+    "-o",
+    "overlaps.tsv"
+  ],
+  "cwd": "<run>",
+  "exit": 0
+}

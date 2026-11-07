@@ -1,0 +1,36 @@
+diff --git a/bin/generate_exint_plotter_input.py b/bin/generate_exint_plotter_input.py
+--- a/bin/generate_exint_plotter_input.py
++++ b/bin/generate_exint_plotter_input.py
+@@ -24,6 +24,11 @@
+ my_ref_prots_file = args.ref_prots
+ my_species = args.species
+ my_output_file = args.output_file
++
++def coord_key(exon_id):
++  #numeric sort key for "chr:start-stop" (a plain string sort puts 100500 before 99000)
++  m = re.match(r"^(.*):(\d+)-(\d+)$", exon_id)
++  return (m.group(1), int(m.group(2)), int(m.group(3))) if m else (exon_id, 0, 0)
+ 
+ ################ OVERLAPPING EXONS INFO #####################
+ my_overlap_df = pd.read_table(my_overlap_file, sep="\t", header=None, names=["ExOverlapID", "GeneID", "ExCoords","Strand"])
+@@ -143,7 +148,7 @@
+ UpDown_phases_df = pd.DataFrame(columns=["GeneID", "ExonID", "Strand", "UpPhase", "DownPhase"])
+ my_grouped_df = my_phase_strand_df.groupby("GeneID") #for each gene
+ for name, group in my_grouped_df:
+-  gene_exons_dict[name] = sorted(list(group["ExonID"])) #dict value = sorted list of exons for each gene (key)
++  gene_exons_dict[name] = sorted(list(group["ExonID"]), key=coord_key) #dict value = sorted list of exons for each gene (key)
+ 
+ for my_exon in list(my_phase_strand_df.loc[:,"ExonID"]): #for each exon
+   my_gene = exon_gene_dict[my_exon]     #select the gene
+@@ -227,9 +232,9 @@
+ #define the functions
+ def reorder_exons(group):
+   if list(group["Strand"])[0] == "+": #check first element of strand list. They should be all the same anyways.
+-    my_group = group.sort_values(by=["ExonID"]) #order in ascending order
++    my_group = group.iloc[sorted(range(group.shape[0]), key=lambda i: coord_key(list(group["ExonID"])[i]))] #order in ascending order
+   elif list(group["Strand"])[0] == "-":
+-    my_group = group.sort_values(by=["ExonID"], ascending=False)
++    my_group = group.iloc[sorted(range(group.shape[0]), key=lambda i: coord_key(list(group["ExonID"])[i]), reverse=True)]
+   return(my_group)
+ 
+ def add_fake_coords(group):

@@ -1,0 +1,2 @@
+RefProt
+FERNP0001|fernGene

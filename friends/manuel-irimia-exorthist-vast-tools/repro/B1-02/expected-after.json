@@ -1,0 +1,34 @@
+{
+  "bug": "B1-02",
+  "correct": true,
+  "observed": {
+    "control": {
+      "pairs": [
+        [
+          "familyAlpha",
+          "FERNP0001|FernSeed",
+          "MOSSP0001|MossSpore"
+        ],
+        [
+          "familyBeta",
+          "FERNP0002|FernSpore",
+          "MOSSP0002|MossSeed"
+        ]
+      ]
+    },
+    "reused": {
+      "pairs": [
+        [
+          "familyAlpha",
+          "FERNP0001|seed",
+          "MOSSP0001|spore"
+        ],
+        [
+          "familyBeta",
+          "FERNP0002|spore",
+          "MOSSP0002|seed"
+        ]
+      ]
+    }
+  }
+}

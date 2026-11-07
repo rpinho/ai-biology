@@ -1,0 +1,23 @@
+diff --git a/bin/get_cluster_stats.pl b/bin/get_cluster_stats.pl
+--- a/bin/get_cluster_stats.pl
++++ b/bin/get_cluster_stats.pl
+@@ -201,8 +201,8 @@
+ 	$tally_missing{$species}++ if $tally_by_exon_cluster{$exon_cluster}{$species} == 0;
+     }
+     $tally_strings{$string}++;
+-    $tally_strings{MANY_3}++ if $string=~/3/;
+-    $tally_strings{MANY_4}++ if $string=~/4/;
++    $tally_strings{MANY_3}++ if $string=~/[3-9]/; # >=3 exons in some species (counts are capped at 9)
++    $tally_strings{MANY_4}++ if $string=~/[4-9]/;
+     $tally_strings{INCOMPLETE}++ if $string=~/0/;
+     $total_strings++;
+ }
+@@ -242,7 +242,7 @@
+ }
+ 
+ ### Number of other clusters
+-my $other_strings = $total_strings-$tally_strings{$default_string1}-$tally_strings{$default_string2}-$tally_strings{MANY_3}-$tally_strings{MANY_4};
++my $other_strings = $total_strings-$tally_strings{$default_string1}-$tally_strings{$default_string2}-$tally_strings{MANY_3}; # MANY_4 is a subset of MANY_3, not subtracted again
+ $other_strings = $other_strings - $tally_strings12 if length($default_string1)==2;
+ my $perc_others = sprintf("%.2f",100*$other_strings/$total_strings);
+ 

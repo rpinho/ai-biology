@@ -1,0 +1,9 @@
+{
+  "bug": "B2-01",
+  "correct": false,
+  "observed": {
+    "control": "fam7300",
+    "na_word": "NA",
+    "padded": "7300"
+  }
+}

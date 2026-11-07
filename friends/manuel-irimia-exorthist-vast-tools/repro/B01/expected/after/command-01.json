@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/C3_count_matches_by_EX.pl",
+    "<run>/inputs/pairs.tsv",
+    "counts.tsv"
+  ],
+  "cwd": "<run>",
+  "exit": 0
+}

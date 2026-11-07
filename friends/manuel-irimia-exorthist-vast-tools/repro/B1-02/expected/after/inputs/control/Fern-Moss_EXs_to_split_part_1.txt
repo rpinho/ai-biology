@@ -1,0 +1,1 @@
+CID	Prot_query	Exon_number_query	AA_pos_exon_query	Chr_query	Exon_coords_query	Strand	Exon_hits_subject	Prot_subject	Aln_AA_pos_subject	%Sim_aln_qry_sbj	%Id_aln_qry_sbj	Gap_number	%Gaps	Prot_subject	Exon_number_subject	AA_pos_exon_subject	Chr_subject	Exon_coords_subject	Strand	Sp_query	Sp_subject

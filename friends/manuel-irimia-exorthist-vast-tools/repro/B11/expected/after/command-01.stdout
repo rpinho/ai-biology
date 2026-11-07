@@ -1,0 +1,14 @@
+
+dPSI information detected = dPSI (40)
+
+
+- Gene-level stats (A => B):
+Genes with A exons in the exon lists	1
+Genes with A exons with gene orthologs in B	1	100.00%
+
+- Exon-level stats (A => B):
+Exons from A in exon list	1
+Exons from A with gene orthologs in B	1	100.00%
+Exons from A with exon orthologs in B (G-conserved)	1	100.00%
+    Only genes with orthologs in B		100.00%
+

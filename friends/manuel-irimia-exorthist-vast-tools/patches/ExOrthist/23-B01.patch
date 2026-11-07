@@ -1,0 +1,20 @@
+diff --git a/bin/C3_count_matches_by_EX.pl b/bin/C3_count_matches_by_EX.pl
+--- a/bin/C3_count_matches_by_EX.pl
++++ b/bin/C3_count_matches_by_EX.pl
+@@ -45,7 +45,15 @@
+ }
+ 
+ my @keys=keys(%ex);
+-@keys=sort (@keys);
++# sort by gene, then chromosome, then NUMERIC start/end (C4 needs coordinate-ordered input)
++@keys = map { $_->[0] } sort {
++    $a->[1] cmp $b->[1] || $a->[2] cmp $b->[2] || $a->[3] <=> $b->[3] || $a->[4] <=> $b->[4] || $a->[0] cmp $b->[0]
++} map {
++    my @f = split(/\t/, $_);
++    my ($chr, $range) = $f[1] =~ /^(.*):(\d+-\d+):[+-]$/ ? ($1, $2) : ($f[1], "0-0");
++    my ($s, $e) = split(/-/, $range);
++    [$_, $f[0], $chr, $s, $e]
++} @keys;
+ foreach my $el (@keys){
+     print OUT "$el\t$ex{$el}\n";
+ }

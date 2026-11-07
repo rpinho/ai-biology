@@ -1,0 +1,2 @@
+ELMP0001|elm	intron	1	chr1	630-701	-
+ELMP0001|elm	intron	2	chr1	530-601	-

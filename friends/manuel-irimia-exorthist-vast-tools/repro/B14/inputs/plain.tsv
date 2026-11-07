@@ -1,0 +1,6 @@
+Family	Family|oak|chrQ:100-159:+|A	Family|elm|chrR:200-259:+|B	TRUE
+Family	Family|oak|chrQ:100-159:+|A	Family|ash|chrS:300-359:+|C	TRUE
+Family	Family|elm|chrR:200-259:+|B	Family|oak|chrQ:100-159:+|A	TRUE
+Family	Family|elm|chrR:200-259:+|B	Family|ash|chrS:300-359:+|C	TRUE
+Family	Family|ash|chrS:300-359:+|C	Family|oak|chrQ:100-159:+|A	TRUE
+Family	Family|ash|chrS:300-359:+|C	Family|elm|chrR:200-259:+|B	TRUE

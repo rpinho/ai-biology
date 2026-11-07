@@ -1,0 +1,2 @@
+F1|seed	chr1	+	intron_1	190-301
+F1|seed	chr1	+	intron_2	390-501

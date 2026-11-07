@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/A2_split_clusters_by_species_pairs.pl",
+    "-f",
+    "clusters.tsv"
+  ],
+  "cwd": "<run>/inputs/family_order",
+  "exit": 0
+}

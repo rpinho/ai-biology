@@ -1,0 +1,20 @@
+{
+  "bug": "B04",
+  "correct": true,
+  "observed": {
+    "rows": [
+      [
+        "Family.01.003",
+        "elm",
+        "chrR:200-259:+",
+        "B"
+      ],
+      [
+        "Family.01.003",
+        "oak",
+        "chrQ:100-159:+",
+        "A"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+Total	Type	Position	ProteinGene1	Exon1	Coord1	ProteinGene2	Exon2	Coord2	Up	Intron1	ExonScore	Intron2	Down	TotalScore	Sp1	Sp2
+1	Exon	Internal	proteinO|oak	exon_2	contig7:300-389:+	proteinE|elm	exon_2	contig7:700-789:+	0.2	0.25	0.2	0.25	0.2	1	A	B

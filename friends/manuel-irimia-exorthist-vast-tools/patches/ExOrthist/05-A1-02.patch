@@ -1,0 +1,22 @@
+diff --git a/bin/A1_generate_annotations.pl b/bin/A1_generate_annotations.pl
+--- a/bin/A1_generate_annotations.pl
++++ b/bin/A1_generate_annotations.pl
+@@ -1288,7 +1288,8 @@
+ 		    $nuc=$nuc+$size;
+ 		    $aa=int(1+$nuc/3);
+                     $aa=1 if $aa <= 0; # in some incorrect GTF annotations an offset can lead to negative nuc values
+-		    print OUT "$prot|$gid\texon_$e\t1-$aa\t$line[0]\t$line[3]-$line[4]\t$line[6]\n"; ###exon numbering according to CDS not to transcript, otherwise $ex variable shoud be use
++		    my $first_end = $aa; $first_end = $aa-1 if $res == 0 && $aa > 1; # CDS ends on a codon boundary: last codon is aa-1
++		    print OUT "$prot|$gid\texon_$e\t1-$first_end\t$line[0]\t$line[3]-$line[4]\t$line[6]\n"; ###exon numbering according to CDS not to transcript, otherwise $ex variable shoud be use
+ 		}
+ 		else {
+ 		    $e++;
+@@ -1305,7 +1306,7 @@
+                     my $new_new = $new;
+                     $new_new = $new-1 if $phase == 0;
+                     my $new_aa = $aa;
+-                    $new_aa = $aa-1 if $phase == 0 && $size%3 == 0;
++                    $new_aa = $aa-1 if $size%3 == 0; # also when the exon starts in phase 1/2
+ 		    print OUT "$prot|$gid\texon_$e\t$new_new-$new_aa\t$line[0]\t$line[3]-$line[4]\t$line[6]\n"; 
+ 		}
+ 	    }

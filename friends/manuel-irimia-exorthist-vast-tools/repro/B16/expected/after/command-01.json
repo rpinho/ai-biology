@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/opt/python-env/bin/python3",
+    "<repo>/bin/D3.1_recluster_genes_by_species_pair.py",
+    "-og",
+    "<run>/inputs/documented.tsv",
+    "-op",
+    "<run>/inputs/pairs.tsv",
+    "-s1",
+    "A",
+    "-s2",
+    "B",
+    "-out",
+    "<run>/documented/genes.tsv"
+  ],
+  "cwd": "<run>/documented",
+  "exit": 0
+}

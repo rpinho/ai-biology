@@ -1,0 +1,14 @@
+{
+  "bug": "A1-04",
+  "correct": true,
+  "observed": {
+    "masked": {
+      "ELMP0001|elm": "MKKKKKKKKKDDDDDDDDDDWWWWWWWWWW",
+      "OAKP0001|oak": "MAAAAAAAAAEEEEEEEEEEEFFFFFFFFF"
+    },
+    "normal": {
+      "ELMP0001|elm": "MKKKKKKKKKDDDDDDDDDDWWWWWWWWWW",
+      "OAKP0001|oak": "MAAAAAAAAAEEEEEEEEEEEFFFFFFFFF"
+    }
+  }
+}

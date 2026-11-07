@@ -1,0 +1,8 @@
+{
+  "bug": "B16",
+  "correct": false,
+  "observed": {
+    "exit": 1,
+    "genes": []
+  }
+}

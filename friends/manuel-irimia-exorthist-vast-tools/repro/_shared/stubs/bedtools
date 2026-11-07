@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+"""Small BED6 -wao intersection for referee fixtures; no genomic mapping."""
+import sys
+from pathlib import Path
+args=sys.argv[1:]
+assert args[0]=='intersect' and '-wao' in args
+first=Path(args[args.index('-a')+1]); second=Path(args[args.index('-b')+1])
+beds=[s.split('\t') for s in second.read_text().splitlines()]
+for line in first.read_text().splitlines():
+    a=line.split('\t'); hit=False
+    for b in beds:
+        overlap=max(0,min(int(a[2]),int(b[2]))-max(int(a[1]),int(b[1]))) if a[0]==b[0] else 0
+        if overlap: print('\t'.join(a+b+[str(overlap)])); hit=True
+    if not hit: print('\t'.join(a+['.','-1','-1','.','-1','.','0']))

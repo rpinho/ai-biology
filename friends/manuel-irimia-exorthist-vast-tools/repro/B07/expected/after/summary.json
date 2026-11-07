@@ -1,0 +1,8 @@
+{
+  "bug": "B07",
+  "correct": true,
+  "observed": {
+    "control_pairs": 1,
+    "problem_pairs": 1
+  }
+}

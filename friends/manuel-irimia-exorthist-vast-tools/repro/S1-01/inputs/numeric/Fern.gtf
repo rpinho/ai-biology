@@ -1,0 +1,2 @@
+chr1	referee	exon	101	130	.	+	0	gene_id "fernGene"; transcript_id "fernTx"; protein_id "FERNP0001"; exon_number "1";
+chr1	referee	CDS	101	130	.	+	0	gene_id "fernGene"; transcript_id "fernTx"; protein_id "FERNP0001"; exon_number "1";

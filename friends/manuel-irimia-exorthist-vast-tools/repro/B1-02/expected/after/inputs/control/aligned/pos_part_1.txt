@@ -1,0 +1,6 @@
+MOSSP0002|MossSeed	exon_1	1-30	chr1	101-190	+
+MOSSP0002|MossSeed	exon_2	31-60	chr1	301-390	+
+MOSSP0002|MossSeed	exon_3	61-90	chr1	501-590	+
+FERNP0002|FernSpore	exon_1	1-30	chr1	101-190	+
+FERNP0002|FernSpore	exon_2	31-60	chr1	301-390	+
+FERNP0002|FernSpore	exon_3	61-90	chr1	501-590	+

@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/retrieve_IPA_aln.pl",
+    "-g1",
+    "seed",
+    "-g2",
+    "spore",
+    "-ex1",
+    "chr1:101-160",
+    "-ex2",
+    "chr2:201-260",
+    "-sp1",
+    "Fern",
+    "-sp2",
+    "Moss",
+    "-main_folder",
+    "main"
+  ],
+  "cwd": "<run>/inputs/control",
+  "exit": 0
+}

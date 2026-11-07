@@ -1,0 +1,12 @@
+diff --git a/bin/B1_parse_IPA_prot_aln.pl b/bin/B1_parse_IPA_prot_aln.pl
+--- a/bin/B1_parse_IPA_prot_aln.pl
++++ b/bin/B1_parse_IPA_prot_aln.pl
+@@ -568,7 +568,7 @@
+ 		    my $c=-1;
+ 		    while (<INTALN>){
+ 			chomp($_);
+-			if ($_=~/\|/){ 
++			if ($_=~/\|/ && $_!~/\t/){ # ID lines only; alignment rows ("lab6\tSEQ\tlab6") may also contain '|' when the ID is shorter than 6 chars
+ 			    $c++; 
+ 			    if ($c==0){ $inn1=$_; }
+ 			    if ($c==1){ $inn2=$_; }

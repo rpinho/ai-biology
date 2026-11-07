@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+"""Identity mapping only for the referee's one-chromosome fixture."""
+import sys
+from pathlib import Path
+source, chain, target, unmapped = sys.argv[-4:]
+Path(target).write_bytes(Path(source).read_bytes())

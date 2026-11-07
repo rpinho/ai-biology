@@ -1,0 +1,12 @@
+chr1	referee	exon	101	131	.	+	.	transcript_id "txOak"; gene_id "oak"; protein_id "OAKP0001"; exon_number "1";
+chr1	referee	CDS	101	131	.	+	0	transcript_id "txOak"; gene_id "oak"; protein_id "OAKP0001"; exon_number "1";
+chr1	referee	exon	201	232	.	+	.	transcript_id "txOak"; gene_id "oak"; protein_id "OAKP0001"; exon_number "2";
+chr1	referee	CDS	201	232	.	+	2	transcript_id "txOak"; gene_id "oak"; protein_id "OAKP0001"; exon_number "2";
+chr1	referee	exon	301	327	.	+	.	transcript_id "txOak"; gene_id "oak"; protein_id "OAKP0001"; exon_number "3";
+chr1	referee	CDS	301	327	.	+	0	transcript_id "txOak"; gene_id "oak"; protein_id "OAKP0001"; exon_number "3";
+chr1	referee	exon	701	730	.	-	.	transcript_id "txElm"; gene_id "elm"; protein_id "ELMP0001"; exon_number "1";
+chr1	referee	CDS	701	730	.	-	0	transcript_id "txElm"; gene_id "elm"; protein_id "ELMP0001"; exon_number "1";
+chr1	referee	exon	601	630	.	-	.	transcript_id "txElm"; gene_id "elm"; protein_id "ELMP0001"; exon_number "2";
+chr1	referee	CDS	601	630	.	-	0	transcript_id "txElm"; gene_id "elm"; protein_id "ELMP0001"; exon_number "2";
+chr1	referee	exon	501	530	.	-	.	transcript_id "txElm"; gene_id "elm"; protein_id "ELMP0001"; exon_number "3";
+chr1	referee	CDS	501	530	.	-	0	transcript_id "txElm"; gene_id "elm"; protein_id "ELMP0001"; exon_number "3";

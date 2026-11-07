@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "Rscript",
+    "<repo>/bin/D2_cluster_EXs.R",
+    "<run>/PART_01-cluster_input.tab",
+    "clusters.tsv",
+    "unclustered.tsv"
+  ],
+  "cwd": "<run>",
+  "exit": 1
+}

@@ -1,0 +1,26 @@
+diff --git a/bin/D3.1_recluster_genes_by_species_pair.py b/bin/D3.1_recluster_genes_by_species_pair.py
+--- a/bin/D3.1_recluster_genes_by_species_pair.py
++++ b/bin/D3.1_recluster_genes_by_species_pair.py
+@@ -40,18 +40,18 @@
+ final_df = pd.DataFrame()
+ for name, group in species_pair_grouped_df:
+   recluster_ID=1
+-  cluster_genes_list = list(set(list(group["GeneID1"])+list(group["GeneID2"])))
++  cluster_genes_list = sorted(set(list(group["GeneID1"])+list(group["GeneID2"]))) #sorted: set order depends on PYTHONHASHSEED
+   my_cluster_counter = 1
+   while my_cluster_counter == 1:
+     focus_gene = cluster_genes_list[0]
+     subgroup = group.loc[(group.GeneID1==focus_gene) | (group.GeneID2==focus_gene)]
+-    subgroup_genes = list(set(list(subgroup["GeneID1"])+list(subgroup["GeneID2"])))
++    subgroup_genes = sorted(set(list(subgroup["GeneID1"])+list(subgroup["GeneID2"])))
+     my_subcluster_counter = 1
+     while my_subcluster_counter == 1:
+       initial_len = len(subgroup_genes)
+       subgroup1 = group.loc[(group.GeneID1.isin(subgroup_genes) | group.GeneID2.isin(subgroup_genes))]  
+-      subgroup1_genes = list(set(list(subgroup1["GeneID1"])+list(subgroup1["GeneID2"])))
+-      subgroup_genes = list(set(subgroup_genes+subgroup1_genes))
++      subgroup1_genes = sorted(set(list(subgroup1["GeneID1"])+list(subgroup1["GeneID2"])))
++      subgroup_genes = sorted(set(subgroup_genes+subgroup1_genes))
+       if len(subgroup_genes) == initial_len:
+         my_subcluster_counter = 2
+     #generate subclusterID

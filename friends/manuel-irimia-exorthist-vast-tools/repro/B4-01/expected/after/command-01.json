@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/B4_merge_PROT_EX_INT_aln_info.pl",
+    "merge"
+  ],
+  "cwd": "<run>/inputs",
+  "exit": 0
+}

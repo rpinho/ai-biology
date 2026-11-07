@@ -1,0 +1,39 @@
+diff --git a/bin/A1_generate_annotations.pl b/bin/A1_generate_annotations.pl
+--- a/bin/A1_generate_annotations.pl
++++ b/bin/A1_generate_annotations.pl
+@@ -106,7 +106,7 @@
+ 	if ($seq{$line[0]}){
+ 	    if ($line[2] eq "CDS"){
+ 		@l1=split(/\"/,$line[8]);
+-		$gid=$l1[1]; 
++		($gid)=$line[8]=~/gene_id \"(.+?)\"/; 
+ 		if ($line[8]=~/protein_id/){
+ 		    $tmp="protein_id";
+ 		} 
+@@ -953,7 +953,7 @@
+ 	    if ($seq{$line[0]}){
+ 		if ($line[2] eq "CDS"){
+ 		    @l1=split(/\"/,$line[8]);
+-		    $gid=$l1[1]; ##change here
++		    ($gid)=$line[8]=~/gene_id \"(.+?)\"/; ##change here
+ 		    #print "GID: $gid\n";
+ 		    if ($line[8]=~/protein_id/){
+ 			$tmp="protein_id";
+@@ -1091,7 +1091,7 @@
+ 	    @line=split(/\t/,$_);
+ 	    if ($line[2] eq "exon"){
+ 		@l1=split(/\"/,$line[8]);
+-		$gid=$l1[1];
++		($gid)=$line[8]=~/gene_id \"(.+?)\"/;
+ 		$tmp="transcript_id";
+ 		@l2=split(/$tmp/,$line[8]);
+ 		@l3=split(/\"/,$l2[1]);
+@@ -1260,7 +1260,7 @@
+ 	@line=split(/\t/,$_);
+ 	if ($line[2] eq "CDS"){
+ 	    @l1=split(/\"/,$line[8]);
+-	    $gid=$l1[1]; ##change here
++	    ($gid)=$line[8]=~/gene_id \"(.+?)\"/; ##change here
+ 	    if ($line[8]=~/protein_id/){ $tmp="protein_id"; }
+ 	    else { $tmp="transcript_id";  }
+ 	    @l2=split(/$tmp/,$line[8]);

@@ -1,0 +1,16 @@
+{
+  "bug": "S1-01",
+  "correct": false,
+  "observed": {
+    "control": {
+      "Fern_subsetted_annot.gtf": 2,
+      "Fern_subsetted_overlap_info.txt": 1,
+      "Fern_subsetted_ref_proteins.txt": 2
+    },
+    "numeric": {
+      "Fern_subsetted_annot.gtf": 0,
+      "Fern_subsetted_overlap_info.txt": 0,
+      "Fern_subsetted_ref_proteins.txt": 1
+    }
+  }
+}

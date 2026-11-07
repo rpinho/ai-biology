@@ -1,0 +1,27 @@
+{
+  "bug": "A1-01",
+  "correct": false,
+  "observed": {
+    "cdsonly": {
+      "exon_rows": 0,
+      "ids": [
+        "ELMP0001|",
+        "OAKP0001|"
+      ]
+    },
+    "exonsfirst": {
+      "exon_rows": 3,
+      "ids": [
+        "ELMP0001|elm",
+        "OAKP0001|elm"
+      ]
+    },
+    "normal": {
+      "exon_rows": 6,
+      "ids": [
+        "ELMP0001|elm",
+        "OAKP0001|oak"
+      ]
+    }
+  }
+}

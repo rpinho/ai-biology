@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/opt/python-env/bin/python3",
+    "<repo>/bin/subset_inputs.py",
+    "-a",
+    "Fern.gtf",
+    "-o",
+    "overlap.tsv",
+    "-r",
+    "ref.tsv",
+    "-c",
+    "clusters.tsv",
+    "-g",
+    "42",
+    "-s",
+    "Fern"
+  ],
+  "cwd": "<run>/inputs/numeric",
+  "exit": 0
+}

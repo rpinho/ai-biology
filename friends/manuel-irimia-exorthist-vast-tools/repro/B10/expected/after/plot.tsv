@@ -1,0 +1,4 @@
+	ClusterID	GeneID	ExonID	Strand	UpPhase	DownPhase	AnnotStatus	Cluster_status	EX_clusterID	State	ExPosition	FakeStart	FakeStop
+0	Family	oak	chrQ:970-1029	+	0	1	annotated	Conserved	Family.001	Exon	first	0	15
+1	Family	oak	chrQ:1120-1179	+	1	2	annotated	Conserved	Family.002	Exon	Internal	30	45
+2	Family	oak	chrQ:1320-1379	+	2	last	annotated	Conserved	Family.003	Exon	last	60	75

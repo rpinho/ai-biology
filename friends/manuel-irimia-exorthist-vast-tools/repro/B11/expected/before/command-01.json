@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/compare_exon_sets.pl",
+    "-sp1",
+    "A",
+    "-sp2",
+    "B",
+    "-gene_clusters",
+    "<run>/inputs/groups.tsv",
+    "-exon_clusters",
+    "<run>/inputs/exons.tsv",
+    "-exon_list_sp1",
+    "<run>/inputs/query.tsv",
+    "-dPSI_info",
+    "dPSI",
+    "-no_plot",
+    "-min_dPSI",
+    "40"
+  ],
+  "cwd": "<run>/requested",
+  "exit": 0
+}

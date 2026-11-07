@@ -1,0 +1,14 @@
+diff --git a/R/vastdiff.R b/R/vastdiff.R
+--- a/R/vastdiff.R
++++ b/R/vastdiff.R
+@@ -175,6 +175,10 @@
+ ## Indexes of samples of interest
+ repAind <- which(head_n %in% firstRepSet)
+ repBind <- which(head_n %in% secondRepSet)
++if (opt$paired) {
++    repAind <- match(firstRepSet, head_n)
++    repBind <- match(secondRepSet, head_n)
++}
+ 
+ ## Indexes of Quals
+ repA.qualInd <- repAind + 1

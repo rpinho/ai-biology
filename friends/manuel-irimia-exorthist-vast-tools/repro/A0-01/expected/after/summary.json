@@ -1,0 +1,8 @@
+{
+  "bug": "A0-01",
+  "correct": true,
+  "observed": {
+    "calendar_date": "2026-11-06",
+    "printed_date": "2026-11-06"
+  }
+}

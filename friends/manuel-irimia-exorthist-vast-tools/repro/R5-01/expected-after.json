@@ -1,0 +1,14 @@
+{
+  "bug": "R5-01",
+  "correct": true,
+  "observed": {
+    "collision": {
+      "Fern": true,
+      "Moss": true
+    },
+    "control": {
+      "Fern": true,
+      "Moss": true
+    }
+  }
+}

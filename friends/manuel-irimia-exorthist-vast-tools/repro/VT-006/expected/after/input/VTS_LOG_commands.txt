@@ -1,0 +1,1 @@
+[VAST-TOOLS v2.5.1, 2026-06-11 (14:28)] vast-tools tidy -min_SD 5 -min_ALT_use 25 -min_N 1 -outFile <run>/input/result.tab

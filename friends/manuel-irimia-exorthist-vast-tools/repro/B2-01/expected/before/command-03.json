@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/opt/python-env/bin/python3",
+    "<repo>/bin/B2_split_EX_pairs_to_realign.py",
+    "-i",
+    "<run>/inputs/na_word/Fern-Moss_EXs_to_split_part_1.txt",
+    "-n",
+    "1"
+  ],
+  "cwd": "<run>/inputs/na_word",
+  "exit": 0
+}

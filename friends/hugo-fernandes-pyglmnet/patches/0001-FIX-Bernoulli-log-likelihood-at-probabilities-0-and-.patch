@@ -1,0 +1,84 @@
+From d0d0815a4d640d495bf4c396ad38cc5a9cb0a865 Mon Sep 17 00:00:00 2001
+From: Ricardo Pinho <rpinho@users.noreply.github.com>
+Date: Sat, 7 Nov 2026 10:05:20 -0500
+Subject: [PATCH] FIX: Bernoulli log likelihood at probabilities 0 and 1 and
+ for large logits
+
+Use xlogy/xlog1py so 0*log(0) counts as 0 instead of NaN, and
+logaddexp(0, z) instead of log(1 + exp(z)), which overflows for large z.
+---
+ pyglmnet/pyglmnet.py  | 10 ++++++----
+ tests/test_metrics.py | 17 +++++++++++++++++
+ 2 files changed, 23 insertions(+), 4 deletions(-)
+
+diff --git a/pyglmnet/pyglmnet.py b/pyglmnet/pyglmnet.py
+index 56fc7b7..5d2d937 100644
+--- a/pyglmnet/pyglmnet.py
++++ b/pyglmnet/pyglmnet.py
+@@ -4,7 +4,7 @@ import warnings
+ from copy import deepcopy
+ 
+ import numpy as np
+-from scipy.special import expit, loggamma
++from scipy.special import expit, loggamma, xlogy, xlog1py
+ from scipy.stats import norm
+ 
+ from .utils import logger, set_log_level, _check_params, \
+@@ -136,17 +136,19 @@ def _logL(distr, y, y_hat, z=None, theta=1.0):
+ 
+         # prevents underflow
+         if z is not None:
+-            logL = np.sum(y * z - np.log(1 + np.exp(z)))
++            logL = np.sum(y * z - np.logaddexp(0, z))
+         # for scoring
+         else:
+-            logL = np.sum(y * np.log(y_hat) + (1 - y) * np.log(1 - y_hat))
++            y_hat = np.asarray(y_hat, dtype=float)
++            logL = np.sum(xlogy(y, y_hat) + xlog1py(1 - y, -y_hat))
+     elif distr == 'probit':
+         if z is not None:
+             pdfz, cdfz = norm.pdf(z), norm.cdf(z)
+             logL = np.sum(y * _probit_g1(z, pdfz, cdfz) +
+                           (1 - y) * _probit_g2(z, pdfz, cdfz))
+         else:
+-            logL = np.sum(y * np.log(y_hat) + (1 - y) * np.log(1 - y_hat))
++            y_hat = np.asarray(y_hat, dtype=float)
++            logL = np.sum(xlogy(y, y_hat) + xlog1py(1 - y, -y_hat))
+     elif distr == 'gamma':
+         # see
+         # https://www.statistics.ma.tum.de/fileadmin/w00bdb/www/czado/lec8.pdf
+diff --git a/tests/test_metrics.py b/tests/test_metrics.py
+index daf4199..039ba0a 100644
+--- a/tests/test_metrics.py
++++ b/tests/test_metrics.py
+@@ -2,6 +2,7 @@
+ 
+ import numpy as np
+ from pyglmnet import GLM, simulate_glm
++from pyglmnet.metrics import deviance
+ 
+ 
+ def test_deviance():
+@@ -58,3 +59,19 @@ def test_accuracy():
+     score = glm_sim.score(X, y)
+ 
+     assert(isinstance(score, float))
++
++
++def test_bernoulli_loglik_endpoints():
++    """Bernoulli log likelihood is finite at probabilities 0 and 1."""
++    from pyglmnet.pyglmnet import _logL
++    y = np.array([0., 1., 0., 1.])
++    for distr in ['binomial', 'probit']:
++        # perfect predictions at the endpoints: log likelihood is 0
++        assert _logL(distr, y, y.copy()) == 0.
++        assert deviance(y, y.copy(), distr, theta=1.0) == 0.
++        # integer probabilities are not wrapped by the negation
++        assert _logL(distr, np.array([0.]),
++                     np.array([1], dtype=np.uint8)) == -np.inf
++    # large logits must not overflow
++    z = np.array([-1000., 1000., -1000., 1000.])
++    assert _logL('binomial', y, None, z=z) == 0.
+-- 
+2.50.1 (Apple Git-155)
+

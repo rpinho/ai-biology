@@ -1,0 +1,9 @@
+{
+  "bug": "B05",
+  "correct": false,
+  "observed": {
+    "error_vector_condition": true,
+    "exit": 1,
+    "rows": []
+  }
+}

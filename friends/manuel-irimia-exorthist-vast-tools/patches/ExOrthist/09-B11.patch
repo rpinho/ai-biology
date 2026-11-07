@@ -1,0 +1,12 @@
+diff --git a/bin/compare_exon_sets.pl b/bin/compare_exon_sets.pl
+--- a/bin/compare_exon_sets.pl
++++ b/bin/compare_exon_sets.pl
+@@ -42,7 +42,7 @@
+ 	    "sp1=s" => \$sp1,
+ 	    "sp2=s" => \$sp2,
+ 	    "dPSI_info=s" => \$dPSI_info,
+-	    "min_dPSI=i" => $min_dPSI,
++	    "min_dPSI=i" => \$min_dPSI,
+ 	    "print_out" => \$outFile,
+ 	    "no_plot" => \$no_plot,
+ 	    "allow_overlap" => \$allow_overlapping_exons,

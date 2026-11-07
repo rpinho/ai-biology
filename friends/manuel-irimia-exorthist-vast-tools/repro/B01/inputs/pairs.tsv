@@ -1,0 +1,4 @@
+GeneID_sp1	Exon_coords_sp1	GeneID_sp2	Exon_coords_sp2	Sp1	Sp2
+oak	chrQ:980-1120:+	elm	chrR:400-540:+	A	B
+oak	chrQ:980-1120:+	ash	chrS:600-740:+	A	C
+oak	chrQ:1010-1070:+	elm	chrR:400-540:+	A	B

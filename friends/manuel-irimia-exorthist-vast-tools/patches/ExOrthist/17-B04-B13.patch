@@ -1,0 +1,17 @@
+diff --git a/bin/D3.2_recluster_EXs_by_species_pair.py b/bin/D3.2_recluster_EXs_by_species_pair.py
+--- a/bin/D3.2_recluster_EXs_by_species_pair.py
++++ b/bin/D3.2_recluster_EXs_by_species_pair.py
+@@ -39,9 +39,11 @@
+ filtered_pairs_df = exon_pairs_sub_df.loc[exon_pairs_sub_df.ClusterID1 == exon_pairs_sub_df.ClusterID2]
+ 
+ #get a ExonID-ExClusterID dictionary.
+-exonID_exclusterID_dict = pd.Series(exon_clusters_df.ExCluster_ID.values, index=exon_clusters_df.Coordinate).to_dict()
++exonID_exclusterID_dict = dict(zip(zip(exon_clusters_df.GeneID, exon_clusters_df.Coordinate), exon_clusters_df.ExCluster_ID)) #key = (gene, coordinates): the same coordinates can belong to different genes
+ #add ExCluster ID (just one, it MUST be identical for the two entries).
+-filtered_pairs_df["ExClusterID"] = filtered_pairs_df["ExonID1"].map(exonID_exclusterID_dict)
++filtered_pairs_df["ExClusterID"] = [exonID_exclusterID_dict.get(key) for key in zip(filtered_pairs_df["GeneID1"], filtered_pairs_df["ExonID1"])]
++# Ignore pairs without a pre-existing exon cluster.
++filtered_pairs_df = filtered_pairs_df.dropna(subset=["ExClusterID"]).copy()
+ #generate new exon reclustering ID.
+ ExReclusteringID = [str(element)+re.sub(".*\.", ".", str(element1)) for (element, element1) in list(zip(list(filtered_pairs_df["ClusterID1"]), list(filtered_pairs_df["ExClusterID"])))]
+ filtered_pairs_df["ExReclusterID"] = ExReclusteringID

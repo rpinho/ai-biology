@@ -1,0 +1,9 @@
+{
+  "bug": "B4-01",
+  "correct": true,
+  "observed": {
+    "EX": 4,
+    "INT": 4,
+    "PROT": 4
+  }
+}

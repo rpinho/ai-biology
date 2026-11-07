@@ -1,0 +1,2 @@
+CID	Sp_query	Sp_subject	Prot_query	Exon_query	Coords_query	Prot_subject	Exon_subject	Coords_subject
+family	Fern	Moss	FERNP0001|seed	exon_2	chr1:101-160	MOSSP0001|spore	exon_2	chr2:201-260

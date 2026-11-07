@@ -1,0 +1,12 @@
+diff --git a/bin/get_liftovers.pl b/bin/get_liftovers.pl
+--- a/bin/get_liftovers.pl
++++ b/bin/get_liftovers.pl
+@@ -137,7 +137,7 @@
+     while (<SEQ>){
+ 	chomp;
+ 	if (/\>/){
+-	    ($current_chr)=/\>(.+)/;
++	    ($current_chr)=/\>\s*(\S+)/; # first word only, like A1_generate_annotations.pl and like the chain/GTF chromosome names
+ 	} else {
+ 	    $SEQ{$current_chr}.=$_ if $current_chr;
+ 	}

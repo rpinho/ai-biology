@@ -1,0 +1,5 @@
+CID	field1	field2	field3	field4	field5	field6	field7	field8	field9	field10	field11	field12	field13
+fam0	FERNP0000|Birch	intron_1	10	0	MOSSP0000|moss0	intron_1	10	0	0	1	1	Fern	Moss
+fam1	FERNP0001|CIDEA	intron_1	10	0	MOSSP0001|moss1	intron_1	10	0	0	1	1	Fern	Moss
+fam2	FERNP0002|PCID2	intron_1	10	0	MOSSP0002|moss2	intron_1	10	0	0	1	1	Fern	Moss
+fam3	FERNP0003|Cedar	intron_1	10	0	MOSSP0003|moss3	intron_1	10	0	0	1	1	Fern	Moss

@@ -1,0 +1,14 @@
+{
+  "bug": "A1-07",
+  "correct": true,
+  "observed": {
+    "normal": {
+      "oak_exons": 3,
+      "oak_sequence": "MAAAAAAAAAEEEEEEEEEEEFFFFFFFFF"
+    },
+    "shared": {
+      "oak_exons": 3,
+      "oak_sequence": "MAAAAAAAAAEEEEEEEEEEEFFFFFFFFF"
+    }
+  }
+}

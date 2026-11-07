@@ -1,0 +1,6 @@
+OAKP0001|txOak	exon_1	1-11	chr1	101-131	+
+OAKP0001|txOak	exon_2	12-22	chr1	201-232	+
+OAKP0001|txOak	exon_3	22-30	chr1	301-327	+
+ELMP0001|txElm	exon_1	1-11	chr1	701-730	-
+ELMP0001|txElm	exon_2	11-20	chr1	601-630	-
+ELMP0001|txElm	exon_3	21-30	chr1	501-530	-

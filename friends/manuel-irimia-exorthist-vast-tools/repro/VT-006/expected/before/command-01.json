@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/vast-tools",
+    "tidy",
+    "<run>/input/input.tab",
+    "--min_N",
+    "1",
+    "--outFile",
+    "<run>/input/result.tab"
+  ],
+  "cwd": "<run>/input",
+  "exit": 255
+}

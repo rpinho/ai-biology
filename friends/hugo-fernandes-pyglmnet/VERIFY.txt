@@ -1,0 +1,20 @@
+fix-bernoulli-loglik | new test, master code: 1 failed, 3 warnings in 0.76s
+fix-bernoulli-loglik | new test, fixed code:  1 passed, 1 warning in 0.49s
+fix-bernoulli-loglik | full suite:            4 failed, 101 passed, 292 warnings in 16.56s
+    FAILED tests/test_pyglmnet.py::test_glm_estimator - TypeError: Passing a cl
+    FAILED tests/test_pyglmnet.py::test_group_lasso - assert False
+    FAILED tests/test_pyglmnet.py::test_cv - ValueError: The key pairwise is no
+    FAILED tests/test_pyglmnet.py::test_intro_example - FileNotFoundError: [Err
+fix-gamma-deviance | new test, master code: 1 failed, 1 warning in 0.39s
+fix-gamma-deviance | new test, fixed code:  1 passed, 1 warning in 0.29s
+fix-gamma-deviance | full suite:            4 failed, 101 passed, 292 warnings in 10.02s
+    FAILED tests/test_pyglmnet.py::test_glm_estimator - TypeError: Passing a cl
+    FAILED tests/test_pyglmnet.py::test_group_lasso - assert False
+    FAILED tests/test_pyglmnet.py::test_cv - ValueError: The key pairwise is no
+    FAILED tests/test_pyglmnet.py::test_intro_example - FileNotFoundError: [Err
+fix-gamma-simulate | new test, master code: 1 failed, 1 warning in 0.72s
+fix-gamma-simulate | new test, fixed code:  1 passed, 1 warning in 0.50s
+fix-gamma-simulate | full suite:            3 failed, 102 passed, 292 warnings in 11.18s
+    FAILED tests/test_pyglmnet.py::test_glm_estimator - TypeError: Passing a cl
+    FAILED tests/test_pyglmnet.py::test_cv - ValueError: The key pairwise is no
+    FAILED tests/test_pyglmnet.py::test_intro_example - FileNotFoundError: [Err

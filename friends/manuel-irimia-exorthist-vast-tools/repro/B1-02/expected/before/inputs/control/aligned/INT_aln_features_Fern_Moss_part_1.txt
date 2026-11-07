@@ -1,0 +1,9 @@
+CID	Prot_query	Intron_number_query	AA_pos_intron_query	Intron_phase_query	Prot_subject	Intron_number_subject	AA_pos_intron_subject	Intron_phase_subject	Aln_dev	Aln_score	Intron_score	Sp_query	Sp_subject
+familyAlpha	FERNP0001|FernSeed	intron_1	30	0	MOSSP0001|MossSpore	intron_1	30	0	0	z,z	10	Fern	Moss
+familyAlpha	FERNP0001|FernSeed	intron_2	60	0	MOSSP0001|MossSpore	intron_2	60	0	0	z,z	10	Fern	Moss
+familyAlpha	MOSSP0001|MossSpore	intron_1	30	0	FERNP0001|FernSeed	intron_1	30	0	0	z,z	10	Moss	Fern
+familyAlpha	MOSSP0001|MossSpore	intron_2	60	0	FERNP0001|FernSeed	intron_2	60	0	0	z,z	10	Moss	Fern
+familyBeta	FERNP0002|FernSpore	intron_1	30	0	MOSSP0002|MossSeed	intron_1	30	0	0	z,z	10	Fern	Moss
+familyBeta	FERNP0002|FernSpore	intron_2	60	0	MOSSP0002|MossSeed	intron_2	60	0	0	z,z	10	Fern	Moss
+familyBeta	MOSSP0002|MossSeed	intron_1	30	0	FERNP0002|FernSpore	intron_1	30	0	0	z,z	10	Moss	Fern
+familyBeta	MOSSP0002|MossSeed	intron_2	60	0	FERNP0002|FernSpore	intron_2	60	0	0	z,z	10	Moss	Fern

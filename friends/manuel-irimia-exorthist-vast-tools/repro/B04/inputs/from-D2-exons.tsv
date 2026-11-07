@@ -1,0 +1,5 @@
+ExCluster_ID	GeneID	Coordinate	Species	Membership_score
+Family.002	node06	chrQ:600-659:+	S06	0.38
+Family.002	node12	chrQ:1200-1259:+	S12	1.12
+Family.002	node10	chrQ:1000-1059:+	S10	0.38
+Family.002	node11	chrQ:1100-1159:+	S11	0.38

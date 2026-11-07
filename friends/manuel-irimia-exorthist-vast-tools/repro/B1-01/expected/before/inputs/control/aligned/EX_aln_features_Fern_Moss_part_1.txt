@@ -1,0 +1,7 @@
+CID	Prot_query	Exon_number_query	AA_pos_exon_query	Chr_query	Exon_coords_query	Strand	Exon_hits_subject	Prot_subject	Aln_AA_pos_subject	%Sim_aln_qry_sbj	%Id_aln_qry_sbj	Gap_number	%Gaps	Prot_subject	Exon_number_subject	AA_pos_exon_subject	Chr_subject	Exon_coords_subject	Strand	Sp_query	Sp_subject
+family	MOSSP0001|spore	exon_1	1-30	chr1	101-190	+	1	FERNP0001|seed	1-30	100.00	100.00	0	0.00	FERNP0001|seed	exon_1	1-30	chr1	101-190	+	Moss	Fern
+family	MOSSP0001|spore	exon_2	31-60	chr1	301-390	+	1	FERNP0001|seed	31-60	100.00	100.00	0	0.00	FERNP0001|seed	exon_2	31-60	chr1	301-390	+	Moss	Fern
+family	MOSSP0001|spore	exon_3	61-90	chr1	501-590	+	1	FERNP0001|seed	61-90	100.00	100.00	0	0.00	FERNP0001|seed	exon_3	61-90	chr1	501-590	+	Moss	Fern
+family	FERNP0001|seed	exon_1	1-30	chr1	101-190	+	1	MOSSP0001|spore	1-30	100.00	100.00	0	0.00	MOSSP0001|spore	exon_1	1-30	chr1	101-190	+	Fern	Moss
+family	FERNP0001|seed	exon_2	31-60	chr1	301-390	+	1	MOSSP0001|spore	31-60	100.00	100.00	0	0.00	MOSSP0001|spore	exon_2	31-60	chr1	301-390	+	Fern	Moss
+family	FERNP0001|seed	exon_3	61-90	chr1	501-590	+	1	MOSSP0001|spore	61-90	100.00	100.00	0	0.00	MOSSP0001|spore	exon_3	61-90	chr1	501-590	+	Fern	Moss

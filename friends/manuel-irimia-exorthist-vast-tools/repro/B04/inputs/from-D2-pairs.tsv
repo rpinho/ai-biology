@@ -1,0 +1,7 @@
+node08	chrQ:800-859:+	node06	chrQ:600-659:+	S08	S06
+node12	chrQ:1200-1259:+	node06	chrQ:600-659:+	S12	S06
+node06	chrQ:600-659:+	node12	chrQ:1200-1259:+	S06	S12
+node10	chrQ:1000-1059:+	node12	chrQ:1200-1259:+	S10	S12
+node12	chrQ:1200-1259:+	node10	chrQ:1000-1059:+	S12	S10
+node11	chrQ:1100-1159:+	node12	chrQ:1200-1259:+	S11	S12
+node12	chrQ:1200-1259:+	node11	chrQ:1100-1159:+	S12	S11

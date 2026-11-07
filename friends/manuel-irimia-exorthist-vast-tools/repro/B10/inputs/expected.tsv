@@ -1,0 +1,4 @@
+ExonID	UpPhase	DownPhase	FakeStart
+chrQ:970-1029	0	1	0
+chrQ:1120-1179	1	2	30
+chrQ:1320-1379	2	last	60

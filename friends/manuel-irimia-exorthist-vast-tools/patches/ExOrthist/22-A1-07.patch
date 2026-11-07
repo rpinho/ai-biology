@@ -1,0 +1,53 @@
+diff --git a/bin/A1_generate_annotations.pl b/bin/A1_generate_annotations.pl
+--- a/bin/A1_generate_annotations.pl
++++ b/bin/A1_generate_annotations.pl
+@@ -55,6 +55,17 @@
+ 
+ 
+ ";    
++}
++
++
++### protein_id shared by several transcripts (identical CDS): only the CDS lines of the first transcript are used
++my %prot_first_tr;
++sub dup_prot {
++    my ($prot,$attr,$scope)=@_;
++    my ($t)=$attr=~/transcript_id \"(.+?)\"/;
++    $t="" unless defined $t;
++    if (!defined $prot_first_tr{$scope}{$prot}){ $prot_first_tr{$scope}{$prot}=$t; return 0; }
++    return ($prot_first_tr{$scope}{$prot} ne $t) ? 1 : 0;
+ }
+ 
+ ### setting EXONS_DB
+@@ -114,6 +125,7 @@
+ 		@l2=split(/$tmp/,$line[8]);
+ 		@l3=split(/\"/,$l2[1]);
+ 		$prot=$l3[1];
++		next if dup_prot($prot,$line[8],"p1"); # same protein_id on another transcript (e.g. RefSeq NM_a/NM_b -> NP_x): keep the first only
+ 		if (!$pid{$prot}){
+ 		    $m=0;
+ 		    if ($line[7] ne "."){  $phase=$line[7]; $fex{$prot}=$phase; $m=$phase; } ##
+@@ -962,6 +974,7 @@
+ 		    @l2=split(/$tmp/,$line[8]);
+ 		    @l3=split(/\"/,$l2[1]);
+ 		    $prot=$l3[1];
++		    next if dup_prot($prot,$line[8],"fake"); # same protein_id on another transcript (e.g. RefSeq NM_a/NM_b -> NP_x): keep the first only
+ 		    if (!$pid{$prot}){
+ 			$m=0;
+ 			if ($line[7] ne "."){  $phase=$line[7]; $fex{$prot}=$phase; $m=$phase; } ##
+@@ -1112,6 +1125,7 @@
+ 		@l2=split(/$tmp/,$line[8]);
+ 		@l3=split(/\"/,$l2[1]);
+ 		$prot=$l3[1];
++		next if dup_prot($prot,$line[8],"p2"); # same protein_id on another transcript (e.g. RefSeq NM_a/NM_b -> NP_x): keep the first only
+ 		$tmp="transcript_id";
+ 		@l2=split(/$tmp/,$line[8]);
+ 		@l3=split(/\"/,$l2[1]);
+@@ -1266,6 +1280,7 @@
+ 	    @l2=split(/$tmp/,$line[8]);
+ 	    @l3=split(/\"/,$l2[1]);
+ 	    $prot=$l3[1];
++	    next if dup_prot($prot,$line[8],"p3"); # same protein_id on another transcript (e.g. RefSeq NM_a/NM_b -> NP_x): keep the first only
+ 	    $id=$prot."|".$gid;
+ 	    $tmp="exon_number";
+ 	    @l2=split(/$tmp/,$line[8]);

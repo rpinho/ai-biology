@@ -1,0 +1,33 @@
+diff --git a/bin/subset_inputs.py b/bin/subset_inputs.py
+--- a/bin/subset_inputs.py
++++ b/bin/subset_inputs.py
+@@ -21,10 +21,10 @@
+ my_species = args.species
+ 
+ #### Main
+-my_cluster_df = pd.read_csv(my_gene_clusters, sep="\t", header=None, index_col=False)
++my_cluster_df = pd.read_csv(my_gene_clusters, sep="\t", header=None, index_col=False, dtype=str)  # IDs are strings (numeric cluster/gene IDs, leading zeros)
+ selected_genes = list(my_cluster_df[my_cluster_df.iloc[:,0]==str(my_gene_clusterID)].iloc[:,2])
+ #Subset GTF
+-my_gtf_df = pd.read_table(my_annot_file, header=None, index_col=False)
++my_gtf_df = pd.read_table(my_annot_file, header=None, index_col=False, dtype=str)
+ my_raw_data = [element for element in list(my_gtf_df.iloc[:,my_gtf_df.shape[1]-1]) if "protein_id" in element and "exon_number" in element]
+ 
+ my_raw_gene_id = [part for element in list(my_gtf_df.iloc[:,my_gtf_df.shape[1]-1]) for part in element.split(";") if "gene_id" in part]
+@@ -35,14 +35,14 @@
+ my_gtf_sub_df.to_csv(my_species+"_subsetted_annot.gtf", header=False, index=False, sep="\t", na_rep="NA")
+ 
+ #Subset Overlap file
+-my_overlap_df = pd.read_table(my_overlap_file, header=None, index_col=False, sep="\t", names=["OverlapID", "GeneID", "ExCoords", "Strand"])
++my_overlap_df = pd.read_table(my_overlap_file, header=None, index_col=False, sep="\t", names=["OverlapID", "GeneID", "ExCoords", "Strand"], dtype=str)
+ #added after modification of main.nf output, 17/11/2020
+ my_overlap_df = my_overlap_df.drop(columns=["Strand"])
+ my_overlap_sub_df = my_overlap_df.loc[my_overlap_df["GeneID"].isin(selected_genes)]
+ my_overlap_sub_df.to_csv(my_species+"_subsetted_overlap_info.txt", header=False, index=False, sep="\t", na_rep="NA")
+ 
+ #Get exint_info (format: ProteinID|GeneID (ref protein), ex num.
+-my_refprot_df = pd.read_table(my_ref_prots_file, header=None, index_col=False, sep="\t", names=["GeneID", "RefProt"])
++my_refprot_df = pd.read_table(my_ref_prots_file, header=None, index_col=False, sep="\t", names=["GeneID", "RefProt"], dtype=str)
+ my_refprot_sub_df = my_refprot_df.loc[my_refprot_df.GeneID.isin(selected_genes)]
+ my_refprot_sub_df = my_refprot_sub_df.drop(columns=["GeneID"])
+ my_refprot_sub_df.to_csv(my_species+"_subsetted_ref_proteins.txt", sep="\t", header=True, index=False, na_rep="NA")

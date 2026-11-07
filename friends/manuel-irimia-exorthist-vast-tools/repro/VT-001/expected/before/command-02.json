@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/MakeTableRPKMs.pl",
+    "-sp=Hsa",
+    "-dbDir=<run>/inputs/db",
+    "-C",
+    "-TPM"
+  ],
+  "cwd": "<run>/inputs/normal",
+  "exit": 0
+}

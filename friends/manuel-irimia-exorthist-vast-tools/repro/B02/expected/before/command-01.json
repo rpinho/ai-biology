@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/opt/python-env/bin/python3",
+    "<repo>/bin/D3.2_recluster_EXs_by_species_pair.py",
+    "-ep",
+    "<run>/inputs/pairs.tsv",
+    "-rg",
+    "<run>/inputs/genes.tsv",
+    "-ec",
+    "<run>/inputs/exons.tsv",
+    "-sp1",
+    "A",
+    "-sp2",
+    "B",
+    "-out",
+    "<run>/out.tsv"
+  ],
+  "cwd": "<run>",
+  "exit": 2
+}

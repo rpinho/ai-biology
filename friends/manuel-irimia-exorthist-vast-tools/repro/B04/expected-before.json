@@ -1,0 +1,44 @@
+{
+  "bug": "B04",
+  "correct": false,
+  "observed": {
+    "rows": [
+      [
+        "Family.01.003",
+        "elm",
+        "chrR:200-259:+",
+        "B"
+      ],
+      [
+        "Family.01.003",
+        "oak",
+        "chrQ:100-159:+",
+        "A"
+      ],
+      [
+        "Family.01nan",
+        "elm",
+        "chrR:500-559:+",
+        "B"
+      ],
+      [
+        "Family.01nan",
+        "elm",
+        "chrR:800-859:+",
+        "B"
+      ],
+      [
+        "Family.01nan",
+        "oak",
+        "chrQ:400-459:+",
+        "A"
+      ],
+      [
+        "Family.01nan",
+        "oak",
+        "chrQ:700-759:+",
+        "A"
+      ]
+    ]
+  }
+}

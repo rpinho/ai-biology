@@ -1,0 +1,1 @@
+[VAST-TOOLS v2.5.1, 2026-06-11 (14:28)] vast-tools diff -a A -b B --sampleNameA A --sampleNameB B -i input.tab -n 2 -p FALSE -d result -o <run>/tail-unpaired -r 0.95 -m 0.1 -e 10 -S 1 --alpha 1 --beta 1 -s 1000 -z 10  

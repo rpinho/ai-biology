@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/A1_generate_annotations.pl",
+    "-GTF",
+    "<run>/inputs/ascending/Tree_annot.gtf",
+    "-G",
+    "<run>/inputs/ascending/Tree_gDNA.fasta",
+    "-sp",
+    "Tree",
+    "-keep_files"
+  ],
+  "cwd": "<run>/inputs/ascending",
+  "exit": 0
+}

@@ -1,0 +1,12 @@
+diff --git a/bin/Filter_and_clean_Combine.pl b/bin/Filter_and_clean_Combine.pl
+--- a/bin/Filter_and_clean_Combine.pl
++++ b/bin/Filter_and_clean_Combine.pl
+@@ -218,7 +218,7 @@
+ 	    }
+ 	}
+ 	elsif ($group_file){
+-	    if ($sample_group{$H[$i]}){
++	    if (exists $sample_group{$H[$i]}){
+ 		$sample_index{$H[$i]}=$i;
+ 		$TISSUES{$H[$i]}=1;
+                 $max_N++;

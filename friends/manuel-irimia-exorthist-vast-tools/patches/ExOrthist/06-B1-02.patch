@@ -1,0 +1,51 @@
+diff --git a/bin/B1_parse_IPA_prot_aln.pl b/bin/B1_parse_IPA_prot_aln.pl
+--- a/bin/B1_parse_IPA_prot_aln.pl
++++ b/bin/B1_parse_IPA_prot_aln.pl
+@@ -125,14 +125,14 @@
+ }
+ close IN;
+ 
+-my (%gn, %cl1, %cl2);
++my (%gn, %gn_sp, %cl1, %cl2); # %gn_sp: species-specific gene -> cluster (the same gene ID can exist in both species)
+ open (IN,"$i1") || die "It cannot open gene cluster file (second time)"; ##Gene cluster files
+ while (<IN>){
+     chomp($_);
+     @l=split(/\t/,$_);    
+     if ($c1{$l[0]} && $c2{$l[0]}){ # only for the valid clusters
+ 	if ($l[1] eq $s1 ) {
+-	    $gn{$l[2]}=$l[0];
++	    $gn{$l[2]}=$l[0]; $gn_sp{$s1}{$l[2]}=$l[0];
+ 	    if (!$cl1{$l[0]}) {
+ 		$cl1{$l[0]}=$l[2];
+ 	    } 
+@@ -141,7 +141,7 @@
+ 	    }
+ 	}
+ 	elsif ($l[1] eq $s2) {
+-	    $gn{$l[2]}=$l[0];
++	    $gn{$l[2]}=$l[0]; $gn_sp{$s2}{$l[2]}=$l[0];
+ 	    if (!$cl2{$l[0]}) {
+ 		$cl2{$l[0]}=$l[2];
+ 	    } 
+@@ -162,8 +162,8 @@
+ while (<IN>){
+     chomp($_);
+     @l=split(/\|/,$_);   
+-    if ($gn{$l[1]}){
+-	$cid=$gn{$l[1]};
++    if ($gn_sp{$s1}{$l[1]}){
++	$cid=$gn_sp{$s1}{$l[1]};
+ 	$p1{$_}=1;
+ 	$spid{$_}=$sp1; ##adding protid species info	
+ 	if (!$pid1{$cid}){
+@@ -186,8 +186,8 @@
+ while (<IN>){
+     chomp($_);
+     @l=split(/\|/,$_);    
+-    if ($gn{$l[1]}){
+-	$cid=$gn{$l[1]};
++    if ($gn_sp{$s2}{$l[1]}){
++	$cid=$gn_sp{$s2}{$l[1]};
+ 	$p2{$_}=1;
+ 	$spid{$_}=$sp2;##adding protid info
+ 	if (!$pid2{$cid}){

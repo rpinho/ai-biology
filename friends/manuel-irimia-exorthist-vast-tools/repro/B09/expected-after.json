@@ -1,0 +1,18 @@
+{
+  "bug": "B09",
+  "correct": true,
+  "observed": {
+    "1-1": {
+      "exit": 0,
+      "summary": "Number\t% from total OGs\nTotal exon OGs\t1\t100%\nOGs 1:1\t1\t100.00%\nOGs 1:2/2:1\t0\t0.00%\nOGs 2:2\t0\t0.00%\nOGs >=3 exons/species\t0\t0.00%\nOGs >=4 exons/species\t0\t0.00%\nOther OGs\t0\t0.00%"
+    },
+    "3-4": {
+      "exit": 0,
+      "summary": "Number\t% from total OGs\nTotal exon OGs\t1\t100%\nOGs 1:1\t0\t0.00%\nOGs 1:2/2:1\t0\t0.00%\nOGs 2:2\t0\t0.00%\nOGs >=3 exons/species\t1\t100.00%\nOGs >=4 exons/species\t1\t100.00%\nOther OGs\t0\t0.00%"
+    },
+    "6-1": {
+      "exit": 0,
+      "summary": "Number\t% from total OGs\nTotal exon OGs\t1\t100%\nOGs 1:1\t0\t0.00%\nOGs 1:2/2:1\t0\t0.00%\nOGs 2:2\t0\t0.00%\nOGs >=3 exons/species\t1\t100.00%\nOGs >=4 exons/species\t1\t100.00%\nOther OGs\t0\t0.00%"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+Family	Family|node06|chrQ:600-659:+|S06	Family|node12|chrQ:1200-1259:+|S12	TRUE
+Family	Family|node08|chrQ:800-859:+|S08	Family|node06|chrQ:600-659:+|S06	FALSE
+Family	Family|node10|chrQ:1000-1059:+|S10	Family|node12|chrQ:1200-1259:+|S12	TRUE
+Family	Family|node11|chrQ:1100-1159:+|S11	Family|node12|chrQ:1200-1259:+|S12	TRUE
+Family	Family|node12|chrQ:1200-1259:+|S12	Family|node06|chrQ:600-659:+|S06	TRUE
+Family	Family|node12|chrQ:1200-1259:+|S12	Family|node10|chrQ:1000-1059:+|S10	TRUE
+Family	Family|node12|chrQ:1200-1259:+|S12	Family|node11|chrQ:1100-1159:+|S11	TRUE

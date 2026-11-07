@@ -1,0 +1,30 @@
+diff --git a/bin/get_cluster_stats.pl b/bin/get_cluster_stats.pl
+--- a/bin/get_cluster_stats.pl
++++ b/bin/get_cluster_stats.pl
+@@ -81,7 +81,7 @@
+ 
+ 	if (!defined $exon_catalog{$l[0]}){
+ 	    $tally_exons_all{$species}++;
+-	    if ($gene_to_cluster{$gene}){
++	    if (defined $gene_to_cluster{$gene}){
+ 		$tally_exons{$species}++;
+ 	    }
+ 	    $exon_catalog{$l[0]} = 1;
+@@ -117,7 +117,7 @@
+     
+     if (!defined $exon_catalog_hits{$l[0]}){
+ 	$tally_exons_all_hits{$species}++;
+-	if ($gene_to_cluster{$gene}){
++	if (defined $gene_to_cluster{$gene}){
+ 	    $tally_exons_hits{$species}++;
+ 	}
+ 	$exon_catalog_hits{$l[0]} = 1;
+@@ -144,7 +144,7 @@
+     my $coord = $l[2];
+     my $species = $l[3];
+ 
+-    if ($gene_to_cluster{$gene}){ # if the gene has orthologs
++    if (defined $gene_to_cluster{$gene}){ # if the gene has orthologs
+ 	my @temp = split(/\:/,$coord);
+ 	my $id2 = "$gene=$temp[1]";
+ 	my $exon_name = $exon_conversion{$id2}; # this is the unique ID (OV_EX_dm6_1)

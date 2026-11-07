@@ -1,0 +1,6 @@
+MOSSP0001|spore	exon_1	1-30	chr1	101-190	+
+MOSSP0001|spore	exon_2	31-60	chr1	301-390	+
+MOSSP0001|spore	exon_3	61-90	chr1	501-590	+
+MOSSP0002|seed	exon_1	1-30	chr1	101-190	+
+MOSSP0002|seed	exon_2	31-60	chr1	301-390	+
+MOSSP0002|seed	exon_3	61-90	chr1	501-590	+

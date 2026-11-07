@@ -1,0 +1,41 @@
+{
+  "bug": "VT-004",
+  "correct": true,
+  "observed": {
+    "normal-paired": {
+      "dimension_error": false,
+      "events": 2,
+      "exit": 0
+    },
+    "normal-unpaired": {
+      "dimension_error": false,
+      "events": 2,
+      "exit": 0
+    },
+    "single-paired": {
+      "dimension_error": false,
+      "events": 1,
+      "exit": 0
+    },
+    "single-pdf": {
+      "dimension_error": false,
+      "events": 1,
+      "exit": 0
+    },
+    "single-unpaired": {
+      "dimension_error": false,
+      "events": 1,
+      "exit": 0
+    },
+    "tail-paired": {
+      "dimension_error": false,
+      "events": 3,
+      "exit": 0
+    },
+    "tail-unpaired": {
+      "dimension_error": false,
+      "events": 3,
+      "exit": 0
+    }
+  }
+}

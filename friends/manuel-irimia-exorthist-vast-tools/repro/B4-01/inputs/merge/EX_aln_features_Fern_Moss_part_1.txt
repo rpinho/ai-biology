@@ -1,0 +1,5 @@
+CID	field1	field2	field3	field4	field5	field6	field7	field8	field9	field10	field11	field12	field13	field14	field15	field16	field17	field18	field19	field20	field21
+fam0	FERNP0000|Birch	exon_1	1-10	chr1	1-30	+	1	MOSSP0000|moss0	1-10	100	100	0	0	MOSSP0000|moss0	exon_1	1-10	chr2	1-30	+	Fern	Moss
+fam1	FERNP0001|CIDEA	exon_1	1-10	chr1	1-30	+	1	MOSSP0001|moss1	1-10	100	100	0	0	MOSSP0001|moss1	exon_1	1-10	chr2	1-30	+	Fern	Moss
+fam2	FERNP0002|PCID2	exon_1	1-10	chr1	1-30	+	1	MOSSP0002|moss2	1-10	100	100	0	0	MOSSP0002|moss2	exon_1	1-10	chr2	1-30	+	Fern	Moss
+fam3	FERNP0003|Cedar	exon_1	1-10	chr1	1-30	+	1	MOSSP0003|moss3	1-10	100	100	0	0	MOSSP0003|moss3	exon_1	1-10	chr2	1-30	+	Fern	Moss

@@ -1,0 +1,52 @@
+From c4279b44cae60b3f8e502b0e56333e4899d6cbe9 Mon Sep 17 00:00:00 2001
+From: Ricardo Pinho <rpinho@users.noreply.github.com>
+Date: Sat, 7 Nov 2026 10:05:21 -0500
+Subject: [PATCH] FIX: simulate_glm(sample=True) for gamma draws gamma samples
+
+It returned exp(mu) deterministically. Draw shape-1 gamma samples with
+mean mu, matching the likelihood used for fitting.
+---
+ pyglmnet/pyglmnet.py   |  2 +-
+ tests/test_pyglmnet.py | 16 ++++++++++++++++
+ 2 files changed, 17 insertions(+), 1 deletion(-)
+
+diff --git a/pyglmnet/pyglmnet.py b/pyglmnet/pyglmnet.py
+index 56fc7b7..0968b9f 100644
+--- a/pyglmnet/pyglmnet.py
++++ b/pyglmnet/pyglmnet.py
+@@ -456,7 +456,7 @@ def simulate_glm(distr, beta0, beta, X, eta=2.0, random_state=None,
+                  fit_intercept=fit_intercept))
+     if distr == 'gamma':
+         mu = _lmb(distr, beta0, beta, X, eta, fit_intercept=fit_intercept)
+-        y = np.exp(mu)
++        y = _random_state.gamma(shape=1.0, scale=mu)
+     if distr == 'neg-binomial':
+         mu = _lmb(distr, beta0, beta, X, eta, fit_intercept=fit_intercept)
+         p = theta / (theta + mu)  # Probability of success
+diff --git a/tests/test_pyglmnet.py b/tests/test_pyglmnet.py
+index b9401a6..ee369d8 100644
+--- a/tests/test_pyglmnet.py
++++ b/tests/test_pyglmnet.py
+@@ -511,3 +511,19 @@ def test_intro_example():
+                 break
+             code_lines.append(line.strip())
+     subprocess.run(['python', '-c', '\n'.join(code_lines)], check=True)
++
++
++def test_simulate_gamma_samples():
++    """simulate_glm(sample=True) draws shape-1 gamma samples with mean mu."""
++    X = np.zeros((20000, 1))
++    beta0, beta = 0.5, np.array([0.])
++    mu = simulate_glm('gamma', beta0, beta, X, sample=False)
++    assert np.allclose(mu, mu[0])
++    y = simulate_glm('gamma', beta0, beta, X, random_state=1, sample=True)
++    # shape-1 gamma: mean mu, variance mu ** 2
++    assert np.isclose(np.mean(y), mu[0], rtol=0.03)
++    assert np.isclose(np.var(y), mu[0] ** 2, rtol=0.1)
++    assert_array_equal(
++        y, simulate_glm('gamma', beta0, beta, X, random_state=1, sample=True))
++    assert not np.array_equal(
++        y, simulate_glm('gamma', beta0, beta, X, random_state=2, sample=True))
+-- 
+2.50.1 (Apple Git-155)
+

@@ -1,0 +1,12 @@
+{
+  "bug": "B02",
+  "correct": false,
+  "observed": {
+    "exit": 2,
+    "exon_rows": 0,
+    "flags": [
+      "-sp1",
+      "-sp2"
+    ]
+  }
+}

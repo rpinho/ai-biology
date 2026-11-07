@@ -1,0 +1,12 @@
+{
+  "bug": "B01",
+  "correct": false,
+  "observed": {
+    "coordinates": [
+      "chrQ:980-1120:+",
+      "chrQ:980-1120:+",
+      "chrQ:1010-1070:+"
+    ],
+    "pairs": 3
+  }
+}

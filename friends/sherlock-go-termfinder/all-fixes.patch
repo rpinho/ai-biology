@@ -1,0 +1,171 @@
+--- a/lib/GO/AnnotationProvider/AnnotationParser.pm
++++ b/lib/GO/AnnotationProvider/AnnotationParser.pm
+@@ -580,7 +580,7 @@
+ 
+ 	@line = split("\t", $_, -1);
+ 
+-	next if $line[$kNotColumn] eq 'NOT'; # skip annotations NOT to a GOID
++	next if $line[$kNotColumn] =~ /(?:^|\|)NOT(?:\||$)/; # skip annotations NOT to a GOID
+ 
+ 	($databaseId, $goid, $aspect) = @line[$kDatabaseIdColumn, $kGoidColumn, $kAspectColumn];
+ 	($standardName, $aliases)     = @line[$kStandardNameColumn, $kAliasesColumn];
+--- a/lib/GO/OntologyProvider/OboParser.pm
++++ b/lib/GO/OntologyProvider/OboParser.pm
+@@ -273,18 +273,27 @@
+     my @entryLine;
+ 
+     my $isValidEntry = 0;
++    my $isObsolete = 0;
+ 
+     my $namespace;
++    my $skipStanza = 0;
+ 
+     while (<$ontologyFh>){
+ 
+ 	chomp;
+ 
+-	# finish parsing the obo file of we reach the typedef line.
+-
+-	last if (/^\[Typedef\]/);       
++	# Finish the previous term and skip non-term stanzas, wherever they occur.
++        if (/^\[(?!Term\])[^]]+\]$/){
++            $self->__processNode(\@entryLine) if $isValidEntry;
++            @entryLine = ();
++            $isValidEntry = 0;
++            $namespace = q{};
++            $skipStanza = 1;
++            next;
++        }       
+ 
+ 	if ($_ eq '[Term]') {
++            $skipStanza = 0;
+ 
+ 	    # we reached a new term - so process the previous entry
+ 
+@@ -299,25 +308,28 @@
+ 	    @entryLine = ();
+ 
+ 	    $isValidEntry = 0;
++            $isObsolete = 0;
+ 	    $namespace    = '';
+ 
++	}elsif ($skipStanza){
++            next;
+ 	}elsif ($_ eq "namespace: $aspect"){
+ 
+ 	    # term is in the requested namespace
+ 
+ 	    $namespace = $aspect;
+ 
+-	    $isValidEntry = 1;
++	    $isValidEntry = !$isObsolete;
+ 	
+ 	}elsif ($_ eq 'is_obsolete: true'){
+ 
+ 	    # we don't want obsolete nodes - DO NOT COMMENT THIS OUT -
+ 	    # infinite recursion will result!
+ 
+-	    # Note, the logic here relies on the is_obsolete line coming after the
+-	    # namespace line.
++	    # Keep the obsolete flag regardless of the order of tags in this stanza.
+ 
+ 	    $isValidEntry = 0;
++            $isObsolete = 1;
+ 		
+ 	}else {
+ 
+@@ -615,6 +627,10 @@
+ 
+     foreach my $ancestorGoid (@{$self->{$kParent}{$parentGoid}}) {
+ 
++        die "Cycle in ontology involving $ancestorGoid\n"
++            if $ancestorGoid eq $childNode->goid ||
++               grep { defined($_) && $_->goid eq $ancestorGoid } @{$pathArrayRef};
++
+ 	# add the ancestor node to our path to the root which is being
+ 	# built
+ 
+--- a/lib/GO/TermFinder.pm
++++ b/lib/GO/TermFinder.pm
+@@ -376,7 +376,8 @@
+ 
+ 	$totalNodeCounts->{$rootNodeId} = $self->totalNumGenes;
+ 
+-	$totalNodeCounts->{$childNodeId} += ($self->totalNumGenes - $populationSize);
++	# Aspect counts represent direct annotations only; anonymous genes
++	# have no direct annotation to the aspect.
+ 
+ 	$totalNodeCounts->{$kUnannotatedNode->goid} += ($self->totalNumGenes - $populationSize);
+ 
+@@ -1119,6 +1120,7 @@
+ 		
+ 		}
+ 
++                next; # No ID was resolved or pushed for this ambiguous alias.
+ 	    }
+ 	    
+ 	}else{
+@@ -1350,6 +1352,9 @@
+ 
+ 	    }
+ 
++	    # Alternate IDs name the same term; count and report its primary ID.
++	    $goid = $self->__ontologyProvider->nodeFromId($goid)->goid;
++
+ 	    # record the goid and its ancestors
+ 
+ 	    $goids{$goid} = undef;
+@@ -1575,7 +1580,7 @@
+     # no correction needs to be done if there is 0 or 1 hypotheses
+     # that were tested
+ 
+-    if ($correctionFactor > 1){
++    if ($correctionFactor >= 1){
+ 
+ 	# simply go through each hypothesis and calculate the corrected
+ 	# p-value by multiplying the uncorrected p-value by the number of
+@@ -1771,7 +1776,9 @@
+ 
+     if ($self->__isUsingPopulation){
+ 
+-	@names = @{$self->__population};
++	# Resolve aliases and duplicates exactly as for the background counts.
++	my ($ids) = $self->__determineDatabaseIdsFromGenes($self->__population);
++	@names = @{$ids};
+ 
+     }else{
+ 
+@@ -1974,7 +1981,15 @@
+     # real data.  We threshold this at a maximum of 1, as we can't
+     # have a FDR of greater than 100%
+ 
++    my $numDiscoveries = 0;
+     foreach (my $i = 0; $i < @realHypotheses; $i++){
++
++        # A p-value cutoff includes every member of a tie.
++        $numDiscoveries = $i + 1 if $numDiscoveries <= $i;
++        while ($numDiscoveries < @realHypotheses &&
++               $realHypotheses[$numDiscoveries]->{PVALUE} == $realHypotheses[$i]->{PVALUE}){
++            $numDiscoveries++;
++        }
+ 
+ 	if (exists $realHypotheses[$i]->{FDR_OBSERVATIONS}){
+ 
+@@ -1984,7 +1999,7 @@
+ 
+ 	    $realHypotheses[$i]->{FDR_OBSERVATIONS} /= $numSimulations;
+ 
+-	    $realHypotheses[$i]->{FDR_RATE} = $realHypotheses[$i]->{FDR_OBSERVATIONS} / ($i + 1);
++	    $realHypotheses[$i]->{FDR_RATE} = $realHypotheses[$i]->{FDR_OBSERVATIONS} / $numDiscoveries;
+ 
+ 	    if ($realHypotheses[$i]->{FDR_RATE} > 1){
+ 
+@@ -2009,7 +2024,7 @@
+ 	# be chosen at this point, we can calculate the expected number of
+ 	# false positives, as the FDR x the number of hypotheses
+ 
+-	$realHypotheses[$i]->{EXPECTED_FALSE_POSITIVES} = $realHypotheses[$i]->{FDR_RATE} * ($i+1);	
++	$realHypotheses[$i]->{EXPECTED_FALSE_POSITIVES} = $realHypotheses[$i]->{FDR_RATE} * $numDiscoveries;	
+ 
+     }
+ 

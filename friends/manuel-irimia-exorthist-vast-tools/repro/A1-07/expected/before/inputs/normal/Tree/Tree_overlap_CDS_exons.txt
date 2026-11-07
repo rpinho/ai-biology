@@ -1,0 +1,6 @@
+OV_EX_Tree_1	elm	501-530	-
+OV_EX_Tree_2	elm	601-630	-
+OV_EX_Tree_3	elm	701-730	-
+OV_EX_Tree_4	oak	101-131	+
+OV_EX_Tree_5	oak	201-232	+
+OV_EX_Tree_6	oak	301-327	+

@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/B1_parse_IPA_prot_aln.pl",
+    "Fern",
+    "Moss",
+    "clusters.tsv",
+    "Fern/Fern_annot_exons_prot_ids.txt",
+    "Moss/Moss_annot_exons_prot_ids.txt",
+    "Fern/Fern_protein_ids_exons_pos.txt",
+    "Moss/Moss_protein_ids_exons_pos.txt",
+    "Fern/Fern_protein_ids_intron_pos_CDS.txt",
+    "Moss/Moss_protein_ids_intron_pos_CDS.txt",
+    "Fern/Fern.exint",
+    "Moss/Moss.exint",
+    "1",
+    "<repo>/files/blosum62.txt",
+    "aligned",
+    "0.25",
+    "1"
+  ],
+  "cwd": "<run>/inputs/control",
+  "exit": 0
+}

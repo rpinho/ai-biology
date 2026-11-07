@@ -1,0 +1,2 @@
+GENE	EVENT	COORD	LENGTH	FullCO	COMPLEX	PSI	Raw_reads_exc	Raw_reads_inc	Corr_reads_exc	Corr_reads_inc
+GENE	ENSG000001-MICROEX1	chr1:101-110	10	chr1:50,101-110,200	MIC_S	NA	NA	NA	NA	NA

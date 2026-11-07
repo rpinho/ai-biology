@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/C5_collapse_overlapping_matches.pl",
+    "overlaps.tsv",
+    "<run>/inputs/pairs.tsv",
+    "collapsed.tsv"
+  ],
+  "cwd": "<run>",
+  "exit": 0
+}

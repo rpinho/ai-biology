@@ -1,0 +1,15 @@
+{
+  "bug": "B03",
+  "correct": true,
+  "observed": {
+    "components": 3,
+    "genes": [
+      "alpha",
+      "beta",
+      "delta",
+      "epsilon",
+      "gamma",
+      "zeta"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "/opt/python-env/bin/python3",
+    "<repo>/bin/generate_exint_plotter_input.py",
+    "-a",
+    "<run>/inputs/annotation.gtf",
+    "-o",
+    "<run>/inputs/overlap.tsv",
+    "-c",
+    "<run>/inputs/groups.tsv",
+    "-e",
+    "<run>/inputs/exons.tsv",
+    "-r",
+    "<run>/inputs/ref.tsv",
+    "-s",
+    "A",
+    "-out",
+    "plot.tsv"
+  ],
+  "cwd": "<run>",
+  "exit": 0
+}

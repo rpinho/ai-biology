@@ -1,0 +1,1 @@
+Ensembl_ID	A_coord	Strand	Event_ID	FullCoord	Type	Length	C1_coord	C2_coord	Length_Int1	Length_Int2	3n	PSI	Reads_exc	Reads_inc1	Reads_inc2	Sum_all_Reads	Ref_C1	Ref_C2	Excl_reads(corr_all=raw_ref=corr_ref)	Inc1_reads(corr_all=raw_ref=corr_ref)	Inc2_reads(corr_all=raw_ref=corr_ref)	Complexity	Pre_C1	Pre_C2	Gene_name

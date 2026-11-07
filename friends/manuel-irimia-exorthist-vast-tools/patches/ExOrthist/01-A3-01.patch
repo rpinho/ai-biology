@@ -1,0 +1,36 @@
+diff --git a/bin/A3_split_clusters_in_chunks.pl b/bin/A3_split_clusters_in_chunks.pl
+--- a/bin/A3_split_clusters_in_chunks.pl
++++ b/bin/A3_split_clusters_in_chunks.pl
+@@ -174,9 +174,22 @@
+ 	print STDERR "\n\nWARNING!!! $w clusters exceed the maximum number of alignments: $N !!!!\n\n"; 
+     }	
+ 
++    # group the lines by cluster (keeping first-appearance order): a cluster whose lines are not contiguous in the input
++    # (e.g. file sorted by species) must not be cut across several parts
++    my (@corder, %clines);
++    open (CLG, "$full_cluster") || die "It cannot open clusters file\n";
++    while (<CLG>){
++	chomp($_);
++	my @g=split(/\t/,$_);
++	push(@corder,$g[0]) unless exists $clines{$g[0]};
++	push(@{$clines{$g[0]}},$_);
++    }
++    close CLG;
++    my $grouped_text="";
++    foreach my $gcl (@corder){ foreach my $gline (@{$clines{$gcl}}){ $grouped_text.="$gline\n"; } }
+     my $sum=0;
+     my %prcid;
+-    open (CL, "$full_cluster") || die "It cannot open clusters file\n";
++    open (CL, "<", \$grouped_text) || die "It cannot open clusters file\n";
+     while (<CL>){
+ 	chomp($_);
+ 	my @l=split(/\t/,$_);
+@@ -211,7 +224,7 @@
+ 	$part=0 if $part == 1;
+ 	print STDERR "WARNING!!! We have a part_2 without a part_1\n\n" if (-e "$cluster_root-part_2");
+     }
+-    open (CL, "$full_cluster") || die "It cannot open clusters file\n";
++    open (CL, "<", \$grouped_text) || die "It cannot open clusters file\n";
+     while (<CL>){
+ 	chomp($_);
+ 	my @l=split(/\t/,$_);

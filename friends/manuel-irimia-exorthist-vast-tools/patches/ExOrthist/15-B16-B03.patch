@@ -1,0 +1,16 @@
+diff --git a/bin/D3.1_recluster_genes_by_species_pair.py b/bin/D3.1_recluster_genes_by_species_pair.py
+--- a/bin/D3.1_recluster_genes_by_species_pair.py
++++ b/bin/D3.1_recluster_genes_by_species_pair.py
+@@ -21,10 +21,10 @@
+ 
+ #### Main
+ #read input
+-orthopairs_df = pd.read_table(my_orthopairs, sep="\t", header=0, names=["GeneID1", "GeneID2"])
++orthopairs_df = pd.read_table(my_orthopairs, sep="\t", header=None, usecols=[0, 1], names=["GeneID1", "GeneID2"])
+ orthopairs_df["GeneID1"] = [re.sub(".*\\|", "", element) for element in list(orthopairs_df["GeneID1"])]
+ orthopairs_df["GeneID2"] = [re.sub(".*\\|", "", element) for element in list(orthopairs_df["GeneID2"])]
+-orthogroups_df = pd.read_table(my_orthogroup, sep="\t", header=0, names=["ClusterID", "Species", "GeneID", ""], index_col=None)
++orthogroups_df = pd.read_table(my_orthogroup, sep="\t", header=None, usecols=[0, 1, 2], names=["ClusterID", "Species", "GeneID"], index_col=None)
+ #add Species to orthopairs
+ geneID_species_dict = pd.Series(orthogroups_df.Species.values, index=orthogroups_df.GeneID).to_dict()
+ orthopairs_df["Species1"] = orthopairs_df["GeneID1"].map(geneID_species_dict)

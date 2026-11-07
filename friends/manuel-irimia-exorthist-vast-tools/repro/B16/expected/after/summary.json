@@ -1,0 +1,13 @@
+{
+  "bug": "B16",
+  "correct": true,
+  "observed": {
+    "exit": 0,
+    "genes": [
+      "ash",
+      "birch",
+      "elm",
+      "oak"
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+[VAST-TOOLS v2.5.1, 2026-06-11 (14:30)] vast-tools diff -a A1,A2 -b B1,B2 --sampleNameA A1 --sampleNameB B1 -i input.tab -n 5000 -p TRUE -d result -o <run>/normal-paired -r 0.95 -m 0.1 -e 10 -S 1 --alpha 1 --beta 1 -s 1000 -z 10  

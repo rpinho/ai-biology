@@ -1,0 +1,2 @@
+MOSSP0001|spore
+MOSSP0002|seed

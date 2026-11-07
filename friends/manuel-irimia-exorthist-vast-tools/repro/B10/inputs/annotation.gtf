@@ -1,0 +1,3 @@
+chrQ	ref	CDS	970	1029	.	+	0	gene_id "oak"; transcript_id "txOak"; protein_id "protOak"; exon_number "1";
+chrQ	ref	CDS	1120	1179	.	+	1	gene_id "oak"; transcript_id "txOak"; protein_id "protOak"; exon_number "2";
+chrQ	ref	CDS	1320	1379	.	+	2	gene_id "oak"; transcript_id "txOak"; protein_id "protOak"; exon_number "3";

@@ -1,0 +1,32 @@
+diff --git a/bin/B4_merge_PROT_EX_INT_aln_info.pl b/bin/B4_merge_PROT_EX_INT_aln_info.pl
+--- a/bin/B4_merge_PROT_EX_INT_aln_info.pl
++++ b/bin/B4_merge_PROT_EX_INT_aln_info.pl
+@@ -12,7 +12,7 @@
+ my $tmp=$folder."/tmp.txt";
+ my $s1=$folder."/all_PROT_aln_features.txt";
+ system("cat $i1*_part* | head -1 > $o1"); ##getting header
+-system("cat $i1*_part* | grep -v 'CID' | sort -k1n | uniq  > $tmp"); ##getting the rest of the file
++system("cat $i1*_part* | grep -v '^CID\t' | sort -k1n | uniq  > $tmp"); ##getting the rest of the file
+ system("cat $o1 $tmp > $s1"); ##getting file of aligned proteins
+ 
+ print "2. Exon scores\n";
+@@ -22,8 +22,8 @@
+ my $tex=$folder."/tex.txt";
+ my $s2=$folder."/all_EX_aln_features.txt";
+ `head -1 $i2*part_1.txt > $o2`; ##getting header
+-#`cat $i2*_part_* $i3* | grep -v 'CID' | sort -k1 | uniq  > $tex`;
+-`cat $i2*_part_* $i3* | grep -v 'CID' | sort -k1,1 -k2,2 -k6,6 -k9,9 -k15,15 -k19,19 | uniq  > $tex`;
++#`cat $i2*_part_* $i3* | grep -v '^CID\t' | sort -k1 | uniq  > $tex`;
++`cat $i2*_part_* $i3* | grep -v '^CID\t' | sort -k1,1 -k2,2 -k6,6 -k9,9 -k15,15 -k19,19 | uniq  > $tex`;
+ 
+ open (FILE, "$tex") || die "It cannot open the file with aligned exons ($tex)\n";
+ open (TMP, ">$tmp") || die "It cannot open the temporary file ($tmp)\n"; # tmp.txt
+@@ -43,7 +43,7 @@
+ my $s3=$folder."/all_INT_aln_features.txt";
+ my $o3=$folder."/h3.txt";
+ `cat $i4*_part_1.txt | head -1 > $o3`; ##getting header (new tmp file)
+-`cat $i4*_part_* | grep -v 'CID' | sort -k1,1 -k2,2 -k6,6 | uniq  > $tmp`; # re-creating tmp.txt
++`cat $i4*_part_* | grep -v '^CID\t' | sort -k1,1 -k2,2 -k6,6 | uniq  > $tmp`; # re-creating tmp.txt
+ `cat $o3 $tmp > $s3`;  ## getting file of intron scores 
+ 
+ print "4. Merging EXINT ALNs\n";

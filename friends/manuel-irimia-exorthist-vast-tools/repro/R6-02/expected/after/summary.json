@@ -1,0 +1,14 @@
+{
+  "bug": "R6-02",
+  "correct": true,
+  "observed": {
+    "description": {
+      "exit": 0,
+      "pairs": 1
+    },
+    "plain": {
+      "exit": 0,
+      "pairs": 1
+    }
+  }
+}

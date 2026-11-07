@@ -1,0 +1,15 @@
+Summary statistics of exon orthogroups (OGs)
+Species	Total annotated CDS exons	Exons in gene OGs	Exons in OGs	% recovered
+A	3	3	3	100.00%
+B	4	4	4	100.00%
+
+Non-annotated bonafide exons in OGs:
+
+Exon OG type	Number	% from total OGs
+Total exon OGs	1	100%
+OGs 1:1	0	0.00%
+OGs 1:2/2:1	0	0.00%
+OGs 2:2	0	0.00%
+OGs >=3 exons/species	1	100.00%
+OGs >=4 exons/species	1	100.00%
+Other OGs	0	0.00%

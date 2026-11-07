@@ -1,0 +1,12 @@
+{
+  "bug": "B1-01",
+  "correct": false,
+  "observed": {
+    "control": {
+      "intron_matches": 4
+    },
+    "short": {
+      "intron_matches": 0
+    }
+  }
+}

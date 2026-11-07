@@ -1,0 +1,11 @@
+diff --git a/bin/A0_check_input.pl b/bin/A0_check_input.pl
+--- a/bin/A0_check_input.pl
++++ b/bin/A0_check_input.pl
+@@ -150,6 +150,6 @@
+     my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime;
+     $year += 1900;
+     $mon += 1;
+-    my $datetime = sprintf "%04d-%02d-%02d (%02d:%02d)", $year, $mday, $mon, $hour, $min;
++    my $datetime = sprintf "%04d-%02d-%02d (%02d:%02d)", $year, $mon, $mday, $hour, $min;
+     return "[Date: ".$datetime."]";
+ }

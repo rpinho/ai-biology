@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "perl",
+    "-e",
+    "BEGIN { *CORE::GLOBAL::localtime = sub { (0,0,12,6,10,126,5,309,0) } } my $script=shift; do $script; die $@ if $@;",
+    "<repo>/bin/A0_check_input.pl",
+    "-e",
+    "evodists.txt",
+    "-g",
+    ".",
+    "-gs",
+    "_annot.gtf",
+    "-f",
+    ".",
+    "-fs",
+    "_gDNA.fasta",
+    "-c",
+    "clusters.tsv"
+  ],
+  "cwd": "<run>/inputs",
+  "exit": 0
+}

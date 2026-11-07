@@ -1,0 +1,14 @@
+{
+  "bug": "A1-02",
+  "correct": false,
+  "observed": {
+    "normal": {
+      "ELMP0001|elm:exon_1": "1-11",
+      "ELMP0001|elm:exon_2": "11-20",
+      "ELMP0001|elm:exon_3": "21-30",
+      "OAKP0001|oak:exon_1": "1-11",
+      "OAKP0001|oak:exon_2": "12-22",
+      "OAKP0001|oak:exon_3": "22-30"
+    }
+  }
+}

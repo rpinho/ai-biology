@@ -1,0 +1,1 @@
+[VAST-TOOLS v2.5.1, 2026-06-11 (14:30)] vast-tools merge -o <run>/inputs/normal -groups <run>/inputs/normal/groups.tab -IR_version 2 -sp hg19 -noIR

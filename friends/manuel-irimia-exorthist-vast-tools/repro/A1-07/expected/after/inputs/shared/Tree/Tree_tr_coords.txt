@@ -1,0 +1,3 @@
+txElm|elm	chr1	-	501,530-601,630-701,730
+txOakUtrVariant|oak	chr1	+	91,131-201,232-301,327
+txOak|oak	chr1	+	101,131-201,232-301,327

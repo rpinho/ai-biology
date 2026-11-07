@@ -1,0 +1,14 @@
+{
+  "bug": "B11",
+  "correct": true,
+  "observed": {
+    "default": {
+      "regulated": 2,
+      "threshold": "15"
+    },
+    "requested": {
+      "regulated": 1,
+      "threshold": "40"
+    }
+  }
+}

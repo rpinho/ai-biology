@@ -1,0 +1,4 @@
+MOSSP0001|spore	chr1	+	intron_1	190-301
+MOSSP0001|spore	chr1	+	intron_2	390-501
+MOSSP0002|seed	chr1	+	intron_1	190-301
+MOSSP0002|seed	chr1	+	intron_2	390-501

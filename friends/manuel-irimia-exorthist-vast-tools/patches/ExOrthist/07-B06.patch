@@ -1,0 +1,13 @@
+diff --git a/bin/D2_cluster_EXs.R b/bin/D2_cluster_EXs.R
+--- a/bin/D2_cluster_EXs.R
++++ b/bin/D2_cluster_EXs.R
+@@ -77,7 +77,8 @@
+   gene_species_count_df = as.data.frame(gene_species_count_matrix); gene_species_count_df$ExonID = as.vector(gene_species_count_df$ExonID)
+ 
+   ####Compute the values necessary for the membership score.
+-  my_sizes_df = as.data.frame(sizes(my_clusters)); colnames(my_sizes_df) = c("ClusterID", "Freq") #number of exons in each community
++  my_sizes_df = as.data.frame(table(my_final_clusters$ClusterID)); colnames(my_sizes_df) = c("ClusterID", "Freq") #number of exons in each final exon cluster (after re-introduction/removal of single-exon clusters)
++  my_sizes_df$ClusterID = as.integer(as.character(my_sizes_df$ClusterID))
+ 
+   #Create subgraphs to count the in and out degree ONLY within the same exon cluster.
+   #Create a dataframe with ExonID, in_degree, out_degree.

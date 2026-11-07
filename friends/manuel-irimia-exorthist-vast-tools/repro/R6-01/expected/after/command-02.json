@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/get_liftovers.pl",
+    "-annot_sp1",
+    "./Fern.gtf",
+    "-annot_sp2",
+    "Moss.gtf",
+    "-chain_file",
+    "identity.chain",
+    "-gene_clusters",
+    "clusters.tsv"
+  ],
+  "cwd": "<run>/inputs/dot_slash",
+  "exit": 0
+}

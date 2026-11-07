@@ -1,0 +1,27 @@
+diff --git a/R/vastdiff.R b/R/vastdiff.R
+--- a/R/vastdiff.R
++++ b/R/vastdiff.R
+@@ -223,16 +223,16 @@
+                                       prior_alpha=opt$alpha, prior_beta=opt$beta)
+     }
+ 
+-    totalFirst  <- apply(shapeFirst,  MAR=2, rowSums)
+-    totalSecond <- apply(shapeSecond, MAR=2, rowSums)
+-
+-    shapeFirstAve  <- apply(shapeFirst,  MAR=3, rowMeans)
+-    shapeSecondAve <- apply(shapeSecond, MAR=3, rowMeans)
++    totalFirst  <- matrix(apply(shapeFirst,  MAR=2, rowSums), nrow=length(lines))
++    totalSecond <- matrix(apply(shapeSecond, MAR=2, rowSums), nrow=length(lines))
++
++    shapeFirstAve  <- matrix(apply(shapeFirst,  MAR=3, rowMeans), nrow=length(lines))
++    shapeSecondAve <- matrix(apply(shapeSecond, MAR=3, rowMeans), nrow=length(lines))
+ 
+ 
+     ## Expected PSI for each replicate
+-    expFirst  <- sapply(1:(dim(shapeFirst)[2]), FUN=function(x)  {shapeFirst[,x,1] / totalFirst[,x]})
+-    expSecond <- sapply(1:(dim(shapeSecond)[2]), FUN=function(x) {shapeSecond[,x,1] / totalSecond[,x]})
++    expFirst  <- matrix(sapply(1:(dim(shapeFirst)[2]), FUN=function(x)  {shapeFirst[,x,1] / totalFirst[,x]}), nrow=length(lines))
++    expSecond <- matrix(sapply(1:(dim(shapeSecond)[2]), FUN=function(x) {shapeSecond[,x,1] / totalSecond[,x]}), nrow=length(lines))
+ 
+     ## Figure out which lines to skip
+     okFirst  <- totalFirst  > opt$minReads + opt$alpha + opt$beta - 1

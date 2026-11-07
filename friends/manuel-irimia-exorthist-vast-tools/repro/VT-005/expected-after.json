@@ -1,0 +1,18 @@
+{
+  "bug": "VT-005",
+  "correct": true,
+  "observed": {
+    "input": {
+      "events": 1,
+      "exit": 0,
+      "missing_zero_group": false,
+      "zero_division": false
+    },
+    "normal": {
+      "events": 1,
+      "exit": 0,
+      "missing_zero_group": false,
+      "zero_division": false
+    }
+  }
+}

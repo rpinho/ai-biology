@@ -1,0 +1,4 @@
+ExonID	ChosenID
+chrQ:970-1029	chrQ:970-1029
+chrQ:1120-1179	chrQ:1120-1179
+chrQ:1320-1379	chrQ:1320-1379

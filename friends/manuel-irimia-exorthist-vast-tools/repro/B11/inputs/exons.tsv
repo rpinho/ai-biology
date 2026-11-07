@@ -1,0 +1,5 @@
+ExCluster_ID	GeneID	Coordinate	Species	Membership_score
+Family.001	oak	chrQ:200-259:+	A	1
+Family.001	elm	chrR:400-459:+	B	1
+Family.002	oak	chrQ:600-659:+	A	1
+Family.002	elm	chrR:800-859:+	B	1

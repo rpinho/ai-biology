@@ -1,0 +1,12 @@
+diff --git a/bin/A1_generate_annotations.pl b/bin/A1_generate_annotations.pl
+--- a/bin/A1_generate_annotations.pl
++++ b/bin/A1_generate_annotations.pl
+@@ -80,7 +80,7 @@
+ while (<GENOME>){
+     chomp($_);
+     if ($_=~/\>/){ $_=~s/\>//; @g=split(/\s+/,$_); $chr=$g[0]; }
+-    else { $seq{$chr}.=$_;  }    
++    else { $seq{$chr}.=uc($_);  } # soft-masked genomes (UCSC, Ensembl dna_sm, NCBI) use lower case
+ }
+ close (GENOME);
+ 

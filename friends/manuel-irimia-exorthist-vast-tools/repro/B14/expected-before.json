@@ -1,0 +1,14 @@
+{
+  "bug": "B14",
+  "correct": false,
+  "observed": {
+    "hash": {
+      "exit": 1,
+      "exon_rows": 0
+    },
+    "plain": {
+      "exit": 0,
+      "exon_rows": 3
+    }
+  }
+}

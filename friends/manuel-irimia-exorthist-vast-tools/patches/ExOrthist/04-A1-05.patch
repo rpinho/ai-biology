@@ -1,0 +1,47 @@
+diff --git a/bin/A1_generate_annotations.pl b/bin/A1_generate_annotations.pl
+--- a/bin/A1_generate_annotations.pl
++++ b/bin/A1_generate_annotations.pl
+@@ -83,6 +83,43 @@
+     else { $seq{$chr}.=$_;  }    
+ }
+ close (GENOME);
++
++### Exon/CDS lines of a transcript must be in transcript order (ascending coordinates on +, descending on -).
++### Some GTFs (StringTie, gffread, ...) list all exons in ascending order, which breaks the concatenation of CDS below.
++### If (and only if) a transcript is in the wrong order, its exon/CDS lines are re-sorted in place; other transcripts and files are untouched.
++{
++    my (@gl, %slots, %strand_of);
++    if ($gtf_file =~ /\.gz$/) { open(SGTF, "gunzip -c $gtf_file |") || die "It cannot open pipe to $gtf_file"; }
++    else { open(SGTF, $gtf_file) || die "It cannot open $gtf_file"; }
++    while (<SGTF>){
++	push(@gl, $_);
++	my @f = split(/\t/, $_);
++	if (defined $f[8] && ($f[2] eq "exon" || $f[2] eq "CDS") && $f[8] =~ /transcript_id \"(.+?)\"/){
++	    push(@{$slots{$1}}, $#gl); $strand_of{$1} = $f[6];
++	}
++    }
++    close SGTF;
++    my $reordered = 0;
++    foreach my $trs (keys %slots){
++	my @idx = @{$slots{$trs}};
++	my @st = map { (split(/\t/, $gl[$_]))[3] } @idx;
++	my $asc = 1; my $desc = 1;
++	for (my $k = 1; $k < scalar(@st); $k++){ $asc = 0 if $st[$k] < $st[$k-1]; $desc = 0 if $st[$k] > $st[$k-1]; }
++	my $ok = ($strand_of{$trs} eq "-") ? $desc : $asc;
++	next if $ok || (!$asc && !$desc); # already in transcript order (or unsortable mix): leave as is
++	my $sign = ($strand_of{$trs} eq "-") ? -1 : 1;
++	my @sorted = map { $_->[2] } sort { $a->[0] <=> $b->[0] || $a->[1] <=> $b->[1] } map { my @f = split(/\t/, $gl[$_]); [ $sign*$f[3], ($f[2] eq "exon" ? 0 : 1), $gl[$_] ] } @idx;
++	@gl[@idx] = @sorted;
++	$reordered++;
++    }
++    if ($reordered){
++	verbPrint("Re-ordered exon/CDS lines of $reordered transcripts to transcript order\n");
++	$gtf_file = "$exons_db_folder/$species/$species"."_annot_sorted.gtf";
++	open(SOUT, ">$gtf_file") || die "It cannot open $gtf_file\n";
++	print SOUT @gl;
++	close SOUT;
++    }
++}
+ 
+ ### PART 1: get_ref_proteins.pl and getting exint file
+ if ($do_all_steps){

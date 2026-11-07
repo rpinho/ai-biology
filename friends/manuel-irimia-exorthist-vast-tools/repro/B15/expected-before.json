@@ -1,0 +1,114 @@
+{
+  "bug": "B15",
+  "correct": false,
+  "observed": {
+    "1": [
+      [
+        "ash",
+        "Family.02"
+      ],
+      [
+        "birch",
+        "Family.02"
+      ],
+      [
+        "elm",
+        "Family.01"
+      ],
+      [
+        "oak",
+        "Family.01"
+      ]
+    ],
+    "2": [
+      [
+        "ash",
+        "Family.01"
+      ],
+      [
+        "birch",
+        "Family.01"
+      ],
+      [
+        "elm",
+        "Family.02"
+      ],
+      [
+        "oak",
+        "Family.02"
+      ]
+    ],
+    "3": [
+      [
+        "ash",
+        "Family.02"
+      ],
+      [
+        "birch",
+        "Family.02"
+      ],
+      [
+        "elm",
+        "Family.01"
+      ],
+      [
+        "oak",
+        "Family.01"
+      ]
+    ],
+    "4": [
+      [
+        "ash",
+        "Family.01"
+      ],
+      [
+        "birch",
+        "Family.01"
+      ],
+      [
+        "elm",
+        "Family.02"
+      ],
+      [
+        "oak",
+        "Family.02"
+      ]
+    ],
+    "5": [
+      [
+        "ash",
+        "Family.02"
+      ],
+      [
+        "birch",
+        "Family.02"
+      ],
+      [
+        "elm",
+        "Family.01"
+      ],
+      [
+        "oak",
+        "Family.01"
+      ]
+    ],
+    "6": [
+      [
+        "ash",
+        "Family.02"
+      ],
+      [
+        "birch",
+        "Family.02"
+      ],
+      [
+        "elm",
+        "Family.01"
+      ],
+      [
+        "oak",
+        "Family.01"
+      ]
+    ]
+  }
+}

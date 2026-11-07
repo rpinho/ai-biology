@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/vast-tools",
+    "diff",
+    "-o",
+    "<run>/single-paired",
+    "-i",
+    "input.tab",
+    "-a",
+    "A",
+    "-b",
+    "B",
+    "-d",
+    "result",
+    "--paired",
+    "--noPDF"
+  ],
+  "cwd": "<run>/single-paired",
+  "exit": 1
+}

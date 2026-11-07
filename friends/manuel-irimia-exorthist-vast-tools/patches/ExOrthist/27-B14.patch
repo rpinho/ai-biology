@@ -1,0 +1,12 @@
+diff --git a/bin/D2_cluster_EXs.R b/bin/D2_cluster_EXs.R
+--- a/bin/D2_cluster_EXs.R
++++ b/bin/D2_cluster_EXs.R
+@@ -9,7 +9,7 @@
+ library("igraph", quietly = TRUE, warn.conflicts = FALSE, verbose = FALSE)
+ library("hashmap", quietly = TRUE, warn.conflicts = FALSE, verbose = FALSE)
+ 
+-input_table = read.table(input_orthopairs, col.names=c("clusterID", "ID1", "ID2", "Best_reciprocal"))
++input_table = read.table(input_orthopairs, sep="\t", quote="", comment.char="", col.names=c("clusterID", "ID1", "ID2", "Best_reciprocal"), stringsAsFactors=FALSE)
+ 
+ #Select all gene orthogroups in the input file
+ all_gene_OG = unique(as.vector(input_table$clusterID))

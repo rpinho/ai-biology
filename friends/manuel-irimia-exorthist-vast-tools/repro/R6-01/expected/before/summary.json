@@ -1,0 +1,18 @@
+{
+  "bug": "R6-01",
+  "correct": false,
+  "observed": {
+    "dot_slash": {
+      "exit": 255,
+      "pairs": 0
+    },
+    "dotted_dir": {
+      "exit": 255,
+      "pairs": 0
+    },
+    "plain": {
+      "exit": 0,
+      "pairs": 1
+    }
+  }
+}

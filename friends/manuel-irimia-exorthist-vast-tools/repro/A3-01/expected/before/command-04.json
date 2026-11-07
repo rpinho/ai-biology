@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/A3_split_clusters_in_chunks.pl",
+    "--gene_cluster",
+    "Fern-Moss.cls.tab",
+    "--sp1",
+    "Fern",
+    "--sp2",
+    "Moss",
+    "--N_split",
+    "1"
+  ],
+  "cwd": "<run>/inputs/family_order",
+  "exit": 0
+}

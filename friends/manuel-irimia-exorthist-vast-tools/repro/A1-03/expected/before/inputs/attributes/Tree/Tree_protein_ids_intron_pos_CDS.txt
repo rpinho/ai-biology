@@ -1,0 +1,4 @@
+ELMP0001|txElm	chr1	-	Intron_1	630-701
+ELMP0001|txElm	chr1	-	Intron_2	530-601
+OAKP0001|txOak	chr1	+	Intron_1	131-201
+OAKP0001|txOak	chr1	+	Intron_2	232-301

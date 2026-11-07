@@ -1,0 +1,11 @@
+{
+  "bug": "B03",
+  "correct": false,
+  "observed": {
+    "components": 1,
+    "genes": [
+      "epsilon",
+      "zeta"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "bug": "VT-003",
+  "correct": false,
+  "observed": {
+    "input": {
+      "eligible_events": [
+        "HsaEX0000002"
+      ]
+    },
+    "normal": {
+      "eligible_events": [
+        "HsaEX0000001"
+      ]
+    }
+  }
+}

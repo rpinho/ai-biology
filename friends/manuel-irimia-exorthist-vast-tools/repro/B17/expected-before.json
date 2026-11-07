@@ -1,0 +1,14 @@
+{
+  "bug": "B17",
+  "correct": false,
+  "observed": {
+    "named-main": {
+      "exit": 0,
+      "summary": "Number\t% from total OGs\nTotal exon OGs\t1\t100%\nOGs 1:1\t1\t100.00%\nOGs 1:2/2:1\t0\t0.00%\nOGs 2:2\t0\t0.00%\nOGs >=3 exons/species\t0\t0.00%\nOGs >=4 exons/species\t0\t0.00%\nOther OGs\t0\t0.00%"
+    },
+    "zero-main": {
+      "exit": 255,
+      "summary": "Summary statistics of exon orthogroups (OGs)\nSpecies\tTotal annotated CDS exons\tExons in gene OGs\tExons in OGs\t% recovered\n\nNon-annotated bonafide exons in OGs:"
+    }
+  }
+}

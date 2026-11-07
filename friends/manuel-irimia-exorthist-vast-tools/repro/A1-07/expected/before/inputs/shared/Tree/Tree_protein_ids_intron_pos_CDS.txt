@@ -1,0 +1,7 @@
+ELMP0001|elm	chr1	-	Intron_1	630-701
+ELMP0001|elm	chr1	-	Intron_2	530-601
+OAKP0001|oak	chr1	+	Intron_1	131-201
+OAKP0001|oak	chr1	+	Intron_2	232-301
+OAKP0001|oak	chr1	+	Intron_3	327-101
+OAKP0001|oak	chr1	+	Intron_4	131-201
+OAKP0001|oak	chr1	+	Intron_5	232-301

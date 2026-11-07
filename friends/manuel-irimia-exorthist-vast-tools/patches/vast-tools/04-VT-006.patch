@@ -1,0 +1,12 @@
+diff --git a/bin/Filter_and_clean_Combine.pl b/bin/Filter_and_clean_Combine.pl
+--- a/bin/Filter_and_clean_Combine.pl
++++ b/bin/Filter_and_clean_Combine.pl
+@@ -517,7 +517,7 @@
+ print "\n\t\tTISSUE\tMISSING\t\%\n";
+ foreach my $tis (sort (keys %TISSUES)){
+     $CUENTA{$tis}=0 if !$CUENTA{$tis};
+-    my $perc=sprintf("%.2f",100*$CUENTA{$tis}/$total_events);
++    my $perc=$total_events ? sprintf("%.2f",100*$CUENTA{$tis}/$total_events) : "NA";
+     print LOG2 "$tis\t$CUENTA{$tis}\t$perc\n" if $log;
+     print "\t\t$tis\t$CUENTA{$tis}\t$perc\n";
+ }

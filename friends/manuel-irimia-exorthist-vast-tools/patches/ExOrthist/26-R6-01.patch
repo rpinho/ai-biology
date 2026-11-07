@@ -1,0 +1,13 @@
+diff --git a/bin/get_liftovers.pl b/bin/get_liftovers.pl
+--- a/bin/get_liftovers.pl
++++ b/bin/get_liftovers.pl
+@@ -57,8 +57,8 @@
+ # Extracts roots
+ my $sp1 = $annot_sp1;
+ my $sp2 = $annot_sp2;
++$sp1=~s/.+\///;   # directory first: a "." in the path (./x.gtf, ../x.gtf, my.dir/x.gtf) must not truncate the ID
+ $sp1=~s/\..+//;
+-$sp1=~s/.+\///;
+ $sp2=~s/\.gtf//;
+ $sp2=~s/.+\///;
+ 

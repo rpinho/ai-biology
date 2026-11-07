@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/D1_format_EX_clusters_input.pl",
+    "<run>/inputs/groups.tsv",
+    "<run>/inputs/pairs.tsv",
+    "500"
+  ],
+  "cwd": "<run>",
+  "exit": 0
+}

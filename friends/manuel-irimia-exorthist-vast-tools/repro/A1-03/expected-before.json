@@ -1,0 +1,26 @@
+{
+  "bug": "A1-03",
+  "correct": false,
+  "observed": {
+    "attributes": {
+      "ids": [
+        "ELMP0001|txElm",
+        "OAKP0001|txOak"
+      ],
+      "ref_genes": [
+        "txElm",
+        "txOak"
+      ]
+    },
+    "normal": {
+      "ids": [
+        "ELMP0001|elm",
+        "OAKP0001|oak"
+      ],
+      "ref_genes": [
+        "elm",
+        "oak"
+      ]
+    }
+  }
+}

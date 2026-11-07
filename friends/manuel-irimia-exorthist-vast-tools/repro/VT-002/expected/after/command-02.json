@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/vast-tools",
+    "merge",
+    "-o",
+    "<run>/inputs/na-last",
+    "-g",
+    "<run>/inputs/na-last/groups.tab",
+    "--noIR",
+    "--sp",
+    "hg19"
+  ],
+  "cwd": "<run>/inputs/na-last",
+  "exit": 0
+}

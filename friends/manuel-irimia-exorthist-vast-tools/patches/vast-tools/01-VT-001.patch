@@ -1,0 +1,21 @@
+diff --git a/bin/MakeTableRPKMs.pl b/bin/MakeTableRPKMs.pl
+--- a/bin/MakeTableRPKMs.pl
++++ b/bin/MakeTableRPKMs.pl
+@@ -76,7 +76,7 @@
+         chomp;
+         my @t=split(/\t/);
+         my $cRPKM = sprintf("%.2f", 0);
+-        my $raw_count = 0;
++        my $raw_count = $t[2];
+ 	$sample_count++;
+ 
+         if ($t[1] eq 'NA') {
+@@ -104,7 +104,7 @@
+ 	    chomp;
+ 	    my @t=split(/\t/);
+ 	    my $TPM = sprintf("%.2f", 0);
+-	    my $raw_count = 0;
++	    my $raw_count = $t[2];
+ 	    
+ 	    if ($t[1] eq 'NA') {
+ 		$TPM = 'NA';

@@ -1,0 +1,3 @@
+CID	field1	field2	field3	field4	field5	field6	field7	field8	field9
+fam0	Protein	FERNP0000|Birch	MOSSP0000|moss0	100	100	100	1	Fern	Moss
+fam3	Protein	FERNP0003|Cedar	MOSSP0003|moss3	100	100	100	1	Fern	Moss

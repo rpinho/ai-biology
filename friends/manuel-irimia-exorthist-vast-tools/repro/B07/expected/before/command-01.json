@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/C2_filter_and_select_best_EX_matches_by_targetgene.pl",
+    "-b",
+    "<run>/inputs/scores.tsv",
+    "-sps",
+    "A,B",
+    "-int",
+    "2",
+    "-id",
+    "0",
+    "-max_size",
+    "0"
+  ],
+  "cwd": "<run>/inputs",
+  "exit": 0
+}

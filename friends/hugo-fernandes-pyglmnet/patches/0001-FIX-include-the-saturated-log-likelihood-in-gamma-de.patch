@@ -1,0 +1,87 @@
+From 8a3694268ea9ac5a648eb273f289aea1c0ff01d7 Mon Sep 17 00:00:00 2001
+From: Ricardo Pinho <rpinho@users.noreply.github.com>
+Date: Sat, 7 Nov 2026 10:05:21 -0500
+Subject: [PATCH] FIX: include the saturated log likelihood in gamma deviance
+ and pseudo-R2
+
+The saturated gamma log likelihood is sum(-1 - log(y)), not 0, so the
+old deviance was negative for perfect predictions and changed with the
+units of y. Gamma now uses the same saturated-model formula as the
+count families.
+---
+ pyglmnet/metrics.py   |  6 +++---
+ tests/test_metrics.py | 23 +++++++++++++++++++++++
+ 2 files changed, 26 insertions(+), 3 deletions(-)
+
+diff --git a/pyglmnet/metrics.py b/pyglmnet/metrics.py
+index 27bd108..5f96bff 100644
+--- a/pyglmnet/metrics.py
++++ b/pyglmnet/metrics.py
+@@ -23,7 +23,7 @@ def deviance(y, yhat, distr, theta):
+     score : float
+         Deviance of the predicted labels.
+     """
+-    if distr in ['softplus', 'poisson', 'neg-binomial']:
++    if distr in ['softplus', 'poisson', 'neg-binomial', 'gamma']:
+         LS = _logL(distr, y, y, theta=theta)
+     else:
+         LS = 0
+@@ -55,7 +55,7 @@ def pseudo_R2(X, y, yhat, ynull_, distr, theta):
+     score : float
+         Pseudo-R2 score.
+     """
+-    if distr in ['softplus', 'poisson', 'neg-binomial']:
++    if distr in ['softplus', 'poisson', 'neg-binomial', 'gamma']:
+         LS = _logL(distr, y, y, theta=theta)
+     else:
+         LS = 0
+@@ -63,7 +63,7 @@ def pseudo_R2(X, y, yhat, ynull_, distr, theta):
+     L0 = _logL(distr, y, ynull_, theta=theta)
+     L1 = _logL(distr, y, yhat, theta=theta)
+ 
+-    if distr in ['softplus', 'poisson', 'neg-binomial']:
++    if distr in ['softplus', 'poisson', 'neg-binomial', 'gamma']:
+         score = (1 - (LS - L1) / (LS - L0))
+     else:
+         score = (1 - L1 / L0)
+diff --git a/tests/test_metrics.py b/tests/test_metrics.py
+index daf4199..f19fbd7 100644
+--- a/tests/test_metrics.py
++++ b/tests/test_metrics.py
+@@ -2,6 +2,7 @@
+ 
+ import numpy as np
+ from pyglmnet import GLM, simulate_glm
++from pyglmnet.metrics import deviance, pseudo_R2
+ 
+ 
+ def test_deviance():
+@@ -58,3 +59,25 @@ def test_accuracy():
+     score = glm_sim.score(X, y)
+ 
+     assert(isinstance(score, float))
++
++
++def test_gamma_deviance_saturated():
++    """Gamma deviance is 0 for perfect predictions and matches the formula."""
++    y = np.array([0.1, 0.2, 0.4])
++    assert np.isclose(deviance(y, y.copy(), 'gamma', theta=1.0), 0.)
++    mu = np.array([0.15, 0.25, 0.3])
++    expected = 2 * np.sum((y - mu) / mu - np.log(y / mu))
++    assert np.isclose(deviance(y, mu, 'gamma', theta=1.0), expected)
++    # unchanged when y and mu are rescaled together
++    assert np.isclose(deviance(10 * y, 10 * mu, 'gamma', theta=1.0), expected)
++    # pseudo-R2 is 1 - D / D_null: 1 for a perfect fit, 0 for the null model
++    X = np.zeros((3, 1))
++    ynull = np.mean(y)
++    d_null = deviance(y, np.full(3, ynull), 'gamma', theta=1.0)
++    assert np.isclose(pseudo_R2(X, y, y.copy(), ynull, 'gamma', 1.0), 1.)
++    assert np.isclose(pseudo_R2(X, y, np.full(3, ynull), ynull, 'gamma', 1.0),
++                      0.)
++    r2 = pseudo_R2(X, y, mu, ynull, 'gamma', 1.0)
++    assert np.isclose(r2, 1 - expected / d_null)
++    assert np.isclose(pseudo_R2(X, 10 * y, 10 * mu, 10 * ynull, 'gamma', 1.0),
++                      r2)
+-- 
+2.50.1 (Apple Git-155)
+

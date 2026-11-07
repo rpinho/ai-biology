@@ -1,0 +1,12 @@
+diff --git a/bin/B2_split_EX_pairs_to_realign.py b/bin/B2_split_EX_pairs_to_realign.py
+--- a/bin/B2_split_EX_pairs_to_realign.py
++++ b/bin/B2_split_EX_pairs_to_realign.py
+@@ -15,7 +15,7 @@
+ 
+ #### Main
+ #read input
+-ex_to_split_df = pd.read_table(my_input, header=0, index_col=False, sep="\t")
++ex_to_split_df = pd.read_table(my_input, header=0, index_col=False, sep="\t", dtype=str, keep_default_na=False) # keep IDs/numbers exactly as written ("000123" must not become 123)
+ output_suffix = re.sub(".txt", "_", re.sub("split", "realign", str(my_input))) #It changes ${sp1}-${sp2}_EXs_to_split_part_*.txt to ${sp1}-${sp2}_EXs_to_realign_part_*_ 
+ 
+ if ex_to_split_df.shape[0] == 0:

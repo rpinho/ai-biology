@@ -1,0 +1,16 @@
+{
+  "bug": "A3-01",
+  "correct": true,
+  "observed": {
+    "default_1000": {
+      "expected_families": 1001,
+      "families": 1001,
+      "split_families": 0
+    },
+    "family_order": {
+      "expected_families": 3,
+      "families": 3,
+      "split_families": 0
+    }
+  }
+}

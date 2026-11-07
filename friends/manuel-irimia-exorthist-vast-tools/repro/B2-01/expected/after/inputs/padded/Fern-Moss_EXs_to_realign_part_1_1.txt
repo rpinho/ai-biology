@@ -1,0 +1,2 @@
+CID	Prot_query	Exon_number_query	AA_pos_exon_query	Chr_query	Exon_coords_query	Strand	Exon_hits_subject	Prot_subject	Aln_AA_pos_subject	Sim	Id	Gap_number	Gaps	Prot_subject.1	Exon_number_subject	AA_pos_exon_subject	Chr_subject	Exon_coords_subject	Strand.1	Sp_query	Sp_subject
+007300	FERNP0001|fernGene	exon_2	11-20	chr1	101-130	+	2	MOSSP0001|mossGene	11-20	100	100	0	0	MOSSP0001|mossGene	exon_2,exon_3	11-20	chr2	201-230	+	Fern	Moss

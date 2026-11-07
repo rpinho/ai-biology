@@ -1,0 +1,4 @@
+Extracting exons from ./Fern.gtf
+Doing liftOver from Fern to Moss
+Extracting exons from Moss.gtf
+Doing coordinate intersect for Moss

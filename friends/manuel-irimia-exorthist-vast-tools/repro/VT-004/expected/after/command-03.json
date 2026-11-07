@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/vast-tools",
+    "diff",
+    "-o",
+    "<run>/tail-unpaired",
+    "-i",
+    "input.tab",
+    "-a",
+    "A",
+    "-b",
+    "B",
+    "-d",
+    "result",
+    "--noPDF",
+    "-n",
+    "2"
+  ],
+  "cwd": "<run>/tail-unpaired",
+  "exit": 0
+}

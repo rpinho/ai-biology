@@ -1,0 +1,1 @@
+overlap1	fernGene	chr1:101-130

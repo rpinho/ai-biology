@@ -1,0 +1,14 @@
+diff --git a/modules/local/exorthist/recluster_exs.nf b/modules/local/exorthist/recluster_exs.nf
+--- a/modules/local/exorthist/recluster_exs.nf
++++ b/modules/local/exorthist/recluster_exs.nf
+@@ -23,8 +23,8 @@
+         -ep ${exon_pairs} \
+         -rg ${recl_genes} \
+         -ec ${exon_clusters} \
+-        -sp1 ${species1} \
+-        -sp2 ${species2} \
++        -s1 ${species1} \
++        -s2 ${species2} \
+         -out reclustered_EXs_${combid1}.tab
+     """
+ }

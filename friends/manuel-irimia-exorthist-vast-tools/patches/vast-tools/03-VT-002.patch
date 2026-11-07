@@ -1,0 +1,11 @@
+diff --git a/bin/MergeOutputs.pl b/bin/MergeOutputs.pl
+--- a/bin/MergeOutputs.pl
++++ b/bin/MergeOutputs.pl
+@@ -448,6 +448,7 @@
+ 	    $dataMIC{$event}=join("\t",@temp[0..5]);
+ 	    foreach my $group (@{$file_2_groups{$root}}){
+ 	    	for my $i (7..$#temp){ # Raw_reads_exc  Raw_reads_inc  Corr_reads_exc  Corr_reads_inc
++			next if defined($MIC{$group}{$event}[$i]) && $MIC{$group}{$event}[$i] eq "NA";
+ 			$MIC{$group}{$event}[$i]+=$temp[$i] if $temp[$i] ne "NA";
+ 			$MIC{$group}{$event}[$i]="NA" if $temp[$i] eq "NA";    # XXX check with Manu's answer
+ 	    	}

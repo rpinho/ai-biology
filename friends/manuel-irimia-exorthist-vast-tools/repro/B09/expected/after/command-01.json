@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "perl",
+    "<repo>/bin/get_cluster_stats.pl",
+    "-main_output",
+    "<run>/inputs/6-1",
+    "-gene_clusters",
+    "<run>/inputs/6-1/genes.tsv"
+  ],
+  "cwd": "<run>/6-1",
+  "exit": 0
+}

@@ -1,0 +1,21 @@
+diff --git a/bin/C2_filter_and_select_best_EX_matches_by_targetgene.pl b/bin/C2_filter_and_select_best_EX_matches_by_targetgene.pl
+--- a/bin/C2_filter_and_select_best_EX_matches_by_targetgene.pl
++++ b/bin/C2_filter_and_select_best_EX_matches_by_targetgene.pl
+@@ -81,12 +81,11 @@
+     ### Not it does the filtering and selection of best match POST-filtering
+     if ($line[7] ne "NO_EXON_ALN"){
+ 	# takes the coordinate and uses the two coordiantes to calculate the length of each exon
+-	my $ts1=$line[5]; $ts1=~s/\-/\:/;
+-	my @ts1=split(/\:/,$ts1); 
+-	my $sex1=$ts1[2]-$ts1[1]+1;
+-	my $ts2=$line[8]; $ts2=~s/\-/\:/;
+-	my @ts2=split(/\:/,$ts2);
+-	my $sex2=$ts2[2]-$ts2[1]+1;
++	# coordinates are chr:start-end:strand; chromosome names may themselves contain '-' or ':'
++	my ($cs1,$ce1) = $line[5] =~ /:(\d+)-(\d+):[+-]$/;
++	my $sex1=$ce1-$cs1+1;
++	my ($cs2,$ce2) = $line[8] =~ /:(\d+)-(\d+):[+-]$/;
++	my $sex2=$ce2-$cs2+1;
+ 	my ($max,$lim);
+ 	# gets the maximum length (the largest of the two exons)
+ 	if ($sex1>$sex2){ 

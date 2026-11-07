@@ -1,0 +1,1 @@
+CID	Prot_query	Intron_number_query	AA_pos_intron_query	Intron_phase_query	Prot_subject	Intron_number_subject	AA_pos_intron_subject	Intron_phase_subject	Aln_dev	Aln_score	Intron_score	Sp_query	Sp_subject

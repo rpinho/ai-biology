@@ -1,0 +1,41 @@
+diff --git a/bin/retrieve_IPA_aln.pl b/bin/retrieve_IPA_aln.pl
+--- a/bin/retrieve_IPA_aln.pl
++++ b/bin/retrieve_IPA_aln.pl
+@@ -108,6 +108,7 @@
+ my $activate;
+ my ($seq_prot1,$seq_prot2);
+ my ($ex_N1,$ex_N2)=(1,1);
++my $blk_line=0;
+ LBL2:while (<ALN>){
+     if (/\>\>\>/ && !$aln_data){
+ 	if ($_ eq "\>\>\> $t_spA $t_spB $t_protA $t_protB\n"){
+@@ -119,7 +120,18 @@
+     }
+     elsif ($aln_data){
+ 	if ($activate){
+-	    if ($_ =~ /^$root_prot1\t(.+)\t/){
++	    # which of the two proteins is this alignment line? B0 labels lines with the first 6 characters of the ID only,
++	    # so when both IDs share them (e.g. NCBI XP_011..., NP_001...) the label is ambiguous: use the line order
++	    # (B0 prints the Sp_A protein first, then the Sp_B protein, in every block).
++	    my $line_is = 0;
++	    if ($_ =~ /^\Q$root_prot1\E\t(.+)\t/ || $_ =~ /^\Q$root_prot2\E\t(.+)\t/){
++		if ($root_prot1 eq $root_prot2){
++		    my $first_in_block = ($blk_line++ % 2 == 0);
++		    $line_is = ($first_in_block == ($t_protA eq $prot1)) ? 1 : 2;
++		} else { $line_is = ($_ =~ /^\Q$root_prot1\E\t/) ? 1 : 2; }
++	    }
++	    if ($line_is == 1){
++		$_ =~ /^[^\t]*\t(.+)\t/;
+ 		my $line1 = $1;
+ 		my @t1 = split(//,$line1);
+ 		for my $i (0..$#t1){
+@@ -134,7 +146,8 @@
+ 		$aln_data.="$sp1\t$line1\t$sp1\n";
+ 		$seq_prot1.=$line1;		
+ 	    }
+-	    elsif ($_ =~ /^$root_prot2\t(.+)\t/){
++	    elsif ($line_is == 2){
++		$_ =~ /^[^\t]*\t(.+)\t/;
+ 		my $line2 = $1;
+ 		my @t2 = split(//,$line2);
+ 		for my $i (0..$#t2){

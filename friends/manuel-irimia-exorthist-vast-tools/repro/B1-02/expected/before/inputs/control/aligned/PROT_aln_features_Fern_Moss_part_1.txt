@@ -1,0 +1,5 @@
+CID	ALN	Query	Subject	%Sim_qry_sbj	%Sim_sbj_qry	%Min_Identity	Global_Score	Sp_query	Sp_subject
+familyAlpha	Protein	MOSSP0001|MossSpore	FERNP0001|FernSeed	100.00	100.00	100.00	1.00	Moss	Fern
+familyAlpha	Protein	FERNP0001|FernSeed	MOSSP0001|MossSpore	100.00	100.00	100.00	1.00	Fern	Moss
+familyBeta	Protein	FERNP0002|FernSpore	MOSSP0002|MossSeed	100.00	100.00	100.00	1.00	Fern	Moss
+familyBeta	Protein	MOSSP0002|MossSeed	FERNP0002|FernSpore	100.00	100.00	100.00	1.00	Moss	Fern
