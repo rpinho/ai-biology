@@ -22,7 +22,7 @@ So each result here ships with what you need to rerun it and a separate referee'
 |---|---|---|---|
 | **Anthropic × Adaptyv Protein Design Competition** ([competition](https://proteinbase.com/competitions/anthropic-adaptyv-2026)) | Entries for Challenges 3, 4 and 5. The competition measures submitted entries in an automated lab and publishes every measurement, failures included. | Submitted; lab results not out at the time of writing | [adaptyv-challenges](https://github.com/rpinho/adaptyv-challenges) |
 | **Arc Institute Virtual Cell Challenge 2026** ([site](https://virtualcellchallenge.org/)) | Predicting CRISPRi knockdown effects in an unseen cell type. Best official validation 0.16438, about rank 463 of 1,580 when recorded. The final phase closed November 5 and its scores are hidden. | Closed; [retro](https://github.com/rpinho/virtual-cell-challenge/blob/main/RETRO.md) published | [virtual-cell-challenge](https://github.com/rpinho/virtual-cell-challenge) |
-| **Virtual Embryo Challenge** ([site](https://virtualembryo.ai/challenge)) | Community tools rather than an entry so far: stage-window checks against public atlases, and two synthetic tutorials on choosing what to submit. No challenge data is used. | Challenge open, final December 2 | [ve-community](https://github.com/rpinho/ve-community) |
+| **Virtual Embryo Challenge** ([site](https://virtualembryo.ai/challenge)) | Community tools and an Agent Team entry: stage-window checks against public atlases, and synthetic tutorials on choosing what to submit and on building local proxy boards. No challenge data or results are published here. | Scoring closed; results December 11 | [ve-community](https://github.com/rpinho/ve-community) |
 
 ## Tools and older work
 
