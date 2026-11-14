@@ -1,0 +1,11 @@
+# repo<TAB>PR number<TAB>one-line fix. tools/render_bio_prs.py fills status from the GitHub API.
+synthesizebio/pysynthbio	77	`predict_query` no longer writes its options into the caller's query dict
+EdisonScientific/labbench2	45	Leading-decimal answers like `.701` keep their value when graded
+EdisonScientific/labbench2	46	Report summaries keep metrics whose scores are all 0
+snap-stanford/Biomni	372	FDA adverse-event summaries count deaths and hospitalizations from the report-level flags
+snap-stanford/Biomni	373	`query_openfda` sends its search, sort, count and skip parameters
+latchbio/latch	624	Glob patterns match the whole file name (`*.fq` no longer matches `a.fq.gz`)
+latchbio/latch	625	`generate-metadata` handles nf-core schema patterns that crashed it (55 to 124 of 146 pipelines)
+robocurve/inspect-robots	617	Rollouts record a copy of each executed action, so a reused policy buffer can't change scores
+robocurve/inspect-robots	618	Trial artifacts stay separate for scene IDs that differ only in case
+rowansci/rowan-python	19	Scan energy positions, explicit empty pKa element lists, and folder lookup past the first page

@@ -89,6 +89,27 @@ Scientists I know publish code with their papers. I asked each of them whether a
 - Aires Ferreira (KITE) is condensed-matter physics and sits in the [physics hub](https://github.com/rpinho/ai-physics); Hugo's optimization work, José Bento's optimization results, Oliveira e Silva's analysis and Marco Sampaio's benchmark are in the [math hub](https://github.com/rpinho/math-certificates).
 - Results that were never sent to the person they concern are not here, in any field.
 
+## Contributions to AI-bio companies and open-source tools
+
+Bug fixes sent as pull requests to AI-for-biology companies' public code. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py`.
+
+<!-- auto:bio-prs -->
+10 PRs: 0 merged, 10 open, 0 closed.
+
+| Repo | PR | Fix | Status |
+| --- | --- | --- | --- |
+| [synthesizebio/pysynthbio](https://github.com/synthesizebio/pysynthbio) | [#77](https://github.com/synthesizebio/pysynthbio/pull/77) | `predict_query` no longer writes its options into the caller's query dict | open |
+| [EdisonScientific/labbench2](https://github.com/EdisonScientific/labbench2) | [#45](https://github.com/EdisonScientific/labbench2/pull/45) | Leading-decimal answers like `.701` keep their value when graded | open |
+| [EdisonScientific/labbench2](https://github.com/EdisonScientific/labbench2) | [#46](https://github.com/EdisonScientific/labbench2/pull/46) | Report summaries keep metrics whose scores are all 0 | open |
+| [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#372](https://github.com/snap-stanford/Biomni/pull/372) | FDA adverse-event summaries count deaths and hospitalizations from the report-level flags | open |
+| [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#373](https://github.com/snap-stanford/Biomni/pull/373) | `query_openfda` sends its search, sort, count and skip parameters | open |
+| [latchbio/latch](https://github.com/latchbio/latch) | [#624](https://github.com/latchbio/latch/pull/624) | Glob patterns match the whole file name (`*.fq` no longer matches `a.fq.gz`) | open |
+| [latchbio/latch](https://github.com/latchbio/latch) | [#625](https://github.com/latchbio/latch/pull/625) | `generate-metadata` handles nf-core schema patterns that crashed it (55 to 124 of 146 pipelines) | open |
+| [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#617](https://github.com/robocurve/inspect-robots/pull/617) | Rollouts record a copy of each executed action, so a reused policy buffer can't change scores | open |
+| [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#618](https://github.com/robocurve/inspect-robots/pull/618) | Trial artifacts stay separate for scene IDs that differ only in case | open |
+| [rowansci/rowan-python](https://github.com/rowansci/rowan-python) | [#19](https://github.com/rowansci/rowan-python/pull/19) | Scan energy positions, explicit empty pKa element lists, and folder lookup past the first page | open |
+<!-- /auto:bio-prs -->
+
 ## How this was run
 
 All of it with AI agents under a bounded harness, [rstack](https://github.com/rpinho/rstack): frozen tests before the first result, the scoring kept away from the agent doing the searching, and prior art reproduced with a command rather than quoted. The biology-specific lesson is in the [retro](RETRO.md): the agents were not the constraint; the data was.
