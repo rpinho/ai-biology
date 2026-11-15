@@ -1,16 +1,18 @@
 """Render the contributions table in README.md from tools/bio_prs.tsv and the GitHub API.
 
 Run: python3 tools/render_bio_prs.py   (uses GITHUB_TOKEN if set; 10-ish unauthenticated calls are fine)
-Rewrites only the text between <!-- auto:bio-prs --> and <!-- /auto:bio-prs -->.
+Rewrites only the text between <!-- auto:bio-prs --> and <!-- /auto -->.
+With --stdout it prints the table instead, for readme-blocks (readme-blocks.json).
 """
 import json
 import os
 import re
+import sys
 import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-START, END = "<!-- auto:bio-prs -->", "<!-- /auto:bio-prs -->"
+START, END = "<!-- auto:bio-prs -->", "<!-- /auto -->"
 
 
 def pr_status(repo: str, number: str) -> str:
@@ -25,7 +27,7 @@ def pr_status(repo: str, number: str) -> str:
     return "closed" if pr["state"] == "closed" else "open"
 
 
-def main() -> None:
+def render() -> str:
     rows, statuses = [], []
     for line in (ROOT / "tools/bio_prs.tsv").read_text().splitlines():
         if not line.strip() or line.startswith("#"):
@@ -45,6 +47,14 @@ def main() -> None:
             *rows,
         ]
     )
+    return table
+
+
+def main() -> None:
+    table = render()
+    if "--stdout" in sys.argv[1:]:
+        print(table)
+        return
     readme = ROOT / "README.md"
     text = readme.read_text()
     new = re.sub(re.escape(START) + r".*?" + re.escape(END), f"{START}\n{table}\n{END}", text, flags=re.S)

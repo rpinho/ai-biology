@@ -108,7 +108,7 @@ Bug fixes sent as pull requests to AI-for-biology companies' public code. Each b
 | [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#617](https://github.com/robocurve/inspect-robots/pull/617) | Rollouts record a copy of each executed action, so a reused policy buffer can't change scores | open |
 | [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#618](https://github.com/robocurve/inspect-robots/pull/618) | Trial artifacts stay separate for scene IDs that differ only in case | open |
 | [rowansci/rowan-python](https://github.com/rowansci/rowan-python) | [#19](https://github.com/rowansci/rowan-python/pull/19) | Scan energy positions, explicit empty pKa element lists, and folder lookup past the first page | open |
-<!-- /auto:bio-prs -->
+<!-- /auto -->
 
 ## How this was run
 

@@ -1,0 +1,1 @@
+{"blocks": {"bio-prs": {"source": "command", "run": "python3 tools/render_bio_prs.py --stdout"}}}
