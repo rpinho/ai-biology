@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-37 PRs: 2 merged, 35 open, 0 closed.
+38 PRs: 2 merged, 36 open, 0 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -135,6 +135,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [ArcInstitute/evo2](https://github.com/ArcInstitute/evo2) | [#236](https://github.com/ArcInstitute/evo2/pull/236) | bug fix | An interrupted shard merge no longer leaves a truncated checkpoint that later loads accept | open |
 | [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#376](https://github.com/snap-stanford/Biomni/pull/376) | bug fix | Drug recall search applies the requested classification filter | open |
 | [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#377](https://github.com/snap-stanford/Biomni/pull/377) | bug fix | Adverse-event search reports FDA API errors instead of 'no adverse events found' | open |
+| [NVIDIA-BioNeMo/bionemo-recipes](https://github.com/NVIDIA-BioNeMo/bionemo-recipes) | [#1802](https://github.com/NVIDIA-BioNeMo/bionemo-recipes/pull/1802) | bug fix | ESM-2 PEFT validation packing uses val_micro_batch_size | open |
 <!-- /auto -->
 
 ## How this was run
