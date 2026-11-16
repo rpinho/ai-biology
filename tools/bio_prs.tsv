@@ -9,3 +9,8 @@ latchbio/latch	625	`generate-metadata` handles nf-core schema patterns that cras
 robocurve/inspect-robots	617	Rollouts record a copy of each executed action, so a reused policy buffer can't change scores
 robocurve/inspect-robots	618	Trial artifacts stay separate for scene IDs that differ only in case
 rowansci/rowan-python	19	Scan energy positions, explicit empty pKa element lists, and folder lookup past the first page
+seqeralabs/nf-metro	2172	Converted metro maps keep edges into dead-end processes in other sections
+seqeralabs/nf-metro	2173	Subworkflows with the same short name get separate sections instead of overwriting each other
+Arcadia-Science/agentic-pymol	18	get_model works against real PyMOL (Indexed was imported from the wrong module)
+Arcadia-Science/agentic-pymol	19	Relative file paths are resolved by PyMOL, as documented, not by the MCP server
+chaidiscovery/chai-lab	437	Merging A3M files from the same database keeps every file's hits

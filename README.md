@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Bug fixes sent as pull requests to AI-for-biology companies' public code. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py`.
 
 <!-- auto:bio-prs -->
-10 PRs: 0 merged, 10 open, 0 closed.
+15 PRs: 0 merged, 15 open, 0 closed.
 
 | Repo | PR | Fix | Status |
 | --- | --- | --- | --- |
@@ -108,6 +108,11 @@ Bug fixes sent as pull requests to AI-for-biology companies' public code. Each b
 | [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#617](https://github.com/robocurve/inspect-robots/pull/617) | Rollouts record a copy of each executed action, so a reused policy buffer can't change scores | open |
 | [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#618](https://github.com/robocurve/inspect-robots/pull/618) | Trial artifacts stay separate for scene IDs that differ only in case | open |
 | [rowansci/rowan-python](https://github.com/rowansci/rowan-python) | [#19](https://github.com/rowansci/rowan-python/pull/19) | Scan energy positions, explicit empty pKa element lists, and folder lookup past the first page | open |
+| [seqeralabs/nf-metro](https://github.com/seqeralabs/nf-metro) | [#2172](https://github.com/seqeralabs/nf-metro/pull/2172) | Converted metro maps keep edges into dead-end processes in other sections | open |
+| [seqeralabs/nf-metro](https://github.com/seqeralabs/nf-metro) | [#2173](https://github.com/seqeralabs/nf-metro/pull/2173) | Subworkflows with the same short name get separate sections instead of overwriting each other | open |
+| [Arcadia-Science/agentic-pymol](https://github.com/Arcadia-Science/agentic-pymol) | [#18](https://github.com/Arcadia-Science/agentic-pymol/pull/18) | get_model works against real PyMOL (Indexed was imported from the wrong module) | open |
+| [Arcadia-Science/agentic-pymol](https://github.com/Arcadia-Science/agentic-pymol) | [#19](https://github.com/Arcadia-Science/agentic-pymol/pull/19) | Relative file paths are resolved by PyMOL, as documented, not by the MCP server | open |
+| [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#437](https://github.com/chaidiscovery/chai-lab/pull/437) | Merging A3M files from the same database keeps every file's hits | open |
 <!-- /auto -->
 
 ## How this was run
