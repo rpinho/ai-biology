@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-30 PRs: 0 merged, 30 open, 0 closed.
+31 PRs: 0 merged, 31 open, 0 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -128,6 +128,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [Future-House/paper-qa](https://github.com/Future-House/paper-qa) | [#1374](https://github.com/Future-House/paper-qa/pull/1374) | bug fix | Rebuilding an index with use_absolute_paper_directory keeps unchanged documents | open |
 | [latchbio/scbench](https://github.com/latchbio/scbench) | [#8](https://github.com/latchbio/scbench/pull/8) | bug fix | scbench batch skips evals/manifest.json instead of counting it as a failed eval | open |
 | [Arcadia-Science/glass-box-umap](https://github.com/Arcadia-Science/glass-box-umap) | [#35](https://github.com/Arcadia-Science/glass-box-umap/pull/35) | tool | py.typed marker so type checkers use the package's annotations (issue #18) | open |
+| [Future-House/aviary](https://github.com/Future-House/aviary) | [#394](https://github.com/Future-House/aviary/pull/394) | bug fix | Tool servers pass a parameter's declared default when the request leaves it out | open |
 <!-- /auto -->
 
 ## How this was run
