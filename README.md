@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-21 PRs: 0 merged, 21 open, 0 closed.
+22 PRs: 0 merged, 22 open, 0 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -119,6 +119,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [rowansci/openconf](https://github.com/rowansci/openconf) | [#20](https://github.com/rowansci/openconf/pull/20) | bug fix | random_seed=0 gives reproducible conformers instead of an unseeded run | open |
 | [rowansci/steamroll](https://github.com/rowansci/steamroll) | [#8](https://github.com/rowansci/steamroll/pull/8) | bug fix | Transition-metal conversions keep input atom order and supplied coordinates | open |
 | [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#438](https://github.com/chaidiscovery/chai-lab/pull/438) | bug fix | Template lookup keeps chain names like 001 or NA as strings | open |
+| [nf-core/tools](https://github.com/nf-core/tools) | [#4619](https://github.com/nf-core/tools/pull/4619) | bug fix | create-params-file includes parameters defined at the schema's top level | open |
 <!-- /auto -->
 
 ## How this was run
