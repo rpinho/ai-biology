@@ -1,4 +1,4 @@
-# repo<TAB>PR number<TAB>one-line fix. tools/render_bio_prs.py fills status from the GitHub API.
+# repo<TAB>PR number<TAB>one-line description<TAB>type (bug fix | speedup | tests/CI | tool; optional, default bug fix). tools/render_bio_prs.py fills status from the GitHub API.
 synthesizebio/pysynthbio	77	`predict_query` no longer writes its options into the caller's query dict
 EdisonScientific/labbench2	45	Leading-decimal answers like `.701` keep their value when graded
 EdisonScientific/labbench2	46	Report summaries keep metrics whose scores are all 0

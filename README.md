@@ -91,34 +91,34 @@ Scientists I know publish code with their papers. I asked each of them whether a
 
 ## Contributions to AI-bio companies and open-source tools
 
-Bug fixes sent as pull requests to AI-for-biology companies' public code. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py`.
+Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
 21 PRs: 0 merged, 21 open, 0 closed.
 
-| Repo | PR | Fix | Status |
-| --- | --- | --- | --- |
-| [synthesizebio/pysynthbio](https://github.com/synthesizebio/pysynthbio) | [#77](https://github.com/synthesizebio/pysynthbio/pull/77) | `predict_query` no longer writes its options into the caller's query dict | open |
-| [EdisonScientific/labbench2](https://github.com/EdisonScientific/labbench2) | [#45](https://github.com/EdisonScientific/labbench2/pull/45) | Leading-decimal answers like `.701` keep their value when graded | open |
-| [EdisonScientific/labbench2](https://github.com/EdisonScientific/labbench2) | [#46](https://github.com/EdisonScientific/labbench2/pull/46) | Report summaries keep metrics whose scores are all 0 | open |
-| [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#372](https://github.com/snap-stanford/Biomni/pull/372) | FDA adverse-event summaries count deaths and hospitalizations from the report-level flags | open |
-| [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#373](https://github.com/snap-stanford/Biomni/pull/373) | `query_openfda` sends its search, sort, count and skip parameters | open |
-| [latchbio/latch](https://github.com/latchbio/latch) | [#624](https://github.com/latchbio/latch/pull/624) | Glob patterns match the whole file name (`*.fq` no longer matches `a.fq.gz`) | open |
-| [latchbio/latch](https://github.com/latchbio/latch) | [#625](https://github.com/latchbio/latch/pull/625) | `generate-metadata` handles nf-core schema patterns that crashed it (55 to 124 of 146 pipelines) | open |
-| [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#617](https://github.com/robocurve/inspect-robots/pull/617) | Rollouts record a copy of each executed action, so a reused policy buffer can't change scores | open |
-| [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#618](https://github.com/robocurve/inspect-robots/pull/618) | Trial artifacts stay separate for scene IDs that differ only in case | open |
-| [rowansci/rowan-python](https://github.com/rowansci/rowan-python) | [#19](https://github.com/rowansci/rowan-python/pull/19) | Scan energy positions, explicit empty pKa element lists, and folder lookup past the first page | open |
-| [seqeralabs/nf-metro](https://github.com/seqeralabs/nf-metro) | [#2172](https://github.com/seqeralabs/nf-metro/pull/2172) | Converted metro maps keep edges into dead-end processes in other sections | open |
-| [seqeralabs/nf-metro](https://github.com/seqeralabs/nf-metro) | [#2173](https://github.com/seqeralabs/nf-metro/pull/2173) | Subworkflows with the same short name get separate sections instead of overwriting each other | open |
-| [Arcadia-Science/agentic-pymol](https://github.com/Arcadia-Science/agentic-pymol) | [#18](https://github.com/Arcadia-Science/agentic-pymol/pull/18) | get_model works against real PyMOL (Indexed was imported from the wrong module) | open |
-| [Arcadia-Science/agentic-pymol](https://github.com/Arcadia-Science/agentic-pymol) | [#19](https://github.com/Arcadia-Science/agentic-pymol/pull/19) | Relative file paths are resolved by PyMOL, as documented, not by the MCP server | open |
-| [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#437](https://github.com/chaidiscovery/chai-lab/pull/437) | Merging A3M files from the same database keeps every file's hits | open |
-| [adaptyvbio/protein-design-skills](https://github.com/adaptyvbio/protein-design-skills) | [#10](https://github.com/adaptyvbio/protein-design-skills/pull/10) | The UniProt skill's PDB helper puts the chains, not the resolution, in its chains field | open |
-| [adaptyvbio/protein-design-skills](https://github.com/adaptyvbio/protein-design-skills) | [#11](https://github.com/adaptyvbio/protein-design-skills/pull/11) | The setup check uses modal token info, since modal token show does not exist | open |
-| [rowansci/openconf](https://github.com/rowansci/openconf) | [#19](https://github.com/rowansci/openconf/pull/19) | Heavy-atom RMSD searches symmetry mappings, so symmetric conformers compare as identical | open |
-| [rowansci/openconf](https://github.com/rowansci/openconf) | [#20](https://github.com/rowansci/openconf/pull/20) | random_seed=0 gives reproducible conformers instead of an unseeded run | open |
-| [rowansci/steamroll](https://github.com/rowansci/steamroll) | [#8](https://github.com/rowansci/steamroll/pull/8) | Transition-metal conversions keep input atom order and supplied coordinates | open |
-| [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#438](https://github.com/chaidiscovery/chai-lab/pull/438) | Template lookup keeps chain names like 001 or NA as strings | open |
+| Repo | PR | Type | What it does | Status |
+| --- | --- | --- | --- | --- |
+| [synthesizebio/pysynthbio](https://github.com/synthesizebio/pysynthbio) | [#77](https://github.com/synthesizebio/pysynthbio/pull/77) | bug fix | `predict_query` no longer writes its options into the caller's query dict | open |
+| [EdisonScientific/labbench2](https://github.com/EdisonScientific/labbench2) | [#45](https://github.com/EdisonScientific/labbench2/pull/45) | bug fix | Leading-decimal answers like `.701` keep their value when graded | open |
+| [EdisonScientific/labbench2](https://github.com/EdisonScientific/labbench2) | [#46](https://github.com/EdisonScientific/labbench2/pull/46) | bug fix | Report summaries keep metrics whose scores are all 0 | open |
+| [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#372](https://github.com/snap-stanford/Biomni/pull/372) | bug fix | FDA adverse-event summaries count deaths and hospitalizations from the report-level flags | open |
+| [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#373](https://github.com/snap-stanford/Biomni/pull/373) | bug fix | `query_openfda` sends its search, sort, count and skip parameters | open |
+| [latchbio/latch](https://github.com/latchbio/latch) | [#624](https://github.com/latchbio/latch/pull/624) | bug fix | Glob patterns match the whole file name (`*.fq` no longer matches `a.fq.gz`) | open |
+| [latchbio/latch](https://github.com/latchbio/latch) | [#625](https://github.com/latchbio/latch/pull/625) | bug fix | `generate-metadata` handles nf-core schema patterns that crashed it (55 to 124 of 146 pipelines) | open |
+| [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#617](https://github.com/robocurve/inspect-robots/pull/617) | bug fix | Rollouts record a copy of each executed action, so a reused policy buffer can't change scores | open |
+| [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#618](https://github.com/robocurve/inspect-robots/pull/618) | bug fix | Trial artifacts stay separate for scene IDs that differ only in case | open |
+| [rowansci/rowan-python](https://github.com/rowansci/rowan-python) | [#19](https://github.com/rowansci/rowan-python/pull/19) | bug fix | Scan energy positions, explicit empty pKa element lists, and folder lookup past the first page | open |
+| [seqeralabs/nf-metro](https://github.com/seqeralabs/nf-metro) | [#2172](https://github.com/seqeralabs/nf-metro/pull/2172) | bug fix | Converted metro maps keep edges into dead-end processes in other sections | open |
+| [seqeralabs/nf-metro](https://github.com/seqeralabs/nf-metro) | [#2173](https://github.com/seqeralabs/nf-metro/pull/2173) | bug fix | Subworkflows with the same short name get separate sections instead of overwriting each other | open |
+| [Arcadia-Science/agentic-pymol](https://github.com/Arcadia-Science/agentic-pymol) | [#18](https://github.com/Arcadia-Science/agentic-pymol/pull/18) | bug fix | get_model works against real PyMOL (Indexed was imported from the wrong module) | open |
+| [Arcadia-Science/agentic-pymol](https://github.com/Arcadia-Science/agentic-pymol) | [#19](https://github.com/Arcadia-Science/agentic-pymol/pull/19) | bug fix | Relative file paths are resolved by PyMOL, as documented, not by the MCP server | open |
+| [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#437](https://github.com/chaidiscovery/chai-lab/pull/437) | bug fix | Merging A3M files from the same database keeps every file's hits | open |
+| [adaptyvbio/protein-design-skills](https://github.com/adaptyvbio/protein-design-skills) | [#10](https://github.com/adaptyvbio/protein-design-skills/pull/10) | bug fix | The UniProt skill's PDB helper puts the chains, not the resolution, in its chains field | open |
+| [adaptyvbio/protein-design-skills](https://github.com/adaptyvbio/protein-design-skills) | [#11](https://github.com/adaptyvbio/protein-design-skills/pull/11) | bug fix | The setup check uses modal token info, since modal token show does not exist | open |
+| [rowansci/openconf](https://github.com/rowansci/openconf) | [#19](https://github.com/rowansci/openconf/pull/19) | bug fix | Heavy-atom RMSD searches symmetry mappings, so symmetric conformers compare as identical | open |
+| [rowansci/openconf](https://github.com/rowansci/openconf) | [#20](https://github.com/rowansci/openconf/pull/20) | bug fix | random_seed=0 gives reproducible conformers instead of an unseeded run | open |
+| [rowansci/steamroll](https://github.com/rowansci/steamroll) | [#8](https://github.com/rowansci/steamroll/pull/8) | bug fix | Transition-metal conversions keep input atom order and supplied coordinates | open |
+| [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#438](https://github.com/chaidiscovery/chai-lab/pull/438) | bug fix | Template lookup keeps chain names like 001 or NA as strings | open |
 <!-- /auto -->
 
 ## How this was run
