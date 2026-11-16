@@ -32,3 +32,4 @@ Arcadia-Science/glass-box-umap	35	py.typed marker so type checkers use the packa
 Future-House/aviary	394	Tool servers pass a parameter's declared default when the request leaves it out	bug fix
 ArcInstitute/state	283	Gene mapping uses the detected gene-name column, so genes named only there aren't dropped	bug fix
 ArcInstitute/cell-eval	248	score_agg_metrics works when one normalization group is empty	bug fix
+ArcInstitute/cell-eval	249	Pipeline metric settings no longer leak into other pipelines' defaults	bug fix
