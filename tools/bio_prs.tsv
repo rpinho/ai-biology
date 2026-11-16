@@ -30,3 +30,4 @@ Future-House/paper-qa	1374	Rebuilding an index with use_absolute_paper_directory
 latchbio/scbench	8	scbench batch skips evals/manifest.json instead of counting it as a failed eval	bug fix
 Arcadia-Science/glass-box-umap	35	py.typed marker so type checkers use the package's annotations (issue #18)	tool
 Future-House/aviary	394	Tool servers pass a parameter's declared default when the request leaves it out	bug fix
+ArcInstitute/state	283	Gene mapping uses the detected gene-name column, so genes named only there aren't dropped	bug fix
