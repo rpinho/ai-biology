@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-28 PRs: 0 merged, 28 open, 0 closed.
+29 PRs: 0 merged, 29 open, 0 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -126,6 +126,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3736](https://github.com/MultiQC/MultiQC/pull/3736) | bug fix | A module set only in top_modules no longer runs a second time on all logs | open |
 | [Future-House/paper-qa](https://github.com/Future-House/paper-qa) | [#1373](https://github.com/Future-House/paper-qa/pull/1373) | bug fix | Text parsing compares page_size_limit with each line's length, not the line count | open |
 | [Future-House/paper-qa](https://github.com/Future-House/paper-qa) | [#1374](https://github.com/Future-House/paper-qa/pull/1374) | bug fix | Rebuilding an index with use_absolute_paper_directory keeps unchanged documents | open |
+| [latchbio/scbench](https://github.com/latchbio/scbench) | [#8](https://github.com/latchbio/scbench/pull/8) | bug fix | scbench batch skips evals/manifest.json instead of counting it as a failed eval | open |
 <!-- /auto -->
 
 ## How this was run

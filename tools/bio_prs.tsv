@@ -27,3 +27,4 @@ Arcadia-Science/glass-box-umap	34	Float64 Tensor input works in transform and co
 MultiQC/MultiQC	3736	A module set only in top_modules no longer runs a second time on all logs	bug fix
 Future-House/paper-qa	1373	Text parsing compares page_size_limit with each line's length, not the line count	bug fix
 Future-House/paper-qa	1374	Rebuilding an index with use_absolute_paper_directory keeps unchanged documents	bug fix
+latchbio/scbench	8	scbench batch skips evals/manifest.json instead of counting it as a failed eval	bug fix
