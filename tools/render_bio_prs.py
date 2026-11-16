@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 START, END = "<!-- auto:bio-prs -->", "<!-- /auto -->"
 
 
-BOTS = re.compile(r"bot|copilot|reviewer|github-actions|^claude$|^rpinho$", re.I)
+BOTS = re.compile(r"bot|copilot|reviewer|github-actions|gemini|coderabbit|sourcery|codecov|^claude$|^rpinho$", re.I)
 TYPES = ("bug fix", "speedup", "tests/CI", "tool")
 
 
