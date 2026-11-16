@@ -52,7 +52,7 @@ def render() -> str:
             raise SystemExit(f"bio_prs.tsv: unknown type {kind!r} for {repo}#{number}; use one of {TYPES}")
         url = f"https://github.com/{repo}/pull/{number}"
         status = pr_status(repo, number)
-        statuses.append(status.split()[0])
+        statuses.append(status.split()[0].rstrip(","))
         rows.append(f"| [{repo}](https://github.com/{repo}) | [#{number}]({url}) | {kind} | {fix} | {status} |")
     merged, opened, closed = (statuses.count(k) for k in ("merged", "open", "closed"))
     table = "\n".join(
