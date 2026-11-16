@@ -94,15 +94,15 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-31 PRs: 0 merged, 31 open, 0 closed.
+31 PRs: 2 merged, 28 open, 0 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
 | [synthesizebio/pysynthbio](https://github.com/synthesizebio/pysynthbio) | [#77](https://github.com/synthesizebio/pysynthbio/pull/77) | bug fix | `predict_query` no longer writes its options into the caller's query dict | open |
 | [EdisonScientific/labbench2](https://github.com/EdisonScientific/labbench2) | [#45](https://github.com/EdisonScientific/labbench2/pull/45) | bug fix | Leading-decimal answers like `.701` keep their value when graded | open |
 | [EdisonScientific/labbench2](https://github.com/EdisonScientific/labbench2) | [#46](https://github.com/EdisonScientific/labbench2/pull/46) | bug fix | Report summaries keep metrics whose scores are all 0 | open |
-| [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#372](https://github.com/snap-stanford/Biomni/pull/372) | bug fix | FDA adverse-event summaries count deaths and hospitalizations from the report-level flags | open |
-| [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#373](https://github.com/snap-stanford/Biomni/pull/373) | bug fix | `query_openfda` sends its search, sort, count and skip parameters | open |
+| [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#372](https://github.com/snap-stanford/Biomni/pull/372) | bug fix | FDA adverse-event summaries count deaths and hospitalizations from the report-level flags | merged 2026-11-16 |
+| [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#373](https://github.com/snap-stanford/Biomni/pull/373) | bug fix | `query_openfda` sends its search, sort, count and skip parameters | merged 2026-11-16 |
 | [latchbio/latch](https://github.com/latchbio/latch) | [#624](https://github.com/latchbio/latch/pull/624) | bug fix | Glob patterns match the whole file name (`*.fq` no longer matches `a.fq.gz`) | open |
 | [latchbio/latch](https://github.com/latchbio/latch) | [#625](https://github.com/latchbio/latch/pull/625) | bug fix | `generate-metadata` handles nf-core schema patterns that crashed it (55 to 124 of 146 pipelines) | open |
 | [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#617](https://github.com/robocurve/inspect-robots/pull/617) | bug fix | Rollouts record a copy of each executed action, so a reused policy buffer can't change scores | open |
@@ -119,7 +119,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [rowansci/openconf](https://github.com/rowansci/openconf) | [#20](https://github.com/rowansci/openconf/pull/20) | bug fix | random_seed=0 gives reproducible conformers instead of an unseeded run | open |
 | [rowansci/steamroll](https://github.com/rowansci/steamroll) | [#8](https://github.com/rowansci/steamroll/pull/8) | bug fix | Transition-metal conversions keep input atom order and supplied coordinates | open |
 | [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#438](https://github.com/chaidiscovery/chai-lab/pull/438) | bug fix | Template lookup keeps chain names like 001 or NA as strings | open |
-| [nf-core/tools](https://github.com/nf-core/tools) | [#4619](https://github.com/nf-core/tools/pull/4619) | bug fix | create-params-file includes parameters defined at the schema's top level | open |
+| [nf-core/tools](https://github.com/nf-core/tools) | [#4619](https://github.com/nf-core/tools/pull/4619) | bug fix | create-params-file includes parameters defined at the schema's top level | open, 1 reply |
 | [nf-core/tools](https://github.com/nf-core/tools) | [#4620](https://github.com/nf-core/tools/pull/4620) | bug fix | Schema build keeps 0 and 0.0 defaults from the pipeline config | open |
 | [Future-House/aviary](https://github.com/Future-House/aviary) | [#393](https://github.com/Future-House/aviary/pull/393) | bug fix | Tool servers build for tools with list parameters (JSON Schema "array") | open |
 | [Arcadia-Science/glass-box-umap](https://github.com/Arcadia-Science/glass-box-umap) | [#34](https://github.com/Arcadia-Science/glass-box-umap/pull/34) | bug fix | Float64 Tensor input works in transform and compute_contributions, like NumPy input | open |
