@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-35 PRs: 2 merged, 33 open, 0 closed.
+36 PRs: 2 merged, 34 open, 0 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -133,6 +133,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [ArcInstitute/cell-eval](https://github.com/ArcInstitute/cell-eval) | [#248](https://github.com/ArcInstitute/cell-eval/pull/248) | bug fix | score_agg_metrics works when one normalization group is empty | open |
 | [ArcInstitute/cell-eval](https://github.com/ArcInstitute/cell-eval) | [#249](https://github.com/ArcInstitute/cell-eval/pull/249) | bug fix | Pipeline metric settings no longer leak into other pipelines' defaults | open |
 | [ArcInstitute/evo2](https://github.com/ArcInstitute/evo2) | [#236](https://github.com/ArcInstitute/evo2/pull/236) | bug fix | An interrupted shard merge no longer leaves a truncated checkpoint that later loads accept | open |
+| [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#376](https://github.com/snap-stanford/Biomni/pull/376) | bug fix | Drug recall search applies the requested classification filter | open |
 <!-- /auto -->
 
 ## How this was run
