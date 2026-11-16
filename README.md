@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Bug fixes sent as pull requests to AI-for-biology companies' public code. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py`.
 
 <!-- auto:bio-prs -->
-15 PRs: 0 merged, 15 open, 0 closed.
+21 PRs: 0 merged, 21 open, 0 closed.
 
 | Repo | PR | Fix | Status |
 | --- | --- | --- | --- |
@@ -113,6 +113,12 @@ Bug fixes sent as pull requests to AI-for-biology companies' public code. Each b
 | [Arcadia-Science/agentic-pymol](https://github.com/Arcadia-Science/agentic-pymol) | [#18](https://github.com/Arcadia-Science/agentic-pymol/pull/18) | get_model works against real PyMOL (Indexed was imported from the wrong module) | open |
 | [Arcadia-Science/agentic-pymol](https://github.com/Arcadia-Science/agentic-pymol) | [#19](https://github.com/Arcadia-Science/agentic-pymol/pull/19) | Relative file paths are resolved by PyMOL, as documented, not by the MCP server | open |
 | [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#437](https://github.com/chaidiscovery/chai-lab/pull/437) | Merging A3M files from the same database keeps every file's hits | open |
+| [adaptyvbio/protein-design-skills](https://github.com/adaptyvbio/protein-design-skills) | [#10](https://github.com/adaptyvbio/protein-design-skills/pull/10) | The UniProt skill returns PDB chains instead of the resolution in the chains field | open |
+| [adaptyvbio/protein-design-skills](https://github.com/adaptyvbio/protein-design-skills) | [#11](https://github.com/adaptyvbio/protein-design-skills/pull/11) | The setup check uses modal token info, since modal token show does not exist | open |
+| [rowansci/openconf](https://github.com/rowansci/openconf) | [#19](https://github.com/rowansci/openconf/pull/19) | Heavy-atom RMSD searches symmetry mappings, so symmetric conformers compare as identical | open |
+| [rowansci/openconf](https://github.com/rowansci/openconf) | [#20](https://github.com/rowansci/openconf/pull/20) | random_seed=0 gives reproducible conformers instead of an unseeded run | open |
+| [rowansci/steamroll](https://github.com/rowansci/steamroll) | [#8](https://github.com/rowansci/steamroll/pull/8) | Transition-metal conversions keep input atom order and supplied coordinates | open |
+| [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#438](https://github.com/chaidiscovery/chai-lab/pull/438) | Template lookup keeps chain names like 001 or NA as strings | open |
 <!-- /auto -->
 
 ## How this was run
