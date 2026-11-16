@@ -14,7 +14,7 @@ seqeralabs/nf-metro	2173	Subworkflows with the same short name get separate sect
 Arcadia-Science/agentic-pymol	18	get_model works against real PyMOL (Indexed was imported from the wrong module)
 Arcadia-Science/agentic-pymol	19	Relative file paths are resolved by PyMOL, as documented, not by the MCP server
 chaidiscovery/chai-lab	437	Merging A3M files from the same database keeps every file's hits
-adaptyvbio/protein-design-skills	10	The UniProt skill returns PDB chains instead of the resolution in the chains field
+adaptyvbio/protein-design-skills	10	The UniProt skill's PDB helper puts the chains, not the resolution, in its chains field
 adaptyvbio/protein-design-skills	11	The setup check uses modal token info, since modal token show does not exist
 rowansci/openconf	19	Heavy-atom RMSD searches symmetry mappings, so symmetric conformers compare as identical
 rowansci/openconf	20	random_seed=0 gives reproducible conformers instead of an unseeded run
