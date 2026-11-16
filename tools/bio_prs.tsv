@@ -23,3 +23,4 @@ chaidiscovery/chai-lab	438	Template lookup keeps chain names like 001 or NA as s
 nf-core/tools	4619	create-params-file includes parameters defined at the schema's top level	bug fix
 nf-core/tools	4620	Schema build keeps 0 and 0.0 defaults from the pipeline config	bug fix
 Future-House/aviary	393	Tool servers build for tools with list parameters (JSON Schema "array")	bug fix
+Arcadia-Science/glass-box-umap	34	Float64 Tensor input works in transform and compute_contributions, like NumPy input	bug fix
