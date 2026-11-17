@@ -39,3 +39,4 @@ snap-stanford/Biomni	377	Adverse-event search reports FDA API errors instead of 
 NVIDIA-BioNeMo/bionemo-recipes	1802	ESM-2 PEFT validation packing uses val_micro_batch_size	bug fix
 EdisonScientific/labbench2	48	custom runner outputs crash after generation (OSError)	bug fix
 EdisonScientific/labbench2	49	--retry-from ignores the original agent/mode; merges mix configurations	bug fix
+ArcInstitute/cell-eval	250	sparse pseudobulk and centroids without densifying (3x faster, 4.8x less memory)	speedup
