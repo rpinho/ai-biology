@@ -37,3 +37,4 @@ ArcInstitute/evo2	236	An interrupted shard merge no longer leaves a truncated ch
 snap-stanford/Biomni	376	Drug recall search applies the requested classification filter	bug fix
 snap-stanford/Biomni	377	Adverse-event search reports FDA API errors instead of 'no adverse events found'	bug fix
 NVIDIA-BioNeMo/bionemo-recipes	1802	ESM-2 PEFT validation packing uses val_micro_batch_size	bug fix
+EdisonScientific/labbench2	48	custom runner outputs crash after generation (OSError)	bug fix
