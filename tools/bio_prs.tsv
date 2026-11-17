@@ -41,3 +41,4 @@ EdisonScientific/labbench2	48	custom runner outputs crash after generation (OSEr
 EdisonScientific/labbench2	49	--retry-from ignores the original agent/mode; merges mix configurations	bug fix
 ArcInstitute/cell-eval	250	sparse pseudobulk and centroids without densifying (3x faster, 4.8x less memory)	speedup
 robocurve/inspect-robots	622	HTML report scans the frame directory once (16x faster, byte-identical)	speedup
+snap-stanford/Biomni	378	database REST helper: timeouts and bounded GET retries	bug fix
