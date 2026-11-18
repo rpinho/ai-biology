@@ -147,3 +147,5 @@ tenpy/tenpy	783	Preserve Jordan-Wigner parity for grouped independent charges	bu
 pyro-ppl/numpyro	2440	fix(infer): reject scanned sample sites in TraceEnum_ELBO	bug fix
 pyro-ppl/numpyro	2441	fix(distributions): keep two-sided TruncatedNormal samples within bounds	bug fix
 pyro-ppl/numpyro	2442	fix(infer): preserve PRNG implementations in Predictive	bug fix
+pyranges/pyranges	413	Preserve strandedness after a DataFrame round trip	bug fix
+pyranges/pyranges	414	Respect as_df and nrows when reading GTF with full=False	bug fix
