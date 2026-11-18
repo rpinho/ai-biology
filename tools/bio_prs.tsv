@@ -142,3 +142,4 @@ adrn/gala	683	Use the toy potential time unit when fitting O2GF frequencies	bug 
 tenpy/tenpy	779	Fix MPO expectation values with supplied environments	bug fix
 tenpy/tenpy	780	Fix joint probabilities in MPS.sample_measurements	bug fix
 tenpy/tenpy	781	Fix dropping charges on grouped sites of different dimensions	bug fix
+tenpy/tenpy	782	Fix MPO construction for empty Hamiltonians	bug fix
