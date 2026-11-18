@@ -93,3 +93,4 @@ phonopy/phonopy	1118	Fix empty arguments in deprecated option name handling	bug 
 pymc-devs/pymc	8644	Initialize variational groups in their variable order	bug fix
 lmfit/lmfit-py	1069	FIX: handle sequence inputs with nan_policy='omit'	bug fix
 biotite-dev/biotite	1039	Fix GFF annotation grouping for discontinuous features	bug fix
+biotite-dev/biotite	1040	Fix `to_sequence()` chain selection for atom array stacks	bug fix

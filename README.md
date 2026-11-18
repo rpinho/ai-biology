@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-94 PRs: 7 merged, 81 open, 6 closed.
+95 PRs: 7 merged, 82 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -194,6 +194,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [pymc-devs/pymc](https://github.com/pymc-devs/pymc) | [#8644](https://github.com/pymc-devs/pymc/pull/8644) | bug fix | Initialize variational groups in their variable order | open |
 | [lmfit/lmfit-py](https://github.com/lmfit/lmfit-py) | [#1069](https://github.com/lmfit/lmfit-py/pull/1069) | bug fix | FIX: handle sequence inputs with nan_policy='omit' | open |
 | [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1039](https://github.com/biotite-dev/biotite/pull/1039) | bug fix | Fix GFF annotation grouping for discontinuous features | open |
+| [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1040](https://github.com/biotite-dev/biotite/pull/1040) | bug fix | Fix `to_sequence()` chain selection for atom array stacks | open |
 <!-- /auto -->
 
 ## How this was run
