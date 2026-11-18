@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-93 PRs: 7 merged, 80 open, 6 closed.
+94 PRs: 7 merged, 81 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -193,6 +193,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1118](https://github.com/phonopy/phonopy/pull/1118) | bug fix | Fix empty arguments in deprecated option name handling | open |
 | [pymc-devs/pymc](https://github.com/pymc-devs/pymc) | [#8644](https://github.com/pymc-devs/pymc/pull/8644) | bug fix | Initialize variational groups in their variable order | open |
 | [lmfit/lmfit-py](https://github.com/lmfit/lmfit-py) | [#1069](https://github.com/lmfit/lmfit-py/pull/1069) | bug fix | FIX: handle sequence inputs with nan_policy='omit' | open |
+| [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1039](https://github.com/biotite-dev/biotite/pull/1039) | bug fix | Fix GFF annotation grouping for discontinuous features | open |
 <!-- /auto -->
 
 ## How this was run
@@ -205,7 +206,7 @@ Nothing here is from scratch. Each repository carries its own references; this l
 
 - Brian Armstrong, [publicly funded science as open source](https://x.com/brian_armstrong/status/2119150702446420027), November 7, 2026.
 - Arc Institute, [Virtual Cell Challenge](https://virtualcellchallenge.org/).
-- Anthropic and Adaptyv Bio, [the protein design competition](https://proteinbase.com/competitions/anthropic-adaptyv-2026), including its public release of every measurement.
+- Anthropic and Adaptyv Bio, [the protein design competition](https://proteinbase.com/competitions/anthropic-adaptyv-2026).
 - [Virtual Embryo Challenge](https://virtualembryo.ai/challenge).
 - Márquez et al., ExOrthist, *Genome Biology* 2021, [doi:10.1186/s13059-021-02441-9](https://doi.org/10.1186/s13059-021-02441-9).
 - Tapial et al., vast-tools / VastDB, *Genome Research* 2017, [doi:10.1101/gr.220962.117](https://doi.org/10.1101/gr.220962.117).
