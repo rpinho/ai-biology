@@ -104,3 +104,4 @@ pymc-devs/pymc	8646	Flatten start_sigma arrays when initializing ADVI	bug fix
 lmfit/lmfit-py	1070	FIX: preserve directories when loading saved models from Paths	bug fix
 phonopy/phonopy	1119	Fix loading YAML with a NumPy primitive matrix	bug fix
 phonopy/phonopy	1120	Preserve symbol distinction when replicating Phonopy	bug fix
+phonopy/phonopy	1121	Speed up thermal displacements by batching mode populations	speedup
