@@ -90,3 +90,4 @@ pymc-devs/pymc	8643	Fix MultiTrace slicing counts and negative strides	bug fix
 lmfit/lmfit-py	1068	FIX: use component prefixes in eval_uncertainty	bug fix
 pybamm-team/PyBaMM	6070	fix: preserve skip_ok on repeated experiment steps	bug fix
 phonopy/phonopy	1118	Fix empty arguments in deprecated option name handling	bug fix
+pymc-devs/pymc	8644	Initialize variational groups in their variable order	bug fix

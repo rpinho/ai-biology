@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-91 PRs: 7 merged, 79 open, 5 closed.
+92 PRs: 7 merged, 80 open, 5 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -172,7 +172,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#806](https://github.com/Quandela/Perceval/pull/806) | bug fix | Fix result insertion for a ComputationIterator without iteration | open |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#807](https://github.com/Quandela/Perceval/pull/807) | bug fix | Fix serialization of detectors without a name | open |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#808](https://github.com/Quandela/Perceval/pull/808) | bug fix | Keep min_detected_photons_filter(0) through experiment serialization | open, 1 reply |
-| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#809](https://github.com/Quandela/Perceval/pull/809) | speedup | Do not copy the experiment in use_phase_noise when there is no phase noise | open, 1 reply |
+| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#809](https://github.com/Quandela/Perceval/pull/809) | speedup | Do not copy the experiment in use_phase_noise when there is no phase noise | open, 2 replies |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#810](https://github.com/Quandela/Perceval/pull/810) | speedup | Compute numeric circuit unitaries by updating row blocks | open, 1 reply |
 | [scikit-bio/scikit-bio](https://github.com/scikit-bio/scikit-bio) | [#2676](https://github.com/scikit-bio/scikit-bio/pull/2676) | speedup | PERF: slice positions from stacked bytes in TabularMSA.iter_positions | open |
 | [lightkurve/lightkurve](https://github.com/lightkurve/lightkurve) | [#1595](https://github.com/lightkurve/lightkurve/pull/1595) | bug fix | Fixed local FITS time units for reordered columns | open |
@@ -189,6 +189,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [lmfit/lmfit-py](https://github.com/lmfit/lmfit-py) | [#1068](https://github.com/lmfit/lmfit-py/pull/1068) | bug fix | FIX: use component prefixes in eval_uncertainty | open |
 | [pybamm-team/PyBaMM](https://github.com/pybamm-team/PyBaMM) | [#6070](https://github.com/pybamm-team/PyBaMM/pull/6070) | bug fix | fix: preserve skip_ok on repeated experiment steps | open |
 | [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1118](https://github.com/phonopy/phonopy/pull/1118) | bug fix | Fix empty arguments in deprecated option name handling | open |
+| [pymc-devs/pymc](https://github.com/pymc-devs/pymc) | [#8644](https://github.com/pymc-devs/pymc/pull/8644) | bug fix | Initialize variational groups in their variable order | open |
 <!-- /auto -->
 
 ## How this was run
