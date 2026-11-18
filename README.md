@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-128 PRs: 8 merged, 114 open, 6 closed.
+129 PRs: 8 merged, 115 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -155,15 +155,15 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [rowansci/openconf](https://github.com/rowansci/openconf) | [#22](https://github.com/rowansci/openconf/pull/22) | bug fix | pool: apply energy_window_kcal to the final selection | open |
 | [rowansci/steamroll](https://github.com/rowansci/steamroll) | [#9](https://github.com/rowansci/steamroll/pull/9) | bug fix | to_rdkit: check transition-metal results against the supplied SMILES | open |
 | [Arcadia-Science/agentic-pymol](https://github.com/Arcadia-Science/agentic-pymol) | [#21](https://github.com/Arcadia-Science/agentic-pymol/pull/21) | bug fix | types: drop slots from tool result dataclasses so FastMCP publishes output schemas | open |
-| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4787](https://github.com/materialsproject/pymatgen/pull/4787) | speedup | ZSLGenerator: cache super-lattice reductions, vectorize match check (3.3-4.8x, byte-identical) | open |
-| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4788](https://github.com/materialsproject/pymatgen/pull/4788) | bug fix | Fix GibbsComputedStructureEntry.from_dict for entries with a correction | open |
-| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4789](https://github.com/materialsproject/pymatgen/pull/4789) | bug fix | Fix QuasiRRHO free-rotor interpolation using vibrational temperatures instead of wavenumbers | open |
-| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4790](https://github.com/materialsproject/pymatgen/pull/4790) | bug fix | Fix MagneticStructureEnumerator crash when the ferromagnetic strategy is not used | open |
-| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4791](https://github.com/materialsproject/pymatgen/pull/4791) | bug fix | Fix get_plot and plot_structures with two_theta_range=None | open |
-| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4792](https://github.com/materialsproject/pymatgen/pull/4792) | bug fix | Fix XAS.stitch in XAFS mode when called on the EXAFS spectrum | open |
-| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4793](https://github.com/materialsproject/pymatgen/pull/4793) | bug fix | Normalize data["volume"] per formula unit in InsertionVoltagePair | open |
-| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4794](https://github.com/materialsproject/pymatgen/pull/4794) | bug fix | Fix get_dimensionality_cheon modifying the input structure when standardize=False | open |
-| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4795](https://github.com/materialsproject/pymatgen/pull/4795) | bug fix | Return "intercalated ion" from get_dimensionality_cheon with larger_cell=True | open |
+| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4787](https://github.com/materialsproject/pymatgen/pull/4787) | speedup | ZSLGenerator: cache super-lattice reductions, vectorize match check (3.3-4.8x, byte-identical) | open, 1 reply |
+| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4788](https://github.com/materialsproject/pymatgen/pull/4788) | bug fix | Fix GibbsComputedStructureEntry.from_dict for entries with a correction | open, 1 reply |
+| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4789](https://github.com/materialsproject/pymatgen/pull/4789) | bug fix | Fix QuasiRRHO free-rotor interpolation using vibrational temperatures instead of wavenumbers | open, 1 reply |
+| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4790](https://github.com/materialsproject/pymatgen/pull/4790) | bug fix | Fix MagneticStructureEnumerator crash when the ferromagnetic strategy is not used | open, 1 reply |
+| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4791](https://github.com/materialsproject/pymatgen/pull/4791) | bug fix | Fix get_plot and plot_structures with two_theta_range=None | open, 1 reply |
+| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4792](https://github.com/materialsproject/pymatgen/pull/4792) | bug fix | Fix XAS.stitch in XAFS mode when called on the EXAFS spectrum | open, 1 reply |
+| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4793](https://github.com/materialsproject/pymatgen/pull/4793) | bug fix | Normalize data["volume"] per formula unit in InsertionVoltagePair | open, 1 reply |
+| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4794](https://github.com/materialsproject/pymatgen/pull/4794) | bug fix | Fix get_dimensionality_cheon modifying the input structure when standardize=False | open, 1 reply |
+| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4795](https://github.com/materialsproject/pymatgen/pull/4795) | bug fix | Return "intercalated ion" from get_dimensionality_cheon with larger_cell=True | open, 1 reply |
 | [astropy/astropy](https://github.com/astropy/astropy) | [#20894](https://github.com/astropy/astropy/pull/20894) | bug fix | Fix sigma_clip rejection masks for Quantity input | closed |
 | [astropy/astropy](https://github.com/astropy/astropy) | [#20895](https://github.com/astropy/astropy/pull/20895) | bug fix | Honor zero sigma bounds in SigmaClip | closed |
 | [astropy/astropy](https://github.com/astropy/astropy) | [#20896](https://github.com/astropy/astropy/pull/20896) | bug fix | Fix array indexing of scalar Distribution | closed |
@@ -190,7 +190,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [pymc-devs/pymc](https://github.com/pymc-devs/pymc) | [#8643](https://github.com/pymc-devs/pymc/pull/8643) | bug fix | Fix MultiTrace slicing counts and negative strides | open |
 | [lmfit/lmfit-py](https://github.com/lmfit/lmfit-py) | [#1068](https://github.com/lmfit/lmfit-py/pull/1068) | bug fix | FIX: use component prefixes in eval_uncertainty | open |
 | [pybamm-team/PyBaMM](https://github.com/pybamm-team/PyBaMM) | [#6070](https://github.com/pybamm-team/PyBaMM/pull/6070) | bug fix | fix: preserve skip_ok on repeated experiment steps | open |
-| [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1118](https://github.com/phonopy/phonopy/pull/1118) | bug fix | Fix empty arguments in deprecated option name handling | open |
+| [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1118](https://github.com/phonopy/phonopy/pull/1118) | bug fix | Fix empty arguments in deprecated option name handling | open, 1 reply |
 | [pymc-devs/pymc](https://github.com/pymc-devs/pymc) | [#8644](https://github.com/pymc-devs/pymc/pull/8644) | bug fix | Initialize variational groups in their variable order | open |
 | [lmfit/lmfit-py](https://github.com/lmfit/lmfit-py) | [#1069](https://github.com/lmfit/lmfit-py/pull/1069) | bug fix | FIX: handle sequence inputs with nan_policy='omit' | open |
 | [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1039](https://github.com/biotite-dev/biotite/pull/1039) | bug fix | Fix GFF annotation grouping for discontinuous features | open |
@@ -228,6 +228,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [LSSTDESC/CCL](https://github.com/LSSTDESC/CCL) | [#1331](https://github.com/LSSTDESC/CCL/pull/1331) | bug fix | Include fc_bar in Duffy08 equality and representation | open |
 | [LSSTDESC/CCL](https://github.com/LSSTDESC/CCL) | [#1332](https://github.com/LSSTDESC/CCL/pull/1332) | bug fix | Fix fourth-profile bias in the two-halo trispectrum | open |
 | [pysam-developers/pysam](https://github.com/pysam-developers/pysam) | [#1431](https://github.com/pysam-developers/pysam/pull/1431) | bug fix | Allow VariantRecord POS=0 (start=-1), as used for telomeres | open |
+| [dfm/corner.py](https://github.com/dfm/corner.py) | [#355](https://github.com/dfm/corner.py/pull/355) | bug fix | Fix linestyle aliases in overplot_points | open |
 <!-- /auto -->
 
 ## How this was run
