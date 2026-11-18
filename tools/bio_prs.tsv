@@ -83,3 +83,4 @@ lightkurve/lightkurve	1596	Fixed stitching light curves with different time form
 biotite-dev/biotite	1038	Reject GRO stacks with unequal model lengths	bug fix
 dfm/emcee	588	fix: keep autocorrelation error estimates in original steps	bug fix
 healpy/healpy	1152	Fix mmax handling in harmonic_ud_grade	bug fix
+joshspeagle/dynesty	529	fix iteration count for stopped merged runs	bug fix

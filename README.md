@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-84 PRs: 7 merged, 73 open, 4 closed.
+85 PRs: 7 merged, 73 open, 5 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -142,7 +142,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#622](https://github.com/robocurve/inspect-robots/pull/622) | speedup | HTML report scans the frame directory once (16x faster, byte-identical) | open |
 | [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#378](https://github.com/snap-stanford/Biomni/pull/378) | bug fix | database REST helper: timeouts and bounded GET retries | open |
 | [Future-House/paper-qa](https://github.com/Future-House/paper-qa) | [#1375](https://github.com/Future-House/paper-qa/pull/1375) | speedup | reuse NumpyVectorStore matrix and norms across retrievals (70x warm, bit-identical) | open |
-| [sunpy/sunpy](https://github.com/sunpy/sunpy) | [#8919](https://github.com/sunpy/sunpy/pull/8919) | bug fix | Fixes CROTA fallback for EUI maps | open, 2 replies |
+| [sunpy/sunpy](https://github.com/sunpy/sunpy) | [#8919](https://github.com/sunpy/sunpy/pull/8919) | bug fix | Fixes CROTA fallback for EUI maps | closed |
 | [scverse/scanpy](https://github.com/scverse/scanpy) | [#4531](https://github.com/scverse/scanpy/pull/4531) | bug fix | fix: match expression layers before reusing marker statistics | open |
 | [scverse/scanpy](https://github.com/scverse/scanpy) | [#4532](https://github.com/scverse/scanpy/pull/4532) | bug fix | fix: keep legacy graph metrics usable without anndata.acc | open |
 | [scverse/scanpy](https://github.com/scverse/scanpy) | [#4533](https://github.com/scverse/scanpy/pull/4533) | bug fix | fix: derive PCA defaults from the selected representation | open |
@@ -182,6 +182,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1038](https://github.com/biotite-dev/biotite/pull/1038) | bug fix | Reject GRO stacks with unequal model lengths | open |
 | [dfm/emcee](https://github.com/dfm/emcee) | [#588](https://github.com/dfm/emcee/pull/588) | bug fix | fix: keep autocorrelation error estimates in original steps | open |
 | [healpy/healpy](https://github.com/healpy/healpy) | [#1152](https://github.com/healpy/healpy/pull/1152) | bug fix | Fix mmax handling in harmonic_ud_grade | open |
+| [joshspeagle/dynesty](https://github.com/joshspeagle/dynesty) | [#529](https://github.com/joshspeagle/dynesty/pull/529) | bug fix | fix iteration count for stopped merged runs | open |
 <!-- /auto -->
 
 ## How this was run
