@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-132 PRs: 8 merged, 118 open, 6 closed.
+133 PRs: 8 merged, 119 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -206,7 +206,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1119](https://github.com/phonopy/phonopy/pull/1119) | bug fix | Fix loading YAML with a NumPy primitive matrix | open |
 | [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1120](https://github.com/phonopy/phonopy/pull/1120) | bug fix | Preserve symbol distinction when replicating Phonopy | open |
 | [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1121](https://github.com/phonopy/phonopy/pull/1121) | speedup | Speed up thermal displacements by batching mode populations | open |
-| [pybamm-team/PyBaMM](https://github.com/pybamm-team/PyBaMM) | [#6072](https://github.com/pybamm-team/PyBaMM/pull/6072) | bug fix | fix: keep EIS input ordering stable across solves | open |
+| [pybamm-team/PyBaMM](https://github.com/pybamm-team/PyBaMM) | [#6072](https://github.com/pybamm-team/PyBaMM/pull/6072) | bug fix | fix: keep EIS input ordering stable across solves | open, 1 reply |
 | [pybamm-team/PyBaMM](https://github.com/pybamm-team/PyBaMM) | [#6073](https://github.com/pybamm-team/PyBaMM/pull/6073) | bug fix | fix: search experiment tags with string steps | open |
 | [exoplanet-dev/celerite2](https://github.com/exoplanet-dev/celerite2) | [#208](https://github.com/exoplanet-dev/celerite2/pull/208) | bug fix | Include GP means in PyMC and NumPyro samples | open |
 | [exoplanet-dev/celerite2](https://github.com/exoplanet-dev/celerite2) | [#209](https://github.com/exoplanet-dev/celerite2/pull/209) | bug fix | Return negative infinity after quiet factorization failures | open |
@@ -232,6 +232,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [dfm/corner.py](https://github.com/dfm/corner.py) | [#356](https://github.com/dfm/corner.py/pull/356) | bug fix | Restore variable selection with ArviZ 1.x | open |
 | [dfm/corner.py](https://github.com/dfm/corner.py) | [#357](https://github.com/dfm/corner.py/pull/357) | bug fix | Align divergence markers with selected coordinates | open |
 | [mdtraj/mdtraj](https://github.com/mdtraj/mdtraj) | [#2236](https://github.com/mdtraj/mdtraj/pull/2236) | bug fix | Resolve mmCIF connections using label identifiers | open |
+| [mdtraj/mdtraj](https://github.com/mdtraj/mdtraj) | [#2237](https://github.com/mdtraj/mdtraj/pull/2237) | bug fix | Apply atom selection after reading ARC topology | open |
 <!-- /auto -->
 
 ## How this was run

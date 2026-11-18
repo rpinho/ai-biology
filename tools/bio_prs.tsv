@@ -131,3 +131,4 @@ dfm/corner.py	355	Fix linestyle aliases in overplot_points	bug fix
 dfm/corner.py	356	Restore variable selection with ArviZ 1.x	bug fix
 dfm/corner.py	357	Align divergence markers with selected coordinates	bug fix
 mdtraj/mdtraj	2236	Resolve mmCIF connections using label identifiers	bug fix
+mdtraj/mdtraj	2237	Apply atom selection after reading ARC topology	bug fix
