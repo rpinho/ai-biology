@@ -95,3 +95,4 @@ lmfit/lmfit-py	1069	FIX: handle sequence inputs with nan_policy='omit'	bug fix
 biotite-dev/biotite	1039	Fix GFF annotation grouping for discontinuous features	bug fix
 biotite-dev/biotite	1040	Fix `to_sequence()` chain selection for atom array stacks	bug fix
 scikit-bio/scikit-bio	2678	BUG: drop gap columns across all sequences in AlignPath.to_indices	bug fix
+scikit-bio/scikit-bio	2679	BUG: update stored IDs in OrdinationResults.rename	bug fix
