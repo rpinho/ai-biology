@@ -45,3 +45,4 @@ snap-stanford/Biomni	378	database REST helper: timeouts and bounded GET retries	
 Future-House/paper-qa	1375	reuse NumpyVectorStore matrix and norms across retrievals (70x warm, bit-identical)	speedup
 sunpy/sunpy	8919	Fixes CROTA fallback for EUI maps	bug fix
 scverse/scanpy	4531	fix: match expression layers before reusing marker statistics	bug fix
+scverse/scanpy	4532	fix: keep legacy graph metrics usable without anndata.acc	bug fix
