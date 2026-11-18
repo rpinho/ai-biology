@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-88 PRs: 7 merged, 76 open, 5 closed.
+89 PRs: 7 merged, 77 open, 5 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -144,8 +144,8 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [Future-House/paper-qa](https://github.com/Future-House/paper-qa) | [#1375](https://github.com/Future-House/paper-qa/pull/1375) | speedup | reuse NumpyVectorStore matrix and norms across retrievals (70x warm, bit-identical) | open |
 | [sunpy/sunpy](https://github.com/sunpy/sunpy) | [#8919](https://github.com/sunpy/sunpy/pull/8919) | bug fix | Fixes CROTA fallback for EUI maps | closed |
 | [scverse/scanpy](https://github.com/scverse/scanpy) | [#4531](https://github.com/scverse/scanpy/pull/4531) | bug fix | fix: match expression layers before reusing marker statistics | open |
-| [scverse/scanpy](https://github.com/scverse/scanpy) | [#4532](https://github.com/scverse/scanpy/pull/4532) | bug fix | fix: keep legacy graph metrics usable without anndata.acc | open |
-| [scverse/scanpy](https://github.com/scverse/scanpy) | [#4533](https://github.com/scverse/scanpy/pull/4533) | bug fix | fix: derive PCA defaults from the selected representation | open |
+| [scverse/scanpy](https://github.com/scverse/scanpy) | [#4532](https://github.com/scverse/scanpy/pull/4532) | bug fix | fix: keep legacy graph metrics usable without anndata.acc | open, 1 reply |
+| [scverse/scanpy](https://github.com/scverse/scanpy) | [#4533](https://github.com/scverse/scanpy/pull/4533) | bug fix | fix: derive PCA defaults from the selected representation | open, 1 reply |
 | [scverse/scanpy](https://github.com/scverse/scanpy) | [#4534](https://github.com/scverse/scanpy/pull/4534) | bug fix | fix: preserve gene pool alignment in score_genes | open |
 | [latchbio/latch](https://github.com/latchbio/latch) | [#626](https://github.com/latchbio/latch/pull/626) | bug fix | launch: send false Nextflow flags and pick the File/Dir union variant by type | open |
 | [latchbio/latch](https://github.com/latchbio/latch) | [#627](https://github.com/latchbio/latch/pull/627) | bug fix | file_glob: put a slash between remote_directory and the file name | open |
@@ -186,6 +186,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [healpy/healpy](https://github.com/healpy/healpy) | [#1153](https://github.com/healpy/healpy/pull/1153) | bug fix | Fix string column names in write_map | open |
 | [joshspeagle/dynesty](https://github.com/joshspeagle/dynesty) | [#530](https://github.com/joshspeagle/dynesty/pull/530) | bug fix | fix information for zero reweighting factors | open |
 | [pymc-devs/pymc](https://github.com/pymc-devs/pymc) | [#8643](https://github.com/pymc-devs/pymc/pull/8643) | bug fix | Fix MultiTrace slicing counts and negative strides | open |
+| [lmfit/lmfit-py](https://github.com/lmfit/lmfit-py) | [#1068](https://github.com/lmfit/lmfit-py/pull/1068) | bug fix | FIX: use component prefixes in eval_uncertainty | open |
 <!-- /auto -->
 
 ## How this was run

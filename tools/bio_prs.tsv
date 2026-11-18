@@ -87,3 +87,4 @@ joshspeagle/dynesty	529	fix iteration count for stopped merged runs	bug fix
 healpy/healpy	1153	Fix string column names in write_map	bug fix
 joshspeagle/dynesty	530	fix information for zero reweighting factors	bug fix
 pymc-devs/pymc	8643	Fix MultiTrace slicing counts and negative strides	bug fix
+lmfit/lmfit-py	1068	FIX: use component prefixes in eval_uncertainty	bug fix
