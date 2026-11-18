@@ -146,3 +146,4 @@ tenpy/tenpy	782	Fix MPO construction for empty Hamiltonians	bug fix
 tenpy/tenpy	783	Preserve Jordan-Wigner parity for grouped independent charges	bug fix
 pyro-ppl/numpyro	2440	fix(infer): reject scanned sample sites in TraceEnum_ELBO	bug fix
 pyro-ppl/numpyro	2441	fix(distributions): keep two-sided TruncatedNormal samples within bounds	bug fix
+pyro-ppl/numpyro	2442	fix(infer): preserve PRNG implementations in Predictive	bug fix
