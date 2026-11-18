@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-44 PRs: 7 merged, 36 open, 1 closed.
+45 PRs: 7 merged, 37 open, 1 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -142,6 +142,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#622](https://github.com/robocurve/inspect-robots/pull/622) | speedup | HTML report scans the frame directory once (16x faster, byte-identical) | open |
 | [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#378](https://github.com/snap-stanford/Biomni/pull/378) | bug fix | database REST helper: timeouts and bounded GET retries | open |
 | [Future-House/paper-qa](https://github.com/Future-House/paper-qa) | [#1375](https://github.com/Future-House/paper-qa/pull/1375) | speedup | reuse NumpyVectorStore matrix and norms across retrievals (70x warm, bit-identical) | open |
+| [sunpy/sunpy](https://github.com/sunpy/sunpy) | [#8919](https://github.com/sunpy/sunpy/pull/8919) | bug fix | Fixes CROTA fallback for EUI maps | open |
 <!-- /auto -->
 
 ## How this was run
