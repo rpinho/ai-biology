@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-137 PRs: 8 merged, 123 open, 6 closed.
+138 PRs: 8 merged, 124 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -237,6 +237,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [mdtraj/mdtraj](https://github.com/mdtraj/mdtraj) | [#2239](https://github.com/mdtraj/mdtraj/pull/2239) | bug fix | Restore integral bond orders when reading HDF5 topology | open |
 | [mdtraj/mdtraj](https://github.com/mdtraj/mdtraj) | [#2240](https://github.com/mdtraj/mdtraj/pull/2240) | bug fix | Use written atom serials in PDB CONECT records | open |
 | [adrn/gala](https://github.com/adrn/gala) | [#680](https://github.com/adrn/gala/pull/680) | bug fix | Preserve mock stream metadata through HDF5 | open |
+| [adrn/gala](https://github.com/adrn/gala) | [#681](https://github.com/adrn/gala/pull/681) | bug fix | Honor the median option for Staeckel focal lengths | open |
 <!-- /auto -->
 
 ## How this was run
