@@ -118,3 +118,4 @@ spglib/spglib	653	perf: prune lattice symmetry candidates by axis length	speedup
 MultiQC/MultiQC	3738	Fix grouped sample values in get_general_stats_data	bug fix
 MultiQC/MultiQC	3739	Fix module and data-key selection in get_module_data	bug fix
 MultiQC/MultiQC	3740	Preserve section order when merging parquet reports	bug fix
+openmc-dev/openmc	4240	Reshape each mesh filter along its expanded axes	bug fix
