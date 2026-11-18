@@ -69,3 +69,4 @@ astropy/astropy	20896	Fix array indexing of scalar Distribution	bug fix
 Quandela/Perceval	802	Make BSDistribution(bsd) copy the source distribution	bug fix
 Quandela/Perceval	803	Validate each iteration of a ComputationIterator	bug fix
 Quandela/Perceval	804	Set ERROR status when execute_sync fails with allow_partial_results	bug fix
+Quandela/Perceval	805	Reset the Processor source when its noise model is changed	bug fix
