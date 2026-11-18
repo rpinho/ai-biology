@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-139 PRs: 8 merged, 125 open, 6 closed.
+140 PRs: 8 merged, 126 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -239,6 +239,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [adrn/gala](https://github.com/adrn/gala) | [#680](https://github.com/adrn/gala/pull/680) | bug fix | Preserve mock stream metadata through HDF5 | open |
 | [adrn/gala](https://github.com/adrn/gala) | [#681](https://github.com/adrn/gala/pull/681) | bug fix | Honor the median option for Staeckel focal lengths | open |
 | [adrn/gala](https://github.com/adrn/gala) | [#682](https://github.com/adrn/gala/pull/682) | bug fix | Use elapsed time in fast Lyapunov estimates | open |
+| [adrn/gala](https://github.com/adrn/gala) | [#683](https://github.com/adrn/gala/pull/683) | bug fix | Use the toy potential time unit when fitting O2GF frequencies | open |
 <!-- /auto -->
 
 ## How this was run
