@@ -55,3 +55,4 @@ rowansci/openconf	22	pool: apply energy_window_kcal to the final selection	bug f
 rowansci/steamroll	9	to_rdkit: check transition-metal results against the supplied SMILES	bug fix
 Arcadia-Science/agentic-pymol	21	types: drop slots from tool result dataclasses so FastMCP publishes output schemas	bug fix
 materialsproject/pymatgen	4787	ZSLGenerator: cache super-lattice reductions, vectorize match check (3.3-4.8x, byte-identical)	speedup
+materialsproject/pymatgen	4788	Fix GibbsComputedStructureEntry.from_dict for entries with a correction	bug fix
