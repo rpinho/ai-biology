@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-151 PRs: 8 merged, 137 open, 6 closed.
+152 PRs: 8 merged, 138 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -251,6 +251,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [pyranges/pyranges](https://github.com/pyranges/pyranges) | [#413](https://github.com/pyranges/pyranges/pull/413) | bug fix | Preserve strandedness after a DataFrame round trip | open |
 | [pyranges/pyranges](https://github.com/pyranges/pyranges) | [#414](https://github.com/pyranges/pyranges/pull/414) | bug fix | Respect as_df and nrows when reading GTF with full=False | open |
 | [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3510](https://github.com/tskit-dev/tskit/pull/3510) | bug fix | Stabilize trait correlation across trait scales | open |
+| [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3511](https://github.com/tskit-dev/tskit/pull/3511) | bug fix | Preserve edge and migration metadata when trimming | open |
 <!-- /auto -->
 
 ## How this was run
