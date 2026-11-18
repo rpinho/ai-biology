@@ -139,3 +139,4 @@ adrn/gala	680	Preserve mock stream metadata through HDF5	bug fix
 adrn/gala	681	Honor the median option for Staeckel focal lengths	bug fix
 adrn/gala	682	Use elapsed time in fast Lyapunov estimates	bug fix
 adrn/gala	683	Use the toy potential time unit when fitting O2GF frequencies	bug fix
+tenpy/tenpy	779	Fix MPO expectation values with supplied environments	bug fix
