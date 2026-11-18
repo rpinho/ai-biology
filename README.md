@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-72 PRs: 7 merged, 61 open, 4 closed.
+73 PRs: 7 merged, 62 open, 4 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -170,6 +170,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#804](https://github.com/Quandela/Perceval/pull/804) | bug fix | Set ERROR status when execute_sync fails with allow_partial_results | open |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#805](https://github.com/Quandela/Perceval/pull/805) | bug fix | Reset the Processor source when its noise model is changed | open |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#806](https://github.com/Quandela/Perceval/pull/806) | bug fix | Fix result insertion for a ComputationIterator without iteration | open |
+| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#807](https://github.com/Quandela/Perceval/pull/807) | bug fix | Fix serialization of detectors without a name | open |
 <!-- /auto -->
 
 ## How this was run
