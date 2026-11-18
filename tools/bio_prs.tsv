@@ -54,3 +54,4 @@ rowansci/openconf	21	hybrid: pick low-mode source seeds from the pool after seed
 rowansci/openconf	22	pool: apply energy_window_kcal to the final selection	bug fix
 rowansci/steamroll	9	to_rdkit: check transition-metal results against the supplied SMILES	bug fix
 Arcadia-Science/agentic-pymol	21	types: drop slots from tool result dataclasses so FastMCP publishes output schemas	bug fix
+materialsproject/pymatgen	4787	ZSLGenerator: cache super-lattice reductions, vectorize match check (3.3-4.8x, byte-identical)	speedup
