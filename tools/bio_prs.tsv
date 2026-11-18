@@ -112,3 +112,4 @@ exoplanet-dev/celerite2	209	Return negative infinity after quiet factorization f
 exoplanet-dev/celerite2	210	Handle PyMC marginal sample sizes	bug fix
 exoplanet-dev/celerite2	211	Reallocate non-owning workspaces after pickling	bug fix
 spglib/spglib	650	fix: preserve legacy Python error messages	bug fix
+spglib/spglib	651	fix: identify magnetic groups in oblique primitive bases	bug fix
