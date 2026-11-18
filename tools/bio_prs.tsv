@@ -115,3 +115,4 @@ spglib/spglib	650	fix: preserve legacy Python error messages	bug fix
 spglib/spglib	651	fix: identify magnetic groups in oblique primitive bases	bug fix
 spglib/spglib	652	fix(fortran): forward stabilized reciprocal mesh arguments	bug fix
 spglib/spglib	653	perf: prune lattice symmetry candidates by axis length	speedup
+MultiQC/MultiQC	3738	Fix grouped sample values in get_general_stats_data	bug fix

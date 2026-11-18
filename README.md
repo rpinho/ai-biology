@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-116 PRs: 7 merged, 103 open, 6 closed.
+117 PRs: 8 merged, 103 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -122,7 +122,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [rowansci/steamroll](https://github.com/rowansci/steamroll) | [#8](https://github.com/rowansci/steamroll/pull/8) | bug fix | Transition-metal conversions keep input atom order and supplied coordinates | open |
 | [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#438](https://github.com/chaidiscovery/chai-lab/pull/438) | bug fix | Template lookup keeps chain names like 001 or NA as strings | open |
 | [nf-core/tools](https://github.com/nf-core/tools) | [#4619](https://github.com/nf-core/tools/pull/4619) | bug fix | create-params-file includes parameters defined at the schema's top level | open, 6 replies |
-| [nf-core/tools](https://github.com/nf-core/tools) | [#4620](https://github.com/nf-core/tools/pull/4620) | bug fix | Schema build keeps 0 and 0.0 defaults from the pipeline config | open, 3 replies |
+| [nf-core/tools](https://github.com/nf-core/tools) | [#4620](https://github.com/nf-core/tools/pull/4620) | bug fix | Schema build keeps 0 and 0.0 defaults from the pipeline config | merged 2026-11-18 |
 | [Future-House/aviary](https://github.com/Future-House/aviary) | [#393](https://github.com/Future-House/aviary/pull/393) | bug fix | Tool servers build for tools with list parameters (JSON Schema "array") | open |
 | [Arcadia-Science/glass-box-umap](https://github.com/Arcadia-Science/glass-box-umap) | [#34](https://github.com/Arcadia-Science/glass-box-umap/pull/34) | bug fix | Float64 Tensor input works in transform and compute_contributions, like NumPy input | open |
 | [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3736](https://github.com/MultiQC/MultiQC/pull/3736) | bug fix | A module set only in top_modules no longer runs a second time on all logs | open |
@@ -216,6 +216,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [spglib/spglib](https://github.com/spglib/spglib) | [#651](https://github.com/spglib/spglib/pull/651) | bug fix | fix: identify magnetic groups in oblique primitive bases | open |
 | [spglib/spglib](https://github.com/spglib/spglib) | [#652](https://github.com/spglib/spglib/pull/652) | bug fix | fix(fortran): forward stabilized reciprocal mesh arguments | open |
 | [spglib/spglib](https://github.com/spglib/spglib) | [#653](https://github.com/spglib/spglib/pull/653) | speedup | perf: prune lattice symmetry candidates by axis length | open |
+| [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3738](https://github.com/MultiQC/MultiQC/pull/3738) | bug fix | Fix grouped sample values in get_general_stats_data | open |
 <!-- /auto -->
 
 ## How this was run
