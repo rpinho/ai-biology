@@ -59,3 +59,4 @@ materialsproject/pymatgen	4788	Fix GibbsComputedStructureEntry.from_dict for ent
 materialsproject/pymatgen	4789	Fix QuasiRRHO free-rotor interpolation using vibrational temperatures instead of wavenumbers	bug fix
 materialsproject/pymatgen	4790	Fix MagneticStructureEnumerator crash when the ferromagnetic strategy is not used	bug fix
 materialsproject/pymatgen	4791	Fix get_plot and plot_structures with two_theta_range=None	bug fix
+materialsproject/pymatgen	4792	Fix XAS.stitch in XAFS mode when called on the EXAFS spectrum	bug fix

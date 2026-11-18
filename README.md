@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-60 PRs: 7 merged, 52 open, 1 closed.
+61 PRs: 7 merged, 53 open, 1 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -158,6 +158,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4789](https://github.com/materialsproject/pymatgen/pull/4789) | bug fix | Fix QuasiRRHO free-rotor interpolation using vibrational temperatures instead of wavenumbers | open |
 | [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4790](https://github.com/materialsproject/pymatgen/pull/4790) | bug fix | Fix MagneticStructureEnumerator crash when the ferromagnetic strategy is not used | open |
 | [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4791](https://github.com/materialsproject/pymatgen/pull/4791) | bug fix | Fix get_plot and plot_structures with two_theta_range=None | open |
+| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4792](https://github.com/materialsproject/pymatgen/pull/4792) | bug fix | Fix XAS.stitch in XAFS mode when called on the EXAFS spectrum | open |
 <!-- /auto -->
 
 ## How this was run
