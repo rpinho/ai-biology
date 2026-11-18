@@ -1,0 +1,54 @@
+PAPER.md.cuts: where every new line in PAPER.md and the README link comes from.
+
+Everything else in PAPER.md is copied word for word: the head from README.md lines 1, 5-11 and 13-17,
+each result from its folder files (named on each "_Source:" line, headings one level down, relative
+links rewritten to repo-root paths, links to files never published in the repo kept as their plain
+text), and the References from README.md's References section.
+No sentence was composed freely. Approved sources are Ricardo's published repo text.
+
+PAPER.md
+- "# ai-biology: the full record"
+  <- ai-physics PAPER.md:3 "# ai-physics: the full record" (repo name swapped).
+- "This file puts the full record of every result in one place, for readers and reviewers who want
+  it in a single document."
+  <- ai-physics PAPER.md:21, verbatim.
+- "Each section below is copied word for word from the result's own folder in this repository: the
+  claim or bug report, the independent referee's verdict, and the prior-art check where there is one."
+  <- ai-physics PAPER.md:21 ("the claim, the derivation or analysis, the independent referee's
+     verdict, and the prior-art check"); "bug report" <- README.md:5 "bug reports";
+     connectors "or", "where there is one".
+- "The folders also hold the patches, repros and referee code."
+  <- ai-physics PAPER.md:21 "The folders also hold the referee and certificate code."
+     + README.md:47 "report, patches and repros".
+- Challenges, VCC row: README.md:26, verbatim (rank as the repo states it: about 463 of 1,580).
+- "Anthropic × Adaptyv Protein Design Competition: adaptyv-challenges. Submitted; lab results not out
+  at the time of writing."
+  <- README.md:25: name, repo link and Status cell, verbatim. Pointer only, no technical content.
+- "Virtual Embryo Challenge: virtual-embryo-community. No challenge data or results are published here."
+  <- README.md:27: name, repo link and its sentence "No challenge data or results are published
+     here.", verbatim. Pointer only (Terms clause 14).
+- Person headings "Manuel Irimia — ExOrthist and vast-tools", "Hugo Fernandes — pyglmnet",
+  "Kris Sankaran — R packages", "Gavin Sherlock — GO::TermFinder",
+  "Marcel Salathé — COVID-Twitter-BERT and lab repos"
+  <- README.md:40, 49, 58, 65, 72, verbatim.
+- "Manuel Irimia — M011, the ExOrthist membership score"
+  <- README.md:46 "Separately, M011: the released ExOrthist membership score".
+- "Victor Garcia — the NK-CTL model, VB10 / VB25 / VB31", "— the R script, line 35",
+  "— codon-rate preprint, Fig 2B / Fig 2C", "— the Danish forecast"
+  <- README.md:79 "Victor Garcia — the NK-CTL model and a codon-rate preprint", :83 "The model",
+     :84 "line 35 of the released R script", :85 "Fig 2B", "Fig 2C", :86 "the Danish forecast";
+     VB10/VB25/VB31 are the folder IDs.
+- File labels ("Claim", "Verdict", "Prior Art", "Bugs", "Verdicts", "Referee", "Review",
+  "Repositories", "Report", "PR 1: Bernoulli log-likelihood", ...) <- the file names, as in ai-physics.
+- "# Contributions to AI-bio companies and open-source tools" <- README.md:94, verbatim.
+- "Pull requests to AI-for-biology companies' public code, with their live status: README."
+  <- README.md:96 "Pull requests to AI-for-biology companies' public code"; connectors
+     "with their live status" (the README table is refreshed daily).
+
+README.md
+- "Every result in one file, with its claim or bug report, checks and verdict copied from the result
+  folders: PAPER.md."
+  <- ai-physics README.md:11 "Every result in one file, with its claim, derivation, checks and verdict
+     copied from the result folders: [PAPER.md](PAPER.md)." ("derivation" -> "or bug report",
+     from README.md:5 "bug reports"). Placed as in ai-physics: its own paragraph right after the
+     retro link, before "Sister hubs".

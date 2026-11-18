@@ -8,6 +8,8 @@ Everything I've run on biology with AI agents, in one place. Three sponsored cha
 
 My PhD was on the evolution of gene regulatory networks, in Marcus Feldman's lab at Stanford: evolutionary biology and population genetics. I came back to it in 2026 with AI agents. Biology has been the hardest of the three fields I've worked in this year, after math and physics. Why, in the [field retro](RETRO.md).
 
+Every result in one file, with its claim or bug report, checks and verdict copied from the result folders: [PAPER.md](PAPER.md).
+
 Sister hubs: [math](https://github.com/rpinho/math-certificates) · [physics](https://github.com/rpinho/ai-physics) · [astronomy](https://github.com/rpinho/planet-hunt)
 
 ## Why it's laid out like this
