@@ -47,3 +47,4 @@ sunpy/sunpy	8919	Fixes CROTA fallback for EUI maps	bug fix
 scverse/scanpy	4531	fix: match expression layers before reusing marker statistics	bug fix
 scverse/scanpy	4532	fix: keep legacy graph metrics usable without anndata.acc	bug fix
 scverse/scanpy	4533	fix: derive PCA defaults from the selected representation	bug fix
+scverse/scanpy	4534	fix: preserve gene pool alignment in score_genes	bug fix
