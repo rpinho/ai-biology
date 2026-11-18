@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-66 PRs: 7 merged, 56 open, 3 closed.
+68 PRs: 7 merged, 57 open, 4 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -164,6 +164,8 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4795](https://github.com/materialsproject/pymatgen/pull/4795) | bug fix | Return "intercalated ion" from get_dimensionality_cheon with larger_cell=True | open |
 | [astropy/astropy](https://github.com/astropy/astropy) | [#20894](https://github.com/astropy/astropy/pull/20894) | bug fix | Fix sigma_clip rejection masks for Quantity input | closed |
 | [astropy/astropy](https://github.com/astropy/astropy) | [#20895](https://github.com/astropy/astropy/pull/20895) | bug fix | Honor zero sigma bounds in SigmaClip | closed |
+| [astropy/astropy](https://github.com/astropy/astropy) | [#20896](https://github.com/astropy/astropy/pull/20896) | bug fix | Fix array indexing of scalar Distribution | closed |
+| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#802](https://github.com/Quandela/Perceval/pull/802) | bug fix | Make BSDistribution(bsd) copy the source distribution | open |
 <!-- /auto -->
 
 ## How this was run
