@@ -192,3 +192,6 @@ open2c/cooler	547	Read the row index for the queried matrix range	speedup
 daler/pybedtools	438	count BAM and CRAM records without converting intervals	speedup
 deeptools/deepTools	1507	perf: average bigWig coverage bins in NumPy	speedup
 levitsky/pyteomics	243	Reuse log-factorials in q-value correction	speedup
+sunpy/sunpy	8924	Fixes WCS construction for FITS maps with SIP distortion	bug fix
+eyurtsev/fcsparser	81	Fix the ANALYSIS segment end offset	bug fix
+bioio-devs/bioio	236	bugfix/preserve-xarray-metadata	bug fix

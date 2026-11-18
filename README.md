@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-193 PRs: 8 merged, 179 open, 6 closed.
+196 PRs: 8 merged, 182 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -293,6 +293,9 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [daler/pybedtools](https://github.com/daler/pybedtools) | [#438](https://github.com/daler/pybedtools/pull/438) | speedup | count BAM and CRAM records without converting intervals | open |
 | [deeptools/deepTools](https://github.com/deeptools/deepTools) | [#1507](https://github.com/deeptools/deepTools/pull/1507) | speedup | perf: average bigWig coverage bins in NumPy | open |
 | [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#243](https://github.com/levitsky/pyteomics/pull/243) | speedup | Reuse log-factorials in q-value correction | open |
+| [sunpy/sunpy](https://github.com/sunpy/sunpy) | [#8924](https://github.com/sunpy/sunpy/pull/8924) | bug fix | Fixes WCS construction for FITS maps with SIP distortion | open |
+| [eyurtsev/fcsparser](https://github.com/eyurtsev/fcsparser) | [#81](https://github.com/eyurtsev/fcsparser/pull/81) | bug fix | Fix the ANALYSIS segment end offset | open |
+| [bioio-devs/bioio](https://github.com/bioio-devs/bioio) | [#236](https://github.com/bioio-devs/bioio/pull/236) | bug fix | bugfix/preserve-xarray-metadata | open |
 <!-- /auto -->
 
 ## How this was run
