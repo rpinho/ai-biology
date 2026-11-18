@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-54 PRs: 7 merged, 46 open, 1 closed.
+55 PRs: 7 merged, 47 open, 1 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -152,6 +152,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [rowansci/openconf](https://github.com/rowansci/openconf) | [#21](https://github.com/rowansci/openconf/pull/21) | bug fix | hybrid: pick low-mode source seeds from the pool after seed insertion | open |
 | [rowansci/openconf](https://github.com/rowansci/openconf) | [#22](https://github.com/rowansci/openconf/pull/22) | bug fix | pool: apply energy_window_kcal to the final selection | open |
 | [rowansci/steamroll](https://github.com/rowansci/steamroll) | [#9](https://github.com/rowansci/steamroll/pull/9) | bug fix | to_rdkit: check transition-metal results against the supplied SMILES | open |
+| [Arcadia-Science/agentic-pymol](https://github.com/Arcadia-Science/agentic-pymol) | [#21](https://github.com/Arcadia-Science/agentic-pymol/pull/21) | bug fix | types: drop slots from tool result dataclasses so FastMCP publishes output schemas | open |
 <!-- /auto -->
 
 ## How this was run

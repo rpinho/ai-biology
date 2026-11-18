@@ -53,3 +53,4 @@ latchbio/latch	627	file_glob: put a slash between remote_directory and the file 
 rowansci/openconf	21	hybrid: pick low-mode source seeds from the pool after seed insertion	bug fix
 rowansci/openconf	22	pool: apply energy_window_kcal to the final selection	bug fix
 rowansci/steamroll	9	to_rdkit: check transition-metal results against the supplied SMILES	bug fix
+Arcadia-Science/agentic-pymol	21	types: drop slots from tool result dataclasses so FastMCP publishes output schemas	bug fix
