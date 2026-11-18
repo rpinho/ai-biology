@@ -78,3 +78,4 @@ Quandela/Perceval	810	Compute numeric circuit unitaries by updating row blocks	s
 scikit-bio/scikit-bio	2676	PERF: slice positions from stacked bytes in TabularMSA.iter_positions	speedup
 lightkurve/lightkurve	1595	Fixed local FITS time units for reordered columns	bug fix
 biotite-dev/biotite	1037	Fix `check_in_box()` returning atoms inside the box	bug fix
+scikit-bio/scikit-bio	2677	BUG: accept a sparse basis in ilr and ilr_inv	bug fix
