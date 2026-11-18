@@ -137,3 +137,4 @@ mdtraj/mdtraj	2239	Restore integral bond orders when reading HDF5 topology	bug f
 mdtraj/mdtraj	2240	Use written atom serials in PDB CONECT records	bug fix
 adrn/gala	680	Preserve mock stream metadata through HDF5	bug fix
 adrn/gala	681	Honor the median option for Staeckel focal lengths	bug fix
+adrn/gala	682	Use elapsed time in fast Lyapunov estimates	bug fix
