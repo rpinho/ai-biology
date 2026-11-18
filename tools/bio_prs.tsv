@@ -145,3 +145,4 @@ tenpy/tenpy	781	Fix dropping charges on grouped sites of different dimensions	bu
 tenpy/tenpy	782	Fix MPO construction for empty Hamiltonians	bug fix
 tenpy/tenpy	783	Preserve Jordan-Wigner parity for grouped independent charges	bug fix
 pyro-ppl/numpyro	2440	fix(infer): reject scanned sample sites in TraceEnum_ELBO	bug fix
+pyro-ppl/numpyro	2441	fix(distributions): keep two-sided TruncatedNormal samples within bounds	bug fix
