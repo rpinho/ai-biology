@@ -102,3 +102,4 @@ joshspeagle/dynesty	531	fix strand IDs when merging independent runs	bug fix
 pymc-devs/pymc	8645	Preserve dimension names in ZarrTrace without coordinate labels	bug fix
 pymc-devs/pymc	8646	Flatten start_sigma arrays when initializing ADVI	bug fix
 lmfit/lmfit-py	1070	FIX: preserve directories when loading saved models from Paths	bug fix
+phonopy/phonopy	1119	Fix loading YAML with a NumPy primitive matrix	bug fix

@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-103 PRs: 7 merged, 90 open, 6 closed.
+104 PRs: 7 merged, 91 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -203,6 +203,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [pymc-devs/pymc](https://github.com/pymc-devs/pymc) | [#8645](https://github.com/pymc-devs/pymc/pull/8645) | bug fix | Preserve dimension names in ZarrTrace without coordinate labels | open |
 | [pymc-devs/pymc](https://github.com/pymc-devs/pymc) | [#8646](https://github.com/pymc-devs/pymc/pull/8646) | bug fix | Flatten start_sigma arrays when initializing ADVI | open |
 | [lmfit/lmfit-py](https://github.com/lmfit/lmfit-py) | [#1070](https://github.com/lmfit/lmfit-py/pull/1070) | bug fix | FIX: preserve directories when loading saved models from Paths | open |
+| [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1119](https://github.com/phonopy/phonopy/pull/1119) | bug fix | Fix loading YAML with a NumPy primitive matrix | open |
 <!-- /auto -->
 
 ## How this was run
