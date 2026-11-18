@@ -106,3 +106,4 @@ phonopy/phonopy	1119	Fix loading YAML with a NumPy primitive matrix	bug fix
 phonopy/phonopy	1120	Preserve symbol distinction when replicating Phonopy	bug fix
 phonopy/phonopy	1121	Speed up thermal displacements by batching mode populations	speedup
 pybamm-team/PyBaMM	6072	fix: keep EIS input ordering stable across solves	bug fix
+pybamm-team/PyBaMM	6073	fix: search experiment tags with string steps	bug fix

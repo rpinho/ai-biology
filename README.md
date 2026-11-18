@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-107 PRs: 7 merged, 94 open, 6 closed.
+108 PRs: 7 merged, 95 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -207,6 +207,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1120](https://github.com/phonopy/phonopy/pull/1120) | bug fix | Preserve symbol distinction when replicating Phonopy | open |
 | [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1121](https://github.com/phonopy/phonopy/pull/1121) | speedup | Speed up thermal displacements by batching mode populations | open |
 | [pybamm-team/PyBaMM](https://github.com/pybamm-team/PyBaMM) | [#6072](https://github.com/pybamm-team/PyBaMM/pull/6072) | bug fix | fix: keep EIS input ordering stable across solves | open |
+| [pybamm-team/PyBaMM](https://github.com/pybamm-team/PyBaMM) | [#6073](https://github.com/pybamm-team/PyBaMM/pull/6073) | bug fix | fix: search experiment tags with string steps | open |
 <!-- /auto -->
 
 ## How this was run
