@@ -48,3 +48,4 @@ scverse/scanpy	4531	fix: match expression layers before reusing marker statistic
 scverse/scanpy	4532	fix: keep legacy graph metrics usable without anndata.acc	bug fix
 scverse/scanpy	4533	fix: derive PCA defaults from the selected representation	bug fix
 scverse/scanpy	4534	fix: preserve gene pool alignment in score_genes	bug fix
+latchbio/latch	626	launch: send false Nextflow flags and pick the File/Dir union variant by type	bug fix
