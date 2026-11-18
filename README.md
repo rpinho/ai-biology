@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-63 PRs: 7 merged, 55 open, 1 closed.
+64 PRs: 7 merged, 56 open, 1 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -161,6 +161,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4792](https://github.com/materialsproject/pymatgen/pull/4792) | bug fix | Fix XAS.stitch in XAFS mode when called on the EXAFS spectrum | open |
 | [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4793](https://github.com/materialsproject/pymatgen/pull/4793) | bug fix | Normalize data["volume"] per formula unit in InsertionVoltagePair | open |
 | [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4794](https://github.com/materialsproject/pymatgen/pull/4794) | bug fix | Fix get_dimensionality_cheon modifying the input structure when standardize=False | open |
+| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4795](https://github.com/materialsproject/pymatgen/pull/4795) | bug fix | Return "intercalated ion" from get_dimensionality_cheon with larger_cell=True | open |
 <!-- /auto -->
 
 ## How this was run
