@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-114 PRs: 7 merged, 101 open, 6 closed.
+115 PRs: 7 merged, 102 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -214,6 +214,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [exoplanet-dev/celerite2](https://github.com/exoplanet-dev/celerite2) | [#211](https://github.com/exoplanet-dev/celerite2/pull/211) | bug fix | Reallocate non-owning workspaces after pickling | open |
 | [spglib/spglib](https://github.com/spglib/spglib) | [#650](https://github.com/spglib/spglib/pull/650) | bug fix | fix: preserve legacy Python error messages | open |
 | [spglib/spglib](https://github.com/spglib/spglib) | [#651](https://github.com/spglib/spglib/pull/651) | bug fix | fix: identify magnetic groups in oblique primitive bases | open |
+| [spglib/spglib](https://github.com/spglib/spglib) | [#652](https://github.com/spglib/spglib/pull/652) | bug fix | fix(fortran): forward stabilized reciprocal mesh arguments | open |
 <!-- /auto -->
 
 ## How this was run
