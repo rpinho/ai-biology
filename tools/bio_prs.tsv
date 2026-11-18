@@ -64,3 +64,4 @@ materialsproject/pymatgen	4793	Normalize data["volume"] per formula unit in Inse
 materialsproject/pymatgen	4794	Fix get_dimensionality_cheon modifying the input structure when standardize=False	bug fix
 materialsproject/pymatgen	4795	Return "intercalated ion" from get_dimensionality_cheon with larger_cell=True	bug fix
 astropy/astropy	20894	Fix sigma_clip rejection masks for Quantity input	bug fix
+astropy/astropy	20895	Honor zero sigma bounds in SigmaClip	bug fix
