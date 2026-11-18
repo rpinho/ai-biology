@@ -67,3 +67,4 @@ astropy/astropy	20894	Fix sigma_clip rejection masks for Quantity input	bug fix
 astropy/astropy	20895	Honor zero sigma bounds in SigmaClip	bug fix
 astropy/astropy	20896	Fix array indexing of scalar Distribution	bug fix
 Quandela/Perceval	802	Make BSDistribution(bsd) copy the source distribution	bug fix
+Quandela/Perceval	803	Validate each iteration of a ComputationIterator	bug fix
