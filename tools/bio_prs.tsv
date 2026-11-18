@@ -128,3 +128,4 @@ LSSTDESC/CCL	1331	Include fc_bar in Duffy08 equality and representation	bug fix
 LSSTDESC/CCL	1332	Fix fourth-profile bias in the two-halo trispectrum	bug fix
 pysam-developers/pysam	1431	Allow VariantRecord POS=0 (start=-1), as used for telomeres	bug fix
 dfm/corner.py	355	Fix linestyle aliases in overplot_points	bug fix
+dfm/corner.py	356	Restore variable selection with ArviZ 1.x	bug fix
