@@ -51,3 +51,4 @@ scverse/scanpy	4534	fix: preserve gene pool alignment in score_genes	bug fix
 latchbio/latch	626	launch: send false Nextflow flags and pick the File/Dir union variant by type	bug fix
 latchbio/latch	627	file_glob: put a slash between remote_directory and the file name	bug fix
 rowansci/openconf	21	hybrid: pick low-mode source seeds from the pool after seed insertion	bug fix
+rowansci/openconf	22	pool: apply energy_window_kcal to the final selection	bug fix
