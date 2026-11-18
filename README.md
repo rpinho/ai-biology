@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-85 PRs: 7 merged, 73 open, 5 closed.
+86 PRs: 7 merged, 74 open, 5 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -183,6 +183,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [dfm/emcee](https://github.com/dfm/emcee) | [#588](https://github.com/dfm/emcee/pull/588) | bug fix | fix: keep autocorrelation error estimates in original steps | open |
 | [healpy/healpy](https://github.com/healpy/healpy) | [#1152](https://github.com/healpy/healpy/pull/1152) | bug fix | Fix mmax handling in harmonic_ud_grade | open |
 | [joshspeagle/dynesty](https://github.com/joshspeagle/dynesty) | [#529](https://github.com/joshspeagle/dynesty/pull/529) | bug fix | fix iteration count for stopped merged runs | open |
+| [healpy/healpy](https://github.com/healpy/healpy) | [#1153](https://github.com/healpy/healpy/pull/1153) | bug fix | Fix string column names in write_map | open |
 <!-- /auto -->
 
 ## How this was run
