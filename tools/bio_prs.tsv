@@ -58,3 +58,4 @@ materialsproject/pymatgen	4787	ZSLGenerator: cache super-lattice reductions, vec
 materialsproject/pymatgen	4788	Fix GibbsComputedStructureEntry.from_dict for entries with a correction	bug fix
 materialsproject/pymatgen	4789	Fix QuasiRRHO free-rotor interpolation using vibrational temperatures instead of wavenumbers	bug fix
 materialsproject/pymatgen	4790	Fix MagneticStructureEnumerator crash when the ferromagnetic strategy is not used	bug fix
+materialsproject/pymatgen	4791	Fix get_plot and plot_structures with two_theta_range=None	bug fix
