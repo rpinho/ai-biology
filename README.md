@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-109 PRs: 7 merged, 96 open, 6 closed.
+110 PRs: 7 merged, 97 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -209,6 +209,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [pybamm-team/PyBaMM](https://github.com/pybamm-team/PyBaMM) | [#6072](https://github.com/pybamm-team/PyBaMM/pull/6072) | bug fix | fix: keep EIS input ordering stable across solves | open |
 | [pybamm-team/PyBaMM](https://github.com/pybamm-team/PyBaMM) | [#6073](https://github.com/pybamm-team/PyBaMM/pull/6073) | bug fix | fix: search experiment tags with string steps | open |
 | [exoplanet-dev/celerite2](https://github.com/exoplanet-dev/celerite2) | [#208](https://github.com/exoplanet-dev/celerite2/pull/208) | bug fix | Include GP means in PyMC and NumPyro samples | open |
+| [exoplanet-dev/celerite2](https://github.com/exoplanet-dev/celerite2) | [#209](https://github.com/exoplanet-dev/celerite2/pull/209) | bug fix | Return negative infinity after quiet factorization failures | open |
 <!-- /auto -->
 
 ## How this was run

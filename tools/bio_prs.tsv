@@ -108,3 +108,4 @@ phonopy/phonopy	1121	Speed up thermal displacements by batching mode populations
 pybamm-team/PyBaMM	6072	fix: keep EIS input ordering stable across solves	bug fix
 pybamm-team/PyBaMM	6073	fix: search experiment tags with string steps	bug fix
 exoplanet-dev/celerite2	208	Include GP means in PyMC and NumPyro samples	bug fix
+exoplanet-dev/celerite2	209	Return negative infinity after quiet factorization failures	bug fix
