@@ -37,7 +37,7 @@ Only the hunter's `BUGS.md` was read. No hunter repro scripts, output artifacts,
 
 ## Already reported or fixed?
 
-Independent read-only GitHub API checks used `~/dev/.bin/gh api`: all 134 issue/PR entries (8 open), all 345 issue comments, 1328 master-history commit records, the recent-commit query since 2026-08-06, all 15 branch heads, and releases/tags. Raw responses are in [upstream-context/](upstream-context/). Matching source excerpts by branch/release are in [branch-source-review.json](upstream-context/branch-source-review.json).
+Independent read-only GitHub API checks used `gh api`: all 134 issue/PR entries (8 open), all 345 issue comments, 1328 master-history commit records, the recent-commit query since 2026-08-06, all 15 branch heads, and releases/tags. Raw responses are in [upstream-context/](upstream-context/). Matching source excerpts by branch/release are in [branch-source-review.json](upstream-context/branch-source-review.json).
 
 No matching public report or branch fix was found for any of these six specific failures. This is a bounded search result, not proof that the authors have never encountered them. Current master is still the pin; its only commit in the last three months adds Osa mappings. The current GitHub release is v2.5.1 (2020-06-26), tag commit `498bbecb2fcef3e98beb9d6a6cc7648a529453e5`, distinct from the pin despite the identical VERSION. The relevant vulnerable constructs also appear in that tag where the feature exists; standalone count/TPM exports were added later. Branch/tag review was source inspection, not execution of those versions.
 

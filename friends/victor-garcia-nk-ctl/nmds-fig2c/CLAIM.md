@@ -23,10 +23,8 @@ Referee: HOLDS. Independently rebuilt the original profiles, recovered the
 actual published PDF configuration, checked native MASS::Shepard and wrote a
 separate 320-bit Arb certificate proving stress below 13.484. The producing
 384-bit certificate encloses the value in [13.4830828456806, 13.4830828456809].
-See [referee verdict](friends_new_victor_1104/referee/VERDICT.md)
-and [full review](friends_new_victor_1104/referee/REVIEW.md).
+See the [referee verdict](VERDICT.md) and [full review](REFEREE.md).
 
-Working directory: `friends_new_victor_1104`.
 Internal claim only; no publication or contact. Original analysis script is
 unavailable; native defaults and published PDF coordinates identify the
 objective convention. No exhaustive-priority claim is made.

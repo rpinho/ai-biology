@@ -20,6 +20,6 @@ Referee: independent computational referee, HOLDS WITH CAVEATS. A separate imple
 
 Limits: historical specimens, later SSI episodes and MiBa case fractions have different sampling and typing definitions. The original forecasts assume continued treatment practices; actual changes prevent causal or counterfactual refutation. Every evaluated point lies inside the original broad parameter confidence band. The two aggregate scores cover different year sets and cannot isolate a source effect. The 2021 SSI denominator is inferred; MiBa 2024 is rounded. No 2025 endpoint, French/Swedish validation, intervention effect, or all-infected-population calibration is claimed. Literature searches are bounded; five citations implied by OpenAlex's headline count were not returned by its query.
 
-Artifacts: NOTE.md (short manuscript), REPORT.md (reproduction), DATA.md, PROPOSAL.md, IDEAS.md, PRIOR_ART.md, BASELINES.json, code/, data/, results/, sources/ and referee/ in friends_note_victor_1104.
+Artifacts: NOTE.md (short manuscript), REPORT.md (reproduction), DATA.md, PROPOSAL.md, IDEAS.md, PRIOR_ART.md, BASELINES.json, code/, data/, results/, sources/ and referee/ in a private working copy, not in this repository.
 
 Disposition at the time: unpublished; the author is the judge.

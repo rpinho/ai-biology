@@ -6,7 +6,7 @@ Status: exact within-run checks PASS; separate referee and Fable/Opus TASTE pend
 
 **Our number and exact domain.** The maximum is **3 hyperbolic asymptotically stable nonnegative equilibria**, over all strictly positive constants in the printed model. A global degree/crossing argument supplies the upper bound; a rational assignment attains it, with stable states at T=0, approximately1.56314789924 and13.99709358253. Two other positive equilibria are unstable. The general bound excludes nonhyperbolic stable states and other attractors. With the non-coupling constants fixed to printed Table3, the sharper maximum is2, attained within the printed variable ranges.
 
-**Mini code/data.** All paths are under friends_pf_victor:
+**Code/data.** Kept in a private working copy, not in this repository:
 
 - vb10_global_dynamics/GENERAL_PROOF.md and PROOF.md: human proofs and exact parameter assignments.
 - vb10_global_dynamics/verify_count_independent.py: separately written checker, importing no search code.

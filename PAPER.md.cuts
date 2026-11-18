@@ -52,3 +52,9 @@ README.md
      copied from the result folders: [PAPER.md](PAPER.md)." ("derivation" -> "or bug report",
      from README.md:5 "bug reports"). Placed as in ai-physics: its own paragraph right after the
      retro link, before "Sister hubs".
+
+Review fixes (11-18, after an outside review):
+- "So each result here ships with a separate referee's verdict." <- README.md:17, the same sentence with "what you need to rerun it and" removed.
+- Removed from the head: README.md:15 "His point about AI matches what I keep hitting. Agents make finding things cheaper, ..." and README.md:17 "Only CONFIRMED, HOLDS and HOLDS WITH CAVEATS results are listed, ...", and the sentence "The folders also hold the patches, repros and referee code."
+- Sherlock and Salathe: the Verdicts tables come first; the bug lists follow under "Bugs: pre-referee report; final dispositions above".
+- Private paths were removed in the source folder files themselves (gh instead of a local path; no local working-directory names), and the Adaptyv References line in README.md is link-only.

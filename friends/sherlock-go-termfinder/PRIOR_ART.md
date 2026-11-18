@@ -1,6 +1,6 @@
 # Source and prior-report check
 
-Checked locally on 2026-11-06. Read `~/dev/open-science/friends_queue/GOAL.md` before inspecting source. No public changes or communications were made.
+Checked locally on 2026-11-06. No public changes or communications were made.
 
 ## Canonical source
 
