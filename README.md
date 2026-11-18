@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-126 PRs: 8 merged, 112 open, 6 closed.
+127 PRs: 8 merged, 113 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -226,6 +226,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [LSSTDESC/CCL](https://github.com/LSSTDESC/CCL) | [#1329](https://github.com/LSSTDESC/CCL/pull/1329) | bug fix | Reject negative neutrino masses | open |
 | [LSSTDESC/CCL](https://github.com/LSSTDESC/CCL) | [#1330](https://github.com/LSSTDESC/CCL/pull/1330) | bug fix | Fix comoving volume in curved cosmologies | open |
 | [LSSTDESC/CCL](https://github.com/LSSTDESC/CCL) | [#1331](https://github.com/LSSTDESC/CCL/pull/1331) | bug fix | Include fc_bar in Duffy08 equality and representation | open |
+| [LSSTDESC/CCL](https://github.com/LSSTDESC/CCL) | [#1332](https://github.com/LSSTDESC/CCL/pull/1332) | bug fix | Fix fourth-profile bias in the two-halo trispectrum | open |
 <!-- /auto -->
 
 ## How this was run

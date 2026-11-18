@@ -125,3 +125,4 @@ openmc-dev/openmc	4243	Preserve mesh identity and transformations when comparing
 LSSTDESC/CCL	1329	Reject negative neutrino masses	bug fix
 LSSTDESC/CCL	1330	Fix comoving volume in curved cosmologies	bug fix
 LSSTDESC/CCL	1331	Include fc_bar in Duffy08 equality and representation	bug fix
+LSSTDESC/CCL	1332	Fix fourth-profile bias in the two-halo trispectrum	bug fix
