@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-80 PRs: 7 merged, 69 open, 4 closed.
+81 PRs: 7 merged, 70 open, 4 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -178,6 +178,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [lightkurve/lightkurve](https://github.com/lightkurve/lightkurve) | [#1595](https://github.com/lightkurve/lightkurve/pull/1595) | bug fix | Fixed local FITS time units for reordered columns | open |
 | [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1037](https://github.com/biotite-dev/biotite/pull/1037) | bug fix | Fix `check_in_box()` returning atoms inside the box | open |
 | [scikit-bio/scikit-bio](https://github.com/scikit-bio/scikit-bio) | [#2677](https://github.com/scikit-bio/scikit-bio/pull/2677) | bug fix | BUG: accept a sparse basis in ilr and ilr_inv | open |
+| [lightkurve/lightkurve](https://github.com/lightkurve/lightkurve) | [#1596](https://github.com/lightkurve/lightkurve/pull/1596) | bug fix | Fixed stitching light curves with different time formats | open |
 <!-- /auto -->
 
 ## How this was run
