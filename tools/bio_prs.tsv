@@ -86,3 +86,4 @@ healpy/healpy	1152	Fix mmax handling in harmonic_ud_grade	bug fix
 joshspeagle/dynesty	529	fix iteration count for stopped merged runs	bug fix
 healpy/healpy	1153	Fix string column names in write_map	bug fix
 joshspeagle/dynesty	530	fix information for zero reweighting factors	bug fix
+pymc-devs/pymc	8643	Fix MultiTrace slicing counts and negative strides	bug fix

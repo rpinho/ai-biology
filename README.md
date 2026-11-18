@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-87 PRs: 7 merged, 75 open, 5 closed.
+88 PRs: 7 merged, 76 open, 5 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -166,14 +166,14 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [astropy/astropy](https://github.com/astropy/astropy) | [#20895](https://github.com/astropy/astropy/pull/20895) | bug fix | Honor zero sigma bounds in SigmaClip | closed |
 | [astropy/astropy](https://github.com/astropy/astropy) | [#20896](https://github.com/astropy/astropy/pull/20896) | bug fix | Fix array indexing of scalar Distribution | closed |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#802](https://github.com/Quandela/Perceval/pull/802) | bug fix | Make BSDistribution(bsd) copy the source distribution | open |
-| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#803](https://github.com/Quandela/Perceval/pull/803) | bug fix | Validate each iteration of a ComputationIterator | open |
-| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#804](https://github.com/Quandela/Perceval/pull/804) | bug fix | Set ERROR status when execute_sync fails with allow_partial_results | open |
-| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#805](https://github.com/Quandela/Perceval/pull/805) | bug fix | Reset the Processor source when its noise model is changed | open |
+| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#803](https://github.com/Quandela/Perceval/pull/803) | bug fix | Validate each iteration of a ComputationIterator | open, 1 reply |
+| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#804](https://github.com/Quandela/Perceval/pull/804) | bug fix | Set ERROR status when execute_sync fails with allow_partial_results | open, 1 reply |
+| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#805](https://github.com/Quandela/Perceval/pull/805) | bug fix | Reset the Processor source when its noise model is changed | open, 2 replies |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#806](https://github.com/Quandela/Perceval/pull/806) | bug fix | Fix result insertion for a ComputationIterator without iteration | open |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#807](https://github.com/Quandela/Perceval/pull/807) | bug fix | Fix serialization of detectors without a name | open |
-| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#808](https://github.com/Quandela/Perceval/pull/808) | bug fix | Keep min_detected_photons_filter(0) through experiment serialization | open |
-| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#809](https://github.com/Quandela/Perceval/pull/809) | speedup | Do not copy the experiment in use_phase_noise when there is no phase noise | open |
-| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#810](https://github.com/Quandela/Perceval/pull/810) | speedup | Compute numeric circuit unitaries by updating row blocks | open |
+| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#808](https://github.com/Quandela/Perceval/pull/808) | bug fix | Keep min_detected_photons_filter(0) through experiment serialization | open, 1 reply |
+| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#809](https://github.com/Quandela/Perceval/pull/809) | speedup | Do not copy the experiment in use_phase_noise when there is no phase noise | open, 1 reply |
+| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#810](https://github.com/Quandela/Perceval/pull/810) | speedup | Compute numeric circuit unitaries by updating row blocks | open, 1 reply |
 | [scikit-bio/scikit-bio](https://github.com/scikit-bio/scikit-bio) | [#2676](https://github.com/scikit-bio/scikit-bio/pull/2676) | speedup | PERF: slice positions from stacked bytes in TabularMSA.iter_positions | open |
 | [lightkurve/lightkurve](https://github.com/lightkurve/lightkurve) | [#1595](https://github.com/lightkurve/lightkurve/pull/1595) | bug fix | Fixed local FITS time units for reordered columns | open |
 | [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1037](https://github.com/biotite-dev/biotite/pull/1037) | bug fix | Fix `check_in_box()` returning atoms inside the box | open |
@@ -185,6 +185,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [joshspeagle/dynesty](https://github.com/joshspeagle/dynesty) | [#529](https://github.com/joshspeagle/dynesty/pull/529) | bug fix | fix iteration count for stopped merged runs | open |
 | [healpy/healpy](https://github.com/healpy/healpy) | [#1153](https://github.com/healpy/healpy/pull/1153) | bug fix | Fix string column names in write_map | open |
 | [joshspeagle/dynesty](https://github.com/joshspeagle/dynesty) | [#530](https://github.com/joshspeagle/dynesty/pull/530) | bug fix | fix information for zero reweighting factors | open |
+| [pymc-devs/pymc](https://github.com/pymc-devs/pymc) | [#8643](https://github.com/pymc-devs/pymc/pull/8643) | bug fix | Fix MultiTrace slicing counts and negative strides | open |
 <!-- /auto -->
 
 ## How this was run
