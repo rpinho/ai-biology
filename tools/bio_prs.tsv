@@ -149,3 +149,4 @@ pyro-ppl/numpyro	2441	fix(distributions): keep two-sided TruncatedNormal samples
 pyro-ppl/numpyro	2442	fix(infer): preserve PRNG implementations in Predictive	bug fix
 pyranges/pyranges	413	Preserve strandedness after a DataFrame round trip	bug fix
 pyranges/pyranges	414	Respect as_df and nrows when reading GTF with full=False	bug fix
+tskit-dev/tskit	3510	Stabilize trait correlation across trait scales	bug fix
