@@ -81,3 +81,4 @@ biotite-dev/biotite	1037	Fix `check_in_box()` returning atoms inside the box	bug
 scikit-bio/scikit-bio	2677	BUG: accept a sparse basis in ilr and ilr_inv	bug fix
 lightkurve/lightkurve	1596	Fixed stitching light curves with different time formats	bug fix
 biotite-dev/biotite	1038	Reject GRO stacks with unequal model lengths	bug fix
+dfm/emcee	588	fix: keep autocorrelation error estimates in original steps	bug fix
