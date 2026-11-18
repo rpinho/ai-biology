@@ -52,3 +52,4 @@ latchbio/latch	626	launch: send false Nextflow flags and pick the File/Dir union
 latchbio/latch	627	file_glob: put a slash between remote_directory and the file name	bug fix
 rowansci/openconf	21	hybrid: pick low-mode source seeds from the pool after seed insertion	bug fix
 rowansci/openconf	22	pool: apply energy_window_kcal to the final selection	bug fix
+rowansci/steamroll	9	to_rdkit: check transition-metal results against the supplied SMILES	bug fix
