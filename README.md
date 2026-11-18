@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-98 PRs: 7 merged, 85 open, 6 closed.
+99 PRs: 7 merged, 86 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [scikit-bio/scikit-bio](https://github.com/scikit-bio/scikit-bio) | [#2678](https://github.com/scikit-bio/scikit-bio/pull/2678) | bug fix | BUG: drop gap columns across all sequences in AlignPath.to_indices | open |
 | [scikit-bio/scikit-bio](https://github.com/scikit-bio/scikit-bio) | [#2679](https://github.com/scikit-bio/scikit-bio/pull/2679) | bug fix | BUG: update stored IDs in OrdinationResults.rename | open |
 | [scikit-bio/scikit-bio](https://github.com/scikit-bio/scikit-bio) | [#2680](https://github.com/scikit-bio/scikit-bio/pull/2680) | bug fix | BUG: treat missing lengths as zero while climbing in root_at_midpoint | open |
+| [healpy/healpy](https://github.com/healpy/healpy) | [#1154](https://github.com/healpy/healpy/pull/1154) | bug fix | Fix ud_grade averaging with non-finite pixels | open |
 <!-- /auto -->
 
 ## How this was run
