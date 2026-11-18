@@ -98,3 +98,4 @@ scikit-bio/scikit-bio	2678	BUG: drop gap columns across all sequences in AlignPa
 scikit-bio/scikit-bio	2679	BUG: update stored IDs in OrdinationResults.rename	bug fix
 scikit-bio/scikit-bio	2680	BUG: treat missing lengths as zero while climbing in root_at_midpoint	bug fix
 healpy/healpy	1154	Fix ud_grade averaging with non-finite pixels	bug fix
+joshspeagle/dynesty	531	fix strand IDs when merging independent runs	bug fix
