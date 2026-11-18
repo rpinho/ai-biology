@@ -75,3 +75,4 @@ Quandela/Perceval	807	Fix serialization of detectors without a name	bug fix
 Quandela/Perceval	808	Keep min_detected_photons_filter(0) through experiment serialization	bug fix
 Quandela/Perceval	809	Do not copy the experiment in use_phase_noise when there is no phase noise	speedup
 Quandela/Perceval	810	Compute numeric circuit unitaries by updating row blocks	speedup
+scikit-bio/scikit-bio	2676	PERF: slice positions from stacked bytes in TabularMSA.iter_positions	speedup

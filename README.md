@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-76 PRs: 7 merged, 65 open, 4 closed.
+77 PRs: 7 merged, 66 open, 4 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -174,6 +174,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#808](https://github.com/Quandela/Perceval/pull/808) | bug fix | Keep min_detected_photons_filter(0) through experiment serialization | open |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#809](https://github.com/Quandela/Perceval/pull/809) | speedup | Do not copy the experiment in use_phase_noise when there is no phase noise | open |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#810](https://github.com/Quandela/Perceval/pull/810) | speedup | Compute numeric circuit unitaries by updating row blocks | open |
+| [scikit-bio/scikit-bio](https://github.com/scikit-bio/scikit-bio) | [#2676](https://github.com/scikit-bio/scikit-bio/pull/2676) | speedup | PERF: slice positions from stacked bytes in TabularMSA.iter_positions | open |
 <!-- /auto -->
 
 ## How this was run
