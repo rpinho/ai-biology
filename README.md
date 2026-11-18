@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-144 PRs: 8 merged, 130 open, 6 closed.
+145 PRs: 8 merged, 131 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -244,6 +244,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [tenpy/tenpy](https://github.com/tenpy/tenpy) | [#780](https://github.com/tenpy/tenpy/pull/780) | bug fix | Fix joint probabilities in MPS.sample_measurements | open |
 | [tenpy/tenpy](https://github.com/tenpy/tenpy) | [#781](https://github.com/tenpy/tenpy/pull/781) | bug fix | Fix dropping charges on grouped sites of different dimensions | open |
 | [tenpy/tenpy](https://github.com/tenpy/tenpy) | [#782](https://github.com/tenpy/tenpy/pull/782) | bug fix | Fix MPO construction for empty Hamiltonians | open |
+| [tenpy/tenpy](https://github.com/tenpy/tenpy) | [#783](https://github.com/tenpy/tenpy/pull/783) | bug fix | Preserve Jordan-Wigner parity for grouped independent charges | open |
 <!-- /auto -->
 
 ## How this was run
