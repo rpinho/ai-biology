@@ -72,3 +72,4 @@ Quandela/Perceval	804	Set ERROR status when execute_sync fails with allow_partia
 Quandela/Perceval	805	Reset the Processor source when its noise model is changed	bug fix
 Quandela/Perceval	806	Fix result insertion for a ComputationIterator without iteration	bug fix
 Quandela/Perceval	807	Fix serialization of detectors without a name	bug fix
+Quandela/Perceval	808	Keep min_detected_photons_filter(0) through experiment serialization	bug fix
