@@ -151,3 +151,44 @@ pyranges/pyranges	413	Preserve strandedness after a DataFrame round trip	bug fix
 pyranges/pyranges	414	Respect as_df and nrows when reading GTF with full=False	bug fix
 tskit-dev/tskit	3510	Stabilize trait correlation across trait scales	bug fix
 tskit-dev/tskit	3511	Preserve edge and migration metadata when trimming	bug fix
+tskit-dev/tskit	3512	Use the converted site mask when validating VCF positions	bug fix
+nipy/nibabel	1637	BF: Use output position when slicing frames of an ECAT array proxy	bug fix
+nipy/nibabel	1638	BF: Read AFNI complex sub-bricks as complex64	bug fix
+nipy/nibabel	1639	BF: Reverse slice timing when reorientation flips the slice axis	bug fix
+nipy/nibabel	1640	ENH: Write TCK streamlines in blocks when no affine needs applying	speedup
+mdtraj/mdtraj	2241	Build and reduce contact distance groups in bulk	speedup
+adrn/gala	684	Use matrix products for O2GF mode sums	speedup
+tskit-dev/tskit	3513	Avoid per-site copies when writing VCF	speedup
+deeptools/deepTools	1502	fix: keep computeMatrix groups distinct when filenames match	bug fix
+deeptools/deepTools	1503	fix: apply zero thresholds in computeMatrix	bug fix
+deeptools/deepTools	1504	fix: score singleton and two-row heatmap clusters correctly	bug fix
+deeptools/deepTools	1505	fix: preserve missing signal when clustering heatmaps	bug fix
+deeptools/deepTools	1506	fix: write final zero-valued bigwigCompare intervals	bug fix
+open2c/cooler	544	Apply divisive weights in cooler dump	bug fix
+open2c/cooler	545	Write the dump header for empty queries	bug fix
+open2c/cooler	546	Decode contig names in joined pixels	bug fix
+daler/pybedtools	434	preserve input rows when indexing presorted files	bug fix
+daler/pybedtools	435	fix generator completion in randomstats	bug fix
+daler/pybedtools	436	accept pathlib paths in intersection database lists	bug fix
+daler/pybedtools	437	preserve mate position 1 when iterating over BAM	bug fix
+tskit-dev/msprime	2554	Record SLiM mutation model parameters before simulation	bug fix
+tskit-dev/msprime	2555	Preserve initial tables when adding populations	bug fix
+tskit-dev/msprime	2556	Preserve population IDs in ancestry provenance	bug fix
+levitsky/pyteomics	238	Write MGF retention-time ranges	bug fix
+levitsky/pyteomics	239	Apply fixed ProForma modifications at the specified terminus	bug fix
+levitsky/pyteomics	240	Check spectrum IDs in MzMLb membership tests	bug fix
+levitsky/pyteomics	241	Use the charge state passed to ProForma.composition	bug fix
+levitsky/pyteomics	242	Keep PSM identities when streaming FDR-filtered results	bug fix
+California-Planet-Search/radvel	464	Preserve the source basis when converting parameters	bug fix
+California-Planet-Search/radvel	465	Use configured planet letters in dict-based fits	bug fix
+California-Planet-Search/radvel	466	Keep the optimizer's returned fit parameters	bug fix
+California-Planet-Search/radvel	467	Honor fixed jitter in information-criterion comparisons	bug fix
+California-Planet-Search/radvel	468	Sort celerite observation times before initializing the kernel	bug fix
+tskit-dev/tskit	3514	Apply NEXUS node labels to alignment rows	bug fix
+nipy/nibabel	1641	BF: Accept MGH files with an intent code in the version field	bug fix
+nipy/nibabel	1642	BF: Align annotation names with colour table rows when entries are missing	bug fix
+nipy/nibabel	1643	BF: Reshape GIFTI MatrixData to 4x4 when values are on one line	bug fix
+open2c/cooler	547	Read the row index for the queried matrix range	speedup
+daler/pybedtools	438	count BAM and CRAM records without converting intervals	speedup
+deeptools/deepTools	1507	perf: average bigWig coverage bins in NumPy	speedup
+levitsky/pyteomics	243	Reuse log-factorials in q-value correction	speedup

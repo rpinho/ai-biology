@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-152 PRs: 8 merged, 138 open, 6 closed.
+193 PRs: 8 merged, 179 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -252,6 +252,47 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [pyranges/pyranges](https://github.com/pyranges/pyranges) | [#414](https://github.com/pyranges/pyranges/pull/414) | bug fix | Respect as_df and nrows when reading GTF with full=False | open |
 | [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3510](https://github.com/tskit-dev/tskit/pull/3510) | bug fix | Stabilize trait correlation across trait scales | open |
 | [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3511](https://github.com/tskit-dev/tskit/pull/3511) | bug fix | Preserve edge and migration metadata when trimming | open |
+| [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3512](https://github.com/tskit-dev/tskit/pull/3512) | bug fix | Use the converted site mask when validating VCF positions | open |
+| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1637](https://github.com/nipy/nibabel/pull/1637) | bug fix | BF: Use output position when slicing frames of an ECAT array proxy | open |
+| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1638](https://github.com/nipy/nibabel/pull/1638) | bug fix | BF: Read AFNI complex sub-bricks as complex64 | open |
+| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1639](https://github.com/nipy/nibabel/pull/1639) | bug fix | BF: Reverse slice timing when reorientation flips the slice axis | open |
+| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1640](https://github.com/nipy/nibabel/pull/1640) | speedup | ENH: Write TCK streamlines in blocks when no affine needs applying | open |
+| [mdtraj/mdtraj](https://github.com/mdtraj/mdtraj) | [#2241](https://github.com/mdtraj/mdtraj/pull/2241) | speedup | Build and reduce contact distance groups in bulk | open |
+| [adrn/gala](https://github.com/adrn/gala) | [#684](https://github.com/adrn/gala/pull/684) | speedup | Use matrix products for O2GF mode sums | open |
+| [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3513](https://github.com/tskit-dev/tskit/pull/3513) | speedup | Avoid per-site copies when writing VCF | open |
+| [deeptools/deepTools](https://github.com/deeptools/deepTools) | [#1502](https://github.com/deeptools/deepTools/pull/1502) | bug fix | fix: keep computeMatrix groups distinct when filenames match | open |
+| [deeptools/deepTools](https://github.com/deeptools/deepTools) | [#1503](https://github.com/deeptools/deepTools/pull/1503) | bug fix | fix: apply zero thresholds in computeMatrix | open |
+| [deeptools/deepTools](https://github.com/deeptools/deepTools) | [#1504](https://github.com/deeptools/deepTools/pull/1504) | bug fix | fix: score singleton and two-row heatmap clusters correctly | open |
+| [deeptools/deepTools](https://github.com/deeptools/deepTools) | [#1505](https://github.com/deeptools/deepTools/pull/1505) | bug fix | fix: preserve missing signal when clustering heatmaps | open |
+| [deeptools/deepTools](https://github.com/deeptools/deepTools) | [#1506](https://github.com/deeptools/deepTools/pull/1506) | bug fix | fix: write final zero-valued bigwigCompare intervals | open |
+| [open2c/cooler](https://github.com/open2c/cooler) | [#544](https://github.com/open2c/cooler/pull/544) | bug fix | Apply divisive weights in cooler dump | open |
+| [open2c/cooler](https://github.com/open2c/cooler) | [#545](https://github.com/open2c/cooler/pull/545) | bug fix | Write the dump header for empty queries | open |
+| [open2c/cooler](https://github.com/open2c/cooler) | [#546](https://github.com/open2c/cooler/pull/546) | bug fix | Decode contig names in joined pixels | open |
+| [daler/pybedtools](https://github.com/daler/pybedtools) | [#434](https://github.com/daler/pybedtools/pull/434) | bug fix | preserve input rows when indexing presorted files | open |
+| [daler/pybedtools](https://github.com/daler/pybedtools) | [#435](https://github.com/daler/pybedtools/pull/435) | bug fix | fix generator completion in randomstats | open |
+| [daler/pybedtools](https://github.com/daler/pybedtools) | [#436](https://github.com/daler/pybedtools/pull/436) | bug fix | accept pathlib paths in intersection database lists | open |
+| [daler/pybedtools](https://github.com/daler/pybedtools) | [#437](https://github.com/daler/pybedtools/pull/437) | bug fix | preserve mate position 1 when iterating over BAM | open |
+| [tskit-dev/msprime](https://github.com/tskit-dev/msprime) | [#2554](https://github.com/tskit-dev/msprime/pull/2554) | bug fix | Record SLiM mutation model parameters before simulation | open |
+| [tskit-dev/msprime](https://github.com/tskit-dev/msprime) | [#2555](https://github.com/tskit-dev/msprime/pull/2555) | bug fix | Preserve initial tables when adding populations | open |
+| [tskit-dev/msprime](https://github.com/tskit-dev/msprime) | [#2556](https://github.com/tskit-dev/msprime/pull/2556) | bug fix | Preserve population IDs in ancestry provenance | open |
+| [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#238](https://github.com/levitsky/pyteomics/pull/238) | bug fix | Write MGF retention-time ranges | open |
+| [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#239](https://github.com/levitsky/pyteomics/pull/239) | bug fix | Apply fixed ProForma modifications at the specified terminus | open |
+| [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#240](https://github.com/levitsky/pyteomics/pull/240) | bug fix | Check spectrum IDs in MzMLb membership tests | open |
+| [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#241](https://github.com/levitsky/pyteomics/pull/241) | bug fix | Use the charge state passed to ProForma.composition | open |
+| [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#242](https://github.com/levitsky/pyteomics/pull/242) | bug fix | Keep PSM identities when streaming FDR-filtered results | open |
+| [California-Planet-Search/radvel](https://github.com/California-Planet-Search/radvel) | [#464](https://github.com/California-Planet-Search/radvel/pull/464) | bug fix | Preserve the source basis when converting parameters | open |
+| [California-Planet-Search/radvel](https://github.com/California-Planet-Search/radvel) | [#465](https://github.com/California-Planet-Search/radvel/pull/465) | bug fix | Use configured planet letters in dict-based fits | open |
+| [California-Planet-Search/radvel](https://github.com/California-Planet-Search/radvel) | [#466](https://github.com/California-Planet-Search/radvel/pull/466) | bug fix | Keep the optimizer's returned fit parameters | open |
+| [California-Planet-Search/radvel](https://github.com/California-Planet-Search/radvel) | [#467](https://github.com/California-Planet-Search/radvel/pull/467) | bug fix | Honor fixed jitter in information-criterion comparisons | open |
+| [California-Planet-Search/radvel](https://github.com/California-Planet-Search/radvel) | [#468](https://github.com/California-Planet-Search/radvel/pull/468) | bug fix | Sort celerite observation times before initializing the kernel | open |
+| [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3514](https://github.com/tskit-dev/tskit/pull/3514) | bug fix | Apply NEXUS node labels to alignment rows | open |
+| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1641](https://github.com/nipy/nibabel/pull/1641) | bug fix | BF: Accept MGH files with an intent code in the version field | open |
+| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1642](https://github.com/nipy/nibabel/pull/1642) | bug fix | BF: Align annotation names with colour table rows when entries are missing | open |
+| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1643](https://github.com/nipy/nibabel/pull/1643) | bug fix | BF: Reshape GIFTI MatrixData to 4x4 when values are on one line | open |
+| [open2c/cooler](https://github.com/open2c/cooler) | [#547](https://github.com/open2c/cooler/pull/547) | speedup | Read the row index for the queried matrix range | open |
+| [daler/pybedtools](https://github.com/daler/pybedtools) | [#438](https://github.com/daler/pybedtools/pull/438) | speedup | count BAM and CRAM records without converting intervals | open |
+| [deeptools/deepTools](https://github.com/deeptools/deepTools) | [#1507](https://github.com/deeptools/deepTools/pull/1507) | speedup | perf: average bigWig coverage bins in NumPy | open |
+| [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#243](https://github.com/levitsky/pyteomics/pull/243) | speedup | Reuse log-factorials in q-value correction | open |
 <!-- /auto -->
 
 ## How this was run
