@@ -94,7 +94,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-57 PRs: 7 merged, 49 open, 1 closed.
+58 PRs: 7 merged, 50 open, 1 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -155,6 +155,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [Arcadia-Science/agentic-pymol](https://github.com/Arcadia-Science/agentic-pymol) | [#21](https://github.com/Arcadia-Science/agentic-pymol/pull/21) | bug fix | types: drop slots from tool result dataclasses so FastMCP publishes output schemas | open |
 | [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4787](https://github.com/materialsproject/pymatgen/pull/4787) | speedup | ZSLGenerator: cache super-lattice reductions, vectorize match check (3.3-4.8x, byte-identical) | open |
 | [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4788](https://github.com/materialsproject/pymatgen/pull/4788) | bug fix | Fix GibbsComputedStructureEntry.from_dict for entries with a correction | open |
+| [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4789](https://github.com/materialsproject/pymatgen/pull/4789) | bug fix | Fix QuasiRRHO free-rotor interpolation using vibrational temperatures instead of wavenumbers | open |
 <!-- /auto -->
 
 ## How this was run
