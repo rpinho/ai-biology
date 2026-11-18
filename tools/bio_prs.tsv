@@ -70,3 +70,4 @@ Quandela/Perceval	802	Make BSDistribution(bsd) copy the source distribution	bug 
 Quandela/Perceval	803	Validate each iteration of a ComputationIterator	bug fix
 Quandela/Perceval	804	Set ERROR status when execute_sync fails with allow_partial_results	bug fix
 Quandela/Perceval	805	Reset the Processor source when its noise model is changed	bug fix
+Quandela/Perceval	806	Fix result insertion for a ComputationIterator without iteration	bug fix
