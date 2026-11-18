@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-122 PRs: 8 merged, 108 open, 6 closed.
+123 PRs: 8 merged, 109 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -222,6 +222,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [openmc-dev/openmc](https://github.com/openmc-dev/openmc) | [#4240](https://github.com/openmc-dev/openmc/pull/4240) | bug fix | Reshape each mesh filter along its expanded axes | open |
 | [openmc-dev/openmc](https://github.com/openmc-dev/openmc) | [#4241](https://github.com/openmc-dev/openmc/pull/4241) | bug fix | Read matrix rotations from mesh filters through the C API | open |
 | [openmc-dev/openmc](https://github.com/openmc-dev/openmc) | [#4242](https://github.com/openmc-dev/openmc/pull/4242) | bug fix | Scale shared mesh sources once when setting total strength | open |
+| [openmc-dev/openmc](https://github.com/openmc-dev/openmc) | [#4243](https://github.com/openmc-dev/openmc/pull/4243) | bug fix | Preserve mesh identity and transformations when comparing filters | open |
 <!-- /auto -->
 
 ## How this was run

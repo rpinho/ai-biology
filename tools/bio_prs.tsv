@@ -121,3 +121,4 @@ MultiQC/MultiQC	3740	Preserve section order when merging parquet reports	bug fix
 openmc-dev/openmc	4240	Reshape each mesh filter along its expanded axes	bug fix
 openmc-dev/openmc	4241	Read matrix rotations from mesh filters through the C API	bug fix
 openmc-dev/openmc	4242	Scale shared mesh sources once when setting total strength	bug fix
+openmc-dev/openmc	4243	Preserve mesh identity and transformations when comparing filters	bug fix
