@@ -116,3 +116,4 @@ spglib/spglib	651	fix: identify magnetic groups in oblique primitive bases	bug f
 spglib/spglib	652	fix(fortran): forward stabilized reciprocal mesh arguments	bug fix
 spglib/spglib	653	perf: prune lattice symmetry candidates by axis length	speedup
 MultiQC/MultiQC	3738	Fix grouped sample values in get_general_stats_data	bug fix
+MultiQC/MultiQC	3739	Fix module and data-key selection in get_module_data	bug fix

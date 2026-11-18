@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-117 PRs: 8 merged, 103 open, 6 closed.
+118 PRs: 8 merged, 104 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -217,6 +217,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [spglib/spglib](https://github.com/spglib/spglib) | [#652](https://github.com/spglib/spglib/pull/652) | bug fix | fix(fortran): forward stabilized reciprocal mesh arguments | open |
 | [spglib/spglib](https://github.com/spglib/spglib) | [#653](https://github.com/spglib/spglib/pull/653) | speedup | perf: prune lattice symmetry candidates by axis length | open |
 | [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3738](https://github.com/MultiQC/MultiQC/pull/3738) | bug fix | Fix grouped sample values in get_general_stats_data | open |
+| [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3739](https://github.com/MultiQC/MultiQC/pull/3739) | bug fix | Fix module and data-key selection in get_module_data | open |
 <!-- /auto -->
 
 ## How this was run
