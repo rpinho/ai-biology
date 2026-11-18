@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups with identical outputs, tests/CI and small tools as they land. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix. The table is rendered from the GitHub API by `tools/render_bio_prs.py` and refreshed daily; "replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-133 PRs: 8 merged, 119 open, 6 closed.
+134 PRs: 8 merged, 120 open, 6 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -233,6 +233,7 @@ Pull requests to AI-for-biology companies' public code: bug fixes, plus speedups
 | [dfm/corner.py](https://github.com/dfm/corner.py) | [#357](https://github.com/dfm/corner.py/pull/357) | bug fix | Align divergence markers with selected coordinates | open |
 | [mdtraj/mdtraj](https://github.com/mdtraj/mdtraj) | [#2236](https://github.com/mdtraj/mdtraj/pull/2236) | bug fix | Resolve mmCIF connections using label identifiers | open |
 | [mdtraj/mdtraj](https://github.com/mdtraj/mdtraj) | [#2237](https://github.com/mdtraj/mdtraj/pull/2237) | bug fix | Apply atom selection after reading ARC topology | open |
+| [mdtraj/mdtraj](https://github.com/mdtraj/mdtraj) | [#2238](https://github.com/mdtraj/mdtraj/pull/2238) | bug fix | Continue default XTC and TRR frame numbers across writes | open |
 <!-- /auto -->
 
 ## How this was run
