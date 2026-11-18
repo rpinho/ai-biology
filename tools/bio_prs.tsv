@@ -77,3 +77,4 @@ Quandela/Perceval	809	Do not copy the experiment in use_phase_noise when there i
 Quandela/Perceval	810	Compute numeric circuit unitaries by updating row blocks	speedup
 scikit-bio/scikit-bio	2676	PERF: slice positions from stacked bytes in TabularMSA.iter_positions	speedup
 lightkurve/lightkurve	1595	Fixed local FITS time units for reordered columns	bug fix
+biotite-dev/biotite	1037	Fix `check_in_box()` returning atoms inside the box	bug fix
