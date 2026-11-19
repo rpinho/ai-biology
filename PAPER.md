@@ -590,11 +590,11 @@ Baseline now independently reproduced from the full official public genome/GTF i
 
 # Hugo Fernandes — pyglmnet
 
-Folder: [friends/hugo-fernandes-pyglmnet](friends/hugo-fernandes-pyglmnet)
+Folder: [friends/hugo-fernandes-pyglmnet](https://github.com/rpinho/fixing-research-software/tree/main/glm-tools-pyglmnet)
 
 ## PR 1: Bernoulli log-likelihood
 
-_Source: [friends/hugo-fernandes-pyglmnet/PR_1_bernoulli.md](friends/hugo-fernandes-pyglmnet/PR_1_bernoulli.md)_
+_Source: [friends/hugo-fernandes-pyglmnet/PR_1_bernoulli.md](https://github.com/rpinho/fixing-research-software/blob/main/glm-tools-pyglmnet/PR_1_bernoulli.md)_
 
 Title: FIX: Bernoulli log likelihood is NaN at probabilities 0 and 1, and overflows for large logits
 
@@ -608,7 +608,7 @@ Open PR #390 moves this code into `Binomial` and `Probit` classes with the same 
 
 ## PR 2: gamma deviance
 
-_Source: [friends/hugo-fernandes-pyglmnet/PR_2_gamma_deviance.md](friends/hugo-fernandes-pyglmnet/PR_2_gamma_deviance.md)_
+_Source: [friends/hugo-fernandes-pyglmnet/PR_2_gamma_deviance.md](https://github.com/rpinho/fixing-research-software/blob/main/glm-tools-pyglmnet/PR_2_gamma_deviance.md)_
 
 Title: FIX: gamma deviance and pseudo-R2 omit the saturated log likelihood
 
@@ -624,7 +624,7 @@ Open PR #390 keeps the same family list (`Poisson, PoissonSoftplus, NegBinomialS
 
 ## PR 3: gamma simulate
 
-_Source: [friends/hugo-fernandes-pyglmnet/PR_3_gamma_simulate.md](friends/hugo-fernandes-pyglmnet/PR_3_gamma_simulate.md)_
+_Source: [friends/hugo-fernandes-pyglmnet/PR_3_gamma_simulate.md](https://github.com/rpinho/fixing-research-software/blob/main/glm-tools-pyglmnet/PR_3_gamma_simulate.md)_
 
 Title: FIX: simulate_glm(sample=True) for gamma returns exp(mu) instead of gamma samples
 
@@ -638,7 +638,7 @@ Open PR #390's `GammaSoftplus.simulate` also returns `np.exp(mu)`, so the same c
 
 ## Review
 
-_Source: [friends/hugo-fernandes-pyglmnet/REVIEW.md](friends/hugo-fernandes-pyglmnet/REVIEW.md)_
+_Source: [friends/hugo-fernandes-pyglmnet/REVIEW.md](https://github.com/rpinho/fixing-research-software/blob/main/glm-tools-pyglmnet/REVIEW.md)_
 
 PR 1 — VERDICT: FIX FIRST
 
@@ -656,7 +656,7 @@ PR 3 — VERDICT: FIX FIRST
 
 ## Verdicts
 
-_Source: [friends/hugo-fernandes-pyglmnet/referee/VERDICTS.md](friends/hugo-fernandes-pyglmnet/referee/VERDICTS.md)_
+_Source: [friends/hugo-fernandes-pyglmnet/referee/VERDICTS.md](https://github.com/rpinho/fixing-research-software/blob/main/glm-tools-pyglmnet/referee/VERDICTS.md)_
 
 ## Independent referee verdicts
 
@@ -917,11 +917,11 @@ Public history was fetched independently through `gh api`, including all open/cl
 
 # Gavin Sherlock — GO::TermFinder
 
-Folder: [friends/sherlock-go-termfinder](friends/sherlock-go-termfinder)
+Folder: [friends/sherlock-go-termfinder](https://github.com/rpinho/fixing-research-software/tree/main/cpan-GO-TermFinder)
 
 ## Verdicts
 
-_Source: [friends/sherlock-go-termfinder/VERDICTS.md](friends/sherlock-go-termfinder/VERDICTS.md)_
+_Source: [friends/sherlock-go-termfinder/VERDICTS.md](https://github.com/rpinho/fixing-research-software/blob/main/cpan-GO-TermFinder/VERDICTS.md)_
 
 Independent referee verdicts for GO::TermFinder 0.86, 2026-11-06. Four priority defects survive; three other defects already have public fixes, two parser defects are minor, and one claimed wrong-p-value result has a documented intended interpretation.
 
@@ -981,13 +981,13 @@ Live [CPAN RT](https://rt.cpan.org/Public/Dist/Display.html?Name=GO-TermFinder) 
 
 ## Bugs: pre-referee report; final dispositions above
 
-_Source: [friends/sherlock-go-termfinder/BUGS.md](friends/sherlock-go-termfinder/BUGS.md)_
+_Source: [friends/sherlock-go-termfinder/BUGS.md](https://github.com/rpinho/fixing-research-software/blob/main/cpan-GO-TermFinder/BUGS.md)_
 
 ## Confirmed defects in GO::TermFinder 0.86
 
 Ten local fixes, each with a failing input, captured original output, independently computed correct output, an isolated patch, and an unchanged normal control. The original source is untouched in `sources/GO-TermFinder-0.86/`; locations below refer to that source. `all-fixes.patch` combines the fixes. Nothing was submitted publicly.
 
-No overlap was found with Changes, the four archived active RT tickets, the three archived resolved-ticket subjects, or the checked mirror history. **Previously unreported is not established:** live RT returned an AWS challenge; the accessible queue snapshot is from 2021. See [PRIOR_ART.md](friends/sherlock-go-termfinder/PRIOR_ART.md).
+No overlap was found with Changes, the four archived active RT tickets, the three archived resolved-ticket subjects, or the checked mirror history. **Previously unreported is not established:** live RT returned an AWS challenge; the accessible queue snapshot is from 2021. See [PRIOR_ART.md](https://github.com/rpinho/fixing-research-software/blob/main/cpan-GO-TermFinder/PRIOR_ART.md).
 
 ### GTF-001 — Compound NOT qualifiers become positive annotations
 
@@ -1096,7 +1096,7 @@ No overlap was found with Changes, the four archived active RT tickets, the thre
 
 ## Prior Art
 
-_Source: [friends/sherlock-go-termfinder/PRIOR_ART.md](friends/sherlock-go-termfinder/PRIOR_ART.md)_
+_Source: [friends/sherlock-go-termfinder/PRIOR_ART.md](https://github.com/rpinho/fixing-research-software/blob/main/cpan-GO-TermFinder/PRIOR_ART.md)_
 
 ## Source and prior-report check
 
