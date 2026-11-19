@@ -33,7 +33,7 @@ So each result here ships with what you need to rerun it and a separate referee'
 | [louis](https://github.com/rpinho/louis) | Pick an autoimmune disease, get trust-ranked candidate CD4+ T-cell targets, built on the Marson/Pritchard genome-scale T-cell Perturb-seq. MCP server, skill or Slack bot. Hypothesis generation, not a clinical claim. |
 | [autoregulation](https://github.com/rpinho/autoregulation) | My PhD code: stability of Boolean gene regulatory networks depends on the sign of self-regulation. Python 2, kept as a record. Published (PLoS Comput Biol 2014; PLoS ONE 2012, 2015). |
 
-## Friends' software: what was asked, what we found, how it was checked
+## Friends' software: what was asked, what I found, how it was checked
 
 Scientists I know publish code with their papers. I asked each of them whether a bug hunt would be useful, ran one on the public repository at a pinned commit, had a separate referee reproduce every finding from scratch, and sent them the report. Everything below has been sent to the person named. Their replies stay private; only what went out is here.
 
@@ -49,7 +49,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 ### Hugo Fernandes — pyglmnet
 
 - **Who:** [Hugo L. Fernandes](https://scholar.google.com/citations?user=0Yy0dJkAAAAJ), computational neuroscience. [pyglmnet](https://github.com/glm-tools/pyglmnet) is the elastic-net GLM package he contributed to.
-- **Asked:** he said that if we found things there, we could open PRs.
+- **Asked:** he said that if I found things there, I could open PRs.
 - **Found and upstreamed:** three fixes, each with a test that fails on master and passes with the fix — [PR #399](https://github.com/glm-tools/pyglmnet/pull/399) (Bernoulli log-likelihood is NaN at probabilities 0 and 1, and overflows for large logits), [PR #400](https://github.com/glm-tools/pyglmnet/pull/400) (gamma deviance and pseudo-R² omit the saturated log-likelihood; the fixed value matches statsmodels to 1e-15), [PR #401](https://github.com/glm-tools/pyglmnet/pull/401) (`simulate_glm(sample=True)` returns `exp(mu)` instead of gamma draws). [#399](https://github.com/glm-tools/pyglmnet/pull/399) and [#401](https://github.com/glm-tools/pyglmnet/pull/401) were merged on 2026-11-08; #400 is still open.
 - **Checked:** a separate referee's [verdicts](https://github.com/rpinho/fixing-research-software/blob/main/glm-tools-pyglmnet/referee/VERDICTS.md), plus a full-suite [verification log](https://github.com/rpinho/fixing-research-software/blob/main/glm-tools-pyglmnet/VERIFY.txt) and [a review](https://github.com/rpinho/fixing-research-software/blob/main/glm-tools-pyglmnet/REVIEW.md) that sent the first draft back three times. Two further findings were left out because an existing open PR already covers one and the other is intended behaviour.
 - **Code:** [PR texts, patches and the verification script](https://github.com/rpinho/fixing-research-software/tree/main/glm-tools-pyglmnet).
@@ -93,7 +93,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 
 ## Contributions to AI-bio companies and open-source tools
 
-Pull requests to biology code: AI-for-biology companies and open-source tools. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix; speedups were checked for identical outputs. This table has the biology rows only. All our pull requests on other people's research code, in every field, are in [fixing-research-software](https://github.com/rpinho/fixing-research-software#pull-requests), which renders this table too (`tools/render_prs.py`, refreshed daily). "Replies" counts maintainers' comments and reviews, not bots.
+Pull requests to biology code: AI-for-biology companies and open-source tools. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix; speedups were checked for identical outputs. This table has the biology rows only. All my pull requests on other people's research code, in every field, are in [fixing-research-software](https://github.com/rpinho/fixing-research-software#pull-requests), which renders this table too (`tools/render_prs.py`, refreshed daily). "Replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
 102 PRs to 32 repositories: 12 merged, 88 open, 2 closed.
