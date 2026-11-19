@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to biology code: AI-for-biology companies and open-source tools. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix; speedups were checked for identical outputs. This table has the biology rows only. All our pull requests on other people's research code, in every field, are in [fixing-research-software](https://github.com/rpinho/fixing-research-software#pull-requests), which renders this table too (`tools/render_prs.py`, refreshed daily). "Replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-102 PRs to 32 repositories: 10 merged, 90 open, 2 closed.
+102 PRs to 32 repositories: 12 merged, 88 open, 2 closed.
 All fields, including physics, materials and general tools: [https://github.com/rpinho/fixing-research-software](https://github.com/rpinho/fixing-research-software#pull-requests).
 
 | Repo | PR | Type | What it does | Status |
@@ -161,13 +161,13 @@ All fields, including physics, materials and general tools: [https://github.com/
 | [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3740](https://github.com/MultiQC/MultiQC/pull/3740) | bug fix | Preserve section order when merging parquet reports | open |
 | [nf-core/tools](https://github.com/nf-core/tools) | [#4619](https://github.com/nf-core/tools/pull/4619) | bug fix | create-params-file includes parameters defined at the schema's top level | open, 6 replies |
 | [nf-core/tools](https://github.com/nf-core/tools) | [#4620](https://github.com/nf-core/tools/pull/4620) | bug fix | Schema build keeps 0 and 0.0 defaults from the pipeline config | merged 2026-11-18 |
-| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1637](https://github.com/nipy/nibabel/pull/1637) | bug fix | BF: Use output position when slicing frames of an ECAT array proxy | open |
-| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1638](https://github.com/nipy/nibabel/pull/1638) | bug fix | BF: Read AFNI complex sub-bricks as complex64 | open |
+| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1637](https://github.com/nipy/nibabel/pull/1637) | bug fix | BF: Use output position when slicing frames of an ECAT array proxy | open, 1 reply |
+| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1638](https://github.com/nipy/nibabel/pull/1638) | bug fix | BF: Read AFNI complex sub-bricks as complex64 | merged 2026-11-19 |
 | [nipy/nibabel](https://github.com/nipy/nibabel) | [#1639](https://github.com/nipy/nibabel/pull/1639) | bug fix | BF: Reverse slice timing when reorientation flips the slice axis | open |
 | [nipy/nibabel](https://github.com/nipy/nibabel) | [#1640](https://github.com/nipy/nibabel/pull/1640) | speedup | ENH: Write TCK streamlines in blocks when no affine needs applying | open |
 | [nipy/nibabel](https://github.com/nipy/nibabel) | [#1641](https://github.com/nipy/nibabel/pull/1641) | bug fix | BF: Accept MGH files with an intent code in the version field | open |
 | [nipy/nibabel](https://github.com/nipy/nibabel) | [#1642](https://github.com/nipy/nibabel/pull/1642) | bug fix | BF: Align annotation names with colour table rows when entries are missing | open |
-| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1643](https://github.com/nipy/nibabel/pull/1643) | bug fix | BF: Reshape GIFTI MatrixData to 4x4 when values are on one line | open, 1 reply |
+| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1643](https://github.com/nipy/nibabel/pull/1643) | bug fix | BF: Reshape GIFTI MatrixData to 4x4 when values are on one line | merged 2026-11-19 |
 | [NVIDIA-BioNeMo/bionemo-recipes](https://github.com/NVIDIA-BioNeMo/bionemo-recipes) | [#1802](https://github.com/NVIDIA-BioNeMo/bionemo-recipes/pull/1802) | bug fix | ESM-2 PEFT validation packing uses val_micro_batch_size | open |
 | [open2c/cooler](https://github.com/open2c/cooler) | [#544](https://github.com/open2c/cooler/pull/544) | bug fix | Apply divisive weights in cooler dump | open |
 | [open2c/cooler](https://github.com/open2c/cooler) | [#545](https://github.com/open2c/cooler/pull/545) | bug fix | Write the dump header for empty queries | open |
