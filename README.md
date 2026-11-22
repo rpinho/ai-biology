@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to biology code: AI-for-biology companies and open-source tools. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix; speedups were checked for identical outputs. This table has the biology rows only. All my pull requests on other people's research code, in every field, are in [fixing-research-software](https://github.com/rpinho/fixing-research-software#pull-requests), which renders this table too (`tools/render_prs.py`, refreshed daily). "Replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-104 PRs to 34 repositories: 15 merged, 86 open, 3 closed.
+104 PRs to 34 repositories: 15 merged, 84 open, 5 closed.
 All fields, including physics, materials and general tools: [https://github.com/rpinho/fixing-research-software](https://github.com/rpinho/fixing-research-software#pull-requests).
 
 | Repo | PR | Type | What it does | Status |
@@ -196,8 +196,8 @@ All fields, including physics, materials and general tools: [https://github.com/
 | [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | [#378](https://github.com/snap-stanford/Biomni/pull/378) | bug fix | database REST helper: timeouts and bounded GET retries | open |
 | [synthesizebio/pysynthbio](https://github.com/synthesizebio/pysynthbio) | [#77](https://github.com/synthesizebio/pysynthbio/pull/77) | bug fix | `predict_query` no longer writes its options into the caller's query dict | open |
 | [tskit-dev/msprime](https://github.com/tskit-dev/msprime) | [#2554](https://github.com/tskit-dev/msprime/pull/2554) | bug fix | Record SLiM mutation model parameters before simulation | closed |
-| [tskit-dev/msprime](https://github.com/tskit-dev/msprime) | [#2555](https://github.com/tskit-dev/msprime/pull/2555) | bug fix | Preserve initial tables when adding populations | open |
-| [tskit-dev/msprime](https://github.com/tskit-dev/msprime) | [#2556](https://github.com/tskit-dev/msprime/pull/2556) | bug fix | Preserve population IDs in ancestry provenance | open |
+| [tskit-dev/msprime](https://github.com/tskit-dev/msprime) | [#2555](https://github.com/tskit-dev/msprime/pull/2555) | bug fix | Preserve initial tables when adding populations | closed |
+| [tskit-dev/msprime](https://github.com/tskit-dev/msprime) | [#2556](https://github.com/tskit-dev/msprime/pull/2556) | bug fix | Preserve population IDs in ancestry provenance | closed |
 | [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3510](https://github.com/tskit-dev/tskit/pull/3510) | bug fix | Stabilize trait correlation across trait scales | closed |
 | [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3511](https://github.com/tskit-dev/tskit/pull/3511) | bug fix | Preserve edge and migration metadata when trimming | merged 2026-11-21 |
 | [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3512](https://github.com/tskit-dev/tskit/pull/3512) | bug fix | Use the converted site mask when validating VCF positions | open, 2 replies |
