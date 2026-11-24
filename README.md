@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to biology code: AI-for-biology companies and open-source tools. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix; speedups were checked for identical outputs. This table has the biology rows only. All my pull requests on other people's research code, in every field, are in [fixing-research-software](https://github.com/rpinho/fixing-research-software#pull-requests), which renders this table too (`tools/render_prs.py`, refreshed daily). "Replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-104 PRs to 34 repositories: 18 merged, 81 open, 5 closed.
+104 PRs to 34 repositories: 19 merged, 80 open, 5 closed.
 All fields, including physics, materials and general tools: [https://github.com/rpinho/fixing-research-software](https://github.com/rpinho/fixing-research-software#pull-requests).
 
 | Repo | PR | Type | What it does | Status |
@@ -113,7 +113,7 @@ All fields, including physics, materials and general tools: [https://github.com/
 | [ArcInstitute/cell-eval](https://github.com/ArcInstitute/cell-eval) | [#250](https://github.com/ArcInstitute/cell-eval/pull/250) | speedup | sparse pseudobulk and centroids without densifying (3x faster, 4.8x less memory) | open |
 | [ArcInstitute/evo2](https://github.com/ArcInstitute/evo2) | [#236](https://github.com/ArcInstitute/evo2/pull/236) | bug fix | An interrupted shard merge no longer leaves a truncated checkpoint that later loads accept | open |
 | [ArcInstitute/state](https://github.com/ArcInstitute/state) | [#283](https://github.com/ArcInstitute/state/pull/283) | bug fix | Gene mapping uses the detected gene-name column, so genes named only there aren't dropped | open |
-| [bioio-devs/bioio](https://github.com/bioio-devs/bioio) | [#236](https://github.com/bioio-devs/bioio/pull/236) | bug fix | bugfix/preserve-xarray-metadata | open |
+| [bioio-devs/bioio](https://github.com/bioio-devs/bioio) | [#236](https://github.com/bioio-devs/bioio/pull/236) | bug fix | bugfix/preserve-xarray-metadata | open, 1 reply |
 | [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1037](https://github.com/biotite-dev/biotite/pull/1037) | bug fix | Fix `check_in_box()` returning atoms inside the box | open |
 | [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1038](https://github.com/biotite-dev/biotite/pull/1038) | bug fix | Reject GRO stacks with unequal model lengths | open |
 | [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1039](https://github.com/biotite-dev/biotite/pull/1039) | bug fix | Fix GFF annotation grouping for discontinuous features | open |
@@ -159,7 +159,7 @@ All fields, including physics, materials and general tools: [https://github.com/
 | [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3738](https://github.com/MultiQC/MultiQC/pull/3738) | bug fix | Fix grouped sample values in get_general_stats_data | open |
 | [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3739](https://github.com/MultiQC/MultiQC/pull/3739) | bug fix | Fix module and data-key selection in get_module_data | open |
 | [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3740](https://github.com/MultiQC/MultiQC/pull/3740) | bug fix | Preserve section order when merging parquet reports | open |
-| [nf-core/tools](https://github.com/nf-core/tools) | [#4619](https://github.com/nf-core/tools/pull/4619) | bug fix | create-params-file includes parameters defined at the schema's top level | open, 6 replies |
+| [nf-core/tools](https://github.com/nf-core/tools) | [#4619](https://github.com/nf-core/tools/pull/4619) | bug fix | create-params-file includes parameters defined at the schema's top level | merged 2026-11-24 |
 | [nf-core/tools](https://github.com/nf-core/tools) | [#4620](https://github.com/nf-core/tools/pull/4620) | bug fix | Schema build keeps 0 and 0.0 defaults from the pipeline config | merged 2026-11-18 |
 | [nipy/nibabel](https://github.com/nipy/nibabel) | [#1637](https://github.com/nipy/nibabel/pull/1637) | bug fix | BF: Use output position when slicing frames of an ECAT array proxy | open, 3 replies |
 | [nipy/nibabel](https://github.com/nipy/nibabel) | [#1638](https://github.com/nipy/nibabel/pull/1638) | bug fix | BF: Read AFNI complex sub-bricks as complex64 | merged 2026-11-19 |
