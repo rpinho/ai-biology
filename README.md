@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to biology code: AI-for-biology companies and open-source tools. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix; speedups were checked for identical outputs. This table has the biology rows only. All my pull requests on other people's research code, in every field, are in [fixing-research-software](https://github.com/rpinho/fixing-research-software#pull-requests), which renders this table too (`tools/render_prs.py`, refreshed daily). "Replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-104 PRs to 34 repositories: 19 merged, 80 open, 5 closed.
+105 PRs to 34 repositories: 21 merged, 79 open, 5 closed.
 All fields, including physics, materials and general tools: [https://github.com/rpinho/fixing-research-software](https://github.com/rpinho/fixing-research-software#pull-requests).
 
 | Repo | PR | Type | What it does | Status |
@@ -143,7 +143,7 @@ All fields, including physics, materials and general tools: [https://github.com/
 | [latchbio/latch](https://github.com/latchbio/latch) | [#626](https://github.com/latchbio/latch/pull/626) | bug fix | launch: send false Nextflow flags and pick the File/Dir union variant by type | open |
 | [latchbio/latch](https://github.com/latchbio/latch) | [#627](https://github.com/latchbio/latch/pull/627) | bug fix | file_glob: put a slash between remote_directory and the file name | open |
 | [latchbio/scbench](https://github.com/latchbio/scbench) | [#8](https://github.com/latchbio/scbench/pull/8) | bug fix | scbench batch skips evals/manifest.json instead of counting it as a failed eval | open |
-| [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#238](https://github.com/levitsky/pyteomics/pull/238) | bug fix | Write MGF retention-time ranges | open |
+| [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#238](https://github.com/levitsky/pyteomics/pull/238) | bug fix | Write MGF retention-time ranges | open, 1 reply |
 | [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#239](https://github.com/levitsky/pyteomics/pull/239) | bug fix | Apply fixed ProForma modifications at the specified terminus | open |
 | [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#240](https://github.com/levitsky/pyteomics/pull/240) | bug fix | Check spectrum IDs in MzMLb membership tests | open |
 | [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#241](https://github.com/levitsky/pyteomics/pull/241) | bug fix | Use the charge state passed to ProForma.composition | open |
@@ -174,8 +174,8 @@ All fields, including physics, materials and general tools: [https://github.com/
 | [open2c/cooler](https://github.com/open2c/cooler) | [#546](https://github.com/open2c/cooler/pull/546) | bug fix | Decode contig names in joined pixels | open |
 | [open2c/cooler](https://github.com/open2c/cooler) | [#547](https://github.com/open2c/cooler/pull/547) | speedup | Read the row index for the queried matrix range | open |
 | [pyranges/pyranges0](https://github.com/pyranges/pyranges0) | [#413](https://github.com/pyranges/pyranges0/pull/413) | bug fix | Preserve strandedness after a DataFrame round trip | merged 2026-11-19 |
-| [pyranges/pyranges0](https://github.com/pyranges/pyranges0) | [#414](https://github.com/pyranges/pyranges0/pull/414) | bug fix | Respect as_df and nrows when reading GTF with full=False | open |
-| [pyranges/pyranges1](https://github.com/pyranges/pyranges1) | [#216](https://github.com/pyranges/pyranges1/pull/216) | bug fix | Honor grouping columns in overlap counts | open |
+| [pyranges/pyranges0](https://github.com/pyranges/pyranges0) | [#414](https://github.com/pyranges/pyranges0/pull/414) | bug fix | Respect as_df and nrows when reading GTF with full=False | merged 2026-11-25 |
+| [pyranges/pyranges1](https://github.com/pyranges/pyranges1) | [#216](https://github.com/pyranges/pyranges1/pull/216) | bug fix | Honor grouping columns in overlap counts | merged 2026-11-25 |
 | [pyranges/pyranges1](https://github.com/pyranges/pyranges1) | [#217](https://github.com/pyranges/pyranges1/pull/217) | bug fix | Preserve VCF filter status | open |
 | [pysam-developers/pysam](https://github.com/pysam-developers/pysam) | [#1431](https://github.com/pysam-developers/pysam/pull/1431) | bug fix | Allow VariantRecord POS=0 (start=-1), as used for telomeres | open |
 | [scikit-bio/scikit-bio](https://github.com/scikit-bio/scikit-bio) | [#2676](https://github.com/scikit-bio/scikit-bio/pull/2676) | speedup | PERF: slice positions from stacked bytes in TabularMSA.iter_positions | open |
@@ -204,7 +204,8 @@ All fields, including physics, materials and general tools: [https://github.com/
 | [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3513](https://github.com/tskit-dev/tskit/pull/3513) | speedup | Avoid per-site copies when writing VCF | closed |
 | [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3514](https://github.com/tskit-dev/tskit/pull/3514) | bug fix | Apply NEXUS node labels to alignment rows | merged 2026-11-19 |
 | [laminlabs/readfcs](https://github.com/laminlabs/readfcs) | [#50](https://github.com/laminlabs/readfcs/pull/50) | bug fix | Read FCS files that have channel names but no marker names ($PnS) | open |
-| [pymzml/pymzML](https://github.com/pymzml/pymzML) | [#420](https://github.com/pymzml/pymzML/pull/420) | bug fix | Iterating a Reader after run[id] no longer raises ParseError | open |
+| [pymzml/pymzML](https://github.com/pymzml/pymzML) | [#420](https://github.com/pymzml/pymzML/pull/420) | bug fix | Iterating a Reader after run[id] no longer raises ParseError | open, 1 reply |
+| [nf-core/tools](https://github.com/nf-core/tools) | [#4642](https://github.com/nf-core/tools/pull/4642) | bug fix | Fix offline and --no-pull handling in component and pipeline linting (#4613, #4584) | open |
 <!-- /auto -->
 
 ## How this was run
