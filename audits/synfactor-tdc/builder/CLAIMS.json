@@ -1,0 +1,145 @@
+{
+  "study": "synfactor-tdc-1124",
+  "sealed_protocol_commit": "ee30be763e5c800ddc5c47a62ecc1700231c7599",
+  "synfactor_commit": "1eaee90610d1a54654c0ec22544154676df4f8fa",
+  "claims": [
+    {
+      "id": "C1",
+      "hypothesis": "H1-Direct",
+      "statement": "When trained directly on experimental TDC ADMET labels, SynFactor CP16 (CP16-Direct) fails to outperform a representation-matched neural additive control (Additive-Direct) on 0/4 endpoints under scaffold splits and 0/4 endpoints under random splits, whereas comparing CP16-Direct against synfactor's embedding-free Additive-ID-Direct lookup produces an artificial +0.1106 to +0.3223 gain on the three large scaffold benchmarks (p = 1.0e-4).",
+      "evidence_files": [
+        "results/summary.json",
+        "results/result_herg.json",
+        "results/result_lipophilicity_astrazeneca.json",
+        "results/result_solubility_aqsoldb.json",
+        "results/result_cyp3a4_veith.json",
+        "results/test_preds_lipophilicity_astrazeneca_scaffold.csv",
+        "results/test_preds_solubility_aqsoldb_scaffold.csv",
+        "results/test_preds_cyp3a4_veith_scaffold.csv"
+      ],
+      "numbers": {
+        "scaffold_cp16_minus_additive_direct": {
+          "herg_dAUROC": {"delta": -0.0065, "ci95": [-0.0717, 0.0592], "p_perm": 0.8634},
+          "lipophilicity_dSpearman": {"delta": -0.0068, "ci95": [-0.0344, 0.0229], "p_perm": 0.6469},
+          "solubility_dSpearman": {"delta": 0.0032, "ci95": [-0.0248, 0.0307], "p_perm": 0.8324},
+          "cyp3a4_dAUROC": {"delta": 0.0020, "ci95": [-0.0063, 0.0109], "p_perm": 0.6394}
+        },
+        "scaffold_cp16_minus_additive_id_direct": {
+          "lipophilicity_dSpearman": {"delta": 0.2065, "p_perm": 9.999e-05},
+          "solubility_dSpearman": {"delta": 0.3223, "p_perm": 9.999e-05},
+          "cyp3a4_dAUROC": {"delta": 0.1106, "p_perm": 9.999e-05}
+        }
+      }
+    },
+    {
+      "id": "C2",
+      "hypothesis": "H1-Distilled-Cartesian",
+      "statement": "Under leak-free train-only Cartesian teacher distillation from FullMol-LGBM, CP16-Distilled-Cartesian passes the pre-registered H1 superiority criterion over the representation-matched Additive-Distilled-Cartesian control on 3/4 endpoints under scaffold splits and 3/4 endpoints under random splits with zero significant degradations (Overall H1 = PASS).",
+      "evidence_files": [
+        "results/summary.json",
+        "results/result_lipophilicity_astrazeneca.json",
+        "results/result_solubility_aqsoldb.json",
+        "results/result_cyp3a4_veith.json",
+        "results/result_herg.json",
+        "results/test_preds_lipophilicity_astrazeneca_scaffold.csv",
+        "results/test_preds_solubility_aqsoldb_scaffold.csv",
+        "results/test_preds_cyp3a4_veith_scaffold.csv"
+      ],
+      "numbers": {
+        "scaffold_cp16_minus_additive_distilled_cartesian": {
+          "lipophilicity": {
+            "dSpearman": 0.0255, "dSpearman_ci95": [0.0090, 0.0430], "dSpearman_p": 0.0042,
+            "dRMSE": -0.0430, "dRMSE_ci95": [-0.0597, -0.0264], "dRMSE_p": 9.999e-05
+          },
+          "solubility": {
+            "dSpearman": 0.0247, "dSpearman_ci95": [0.0093, 0.0393], "dSpearman_p": 0.0022,
+            "dRMSE": -0.0756, "dRMSE_ci95": [-0.1124, -0.0371], "dRMSE_p": 0.0002
+          },
+          "cyp3a4": {
+            "dAUROC": 0.0209, "dAUROC_ci95": [0.0134, 0.0289], "dAUROC_p": 9.999e-05,
+            "dAUPRC": 0.0429, "dAUPRC_ci95": [0.0286, 0.0574], "dAUPRC_p": 9.999e-05
+          },
+          "herg": {
+            "dAUROC": 0.0104, "dAUROC_ci95": [-0.0228, 0.0423], "dAUROC_p": 0.5359
+          }
+        },
+        "random_cp16_minus_additive_distilled_cartesian": {
+          "lipophilicity": {"dSpearman": 0.0352, "dSpearman_ci95": [0.0208, 0.0504], "dSpearman_p": 9.999e-05, "dRMSE": -0.0557, "dRMSE_p": 9.999e-05},
+          "solubility": {"dSpearman": 0.0220, "dSpearman_ci95": [0.0150, 0.0292], "dSpearman_p": 9.999e-05, "dRMSE": -0.1033, "dRMSE_p": 9.999e-05},
+          "cyp3a4": {"dAUROC": 0.0161, "dAUROC_ci95": [0.0105, 0.0216], "dAUROC_p": 9.999e-05, "dAUPRC": 0.0198, "dAUPRC_p": 0.0002},
+          "herg": {"dAUROC": 0.0094, "dAUROC_ci95": [-0.0154, 0.0348], "dAUROC_p": 0.4729}
+        }
+      }
+    },
+    {
+      "id": "C3",
+      "hypothesis": "H1-Unseen-Generalization",
+      "statement": "The non-additive advantage of CP16-Distilled-Cartesian over Additive-Distilled-Cartesian generalizes to test molecules containing at least one unseen synthon (unseen_any stratum) on all three large benchmarks under both scaffold and random splits.",
+      "evidence_files": [
+        "results/summary.json",
+        "results/test_preds_lipophilicity_astrazeneca_scaffold.csv",
+        "results/test_preds_solubility_aqsoldb_scaffold.csv",
+        "results/test_preds_cyp3a4_veith_scaffold.csv"
+      ],
+      "numbers": {
+        "scaffold_unseen_any": {
+          "lipophilicity_n766": {"dSpearman": 0.0248, "ci95": [0.0070, 0.0425], "p_perm": 0.0070, "dRMSE": -0.0437, "dRMSE_p": 9.999e-05},
+          "solubility_n1238": {"dSpearman": 0.0252, "ci95": [0.0105, 0.0415], "p_perm": 0.0028, "dRMSE": -0.0768, "dRMSE_p": 0.0002},
+          "cyp3a4_n2016": {"dAUROC": 0.0203, "ci95": [0.0113, 0.0295], "p_perm": 9.999e-05}
+        }
+      }
+    },
+    {
+      "id": "C4",
+      "hypothesis": "H2-Teacher-vs-Experimental-Gap",
+      "statement": "CP16-Distilled-Cartesian exceeds SynFactor's 0.80 teacher-Spearman benchmark on all 8/8 endpoint x split combinations (0.8223-0.9033 scaffold; 0.8991-0.9613 random), yet still trails its FullMol-LGBM teacher significantly on experimental labels across all three large endpoints under scaffold splits (-0.0875 Spearman on Lipophilicity, -0.1085 Spearman on Solubility, -0.0262 AUROC on CYP3A4; all p = 1.0e-4).",
+      "evidence_files": [
+        "results/summary.json",
+        "results/result_herg.json",
+        "results/result_lipophilicity_astrazeneca.json",
+        "results/result_solubility_aqsoldb.json",
+        "results/result_cyp3a4_veith.json"
+      ],
+      "numbers": {
+        "scaffold_teacher_fidelity_spearman": {
+          "herg": {"point": 0.8223, "ci95": [0.7299, 0.8810]},
+          "lipophilicity": {"point": 0.8702, "ci95": [0.8471, 0.8890]},
+          "solubility": {"point": 0.8664, "ci95": [0.8477, 0.8838]},
+          "cyp3a4": {"point": 0.9033, "ci95": [0.8929, 0.9126]}
+        },
+        "scaffold_exp_gap_cp16cart_minus_fullmol_lgbm": {
+          "herg_dAUROC": {"delta": -0.0143, "ci95": [-0.0735, 0.0411], "p_perm": 0.6544},
+          "lipophilicity_dSpearman": {"delta": -0.0875, "ci95": [-0.1182, -0.0594], "p_perm": 9.999e-05, "dRMSE": 0.0869, "dRMSE_p": 9.999e-05},
+          "solubility_dSpearman": {"delta": -0.1085, "ci95": [-0.1333, -0.0846], "p_perm": 9.999e-05, "dRMSE": 0.2040, "dRMSE_p": 9.999e-05},
+          "cyp3a4_dAUROC": {"delta": -0.0262, "ci95": [-0.0356, -0.0170], "p_perm": 9.999e-05, "dAUPRC": -0.0306, "dAUPRC_p": 9.999e-05}
+        }
+      }
+    },
+    {
+      "id": "C5",
+      "hypothesis": "H3-Coverage-And-Overlap",
+      "statement": "Under realistic TDC Bemis-Murcko scaffold splits, BRICS 1-cut 2-synthon decomposition covers 92.96%-95.88% of drug-like endpoints (hERG, Lipophilicity, CYP3A4) but only 66.85% (6,400/9,574) of Solubility_AqSolDB, and only 2.52%-12.58% of scaffold test molecules have both synthons observed in their training slot.",
+      "evidence_files": [
+        "results/summary.json",
+        "results/result_herg.json",
+        "results/result_lipophilicity_astrazeneca.json",
+        "results/result_solubility_aqsoldb.json",
+        "results/result_cyp3a4_veith.json"
+      ],
+      "numbers": {
+        "coverage_pct": {
+          "herg": {"n_decomp": 594, "n_clean": 639, "pct": 92.96},
+          "lipophilicity": {"n_decomp": 4027, "n_clean": 4200, "pct": 95.88},
+          "solubility": {"n_decomp": 6400, "n_clean": 9574, "pct": 66.85},
+          "cyp3a4": {"n_decomp": 11528, "n_clean": 12299, "pct": 93.73}
+        },
+        "scaffold_both_seen_pct": {
+          "herg": {"n": 3, "n_test": 119, "pct": 2.52},
+          "lipophilicity": {"n": 40, "n_test": 806, "pct": 4.96},
+          "solubility": {"n": 42, "n_test": 1280, "pct": 3.28},
+          "cyp3a4": {"n": 290, "n_test": 2306, "pct": 12.58}
+        }
+      }
+    }
+  ]
+}
