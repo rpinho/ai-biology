@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to biology code: AI-for-biology companies and open-source tools. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix; speedups were checked for identical outputs. This table has the biology rows only. All my pull requests on other people's research code, in every field, are in [fixing-research-software](https://github.com/rpinho/fixing-research-software#pull-requests), which renders this table too (`tools/render_prs.py`, refreshed daily). "Replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-111 PRs to 40 repositories: 25 merged, 81 open, 5 closed.
+123 PRs to 50 repositories: 32 merged, 86 open, 5 closed.
 All fields, including physics, materials and general tools: [https://github.com/rpinho/fixing-research-software](https://github.com/rpinho/fixing-research-software#pull-requests).
 
 | Repo | PR | Type | What it does | Status |
@@ -114,10 +114,10 @@ All fields, including physics, materials and general tools: [https://github.com/
 | [ArcInstitute/evo2](https://github.com/ArcInstitute/evo2) | [#236](https://github.com/ArcInstitute/evo2/pull/236) | bug fix | An interrupted shard merge no longer leaves a truncated checkpoint that later loads accept | open |
 | [ArcInstitute/state](https://github.com/ArcInstitute/state) | [#283](https://github.com/ArcInstitute/state/pull/283) | bug fix | Gene mapping uses the detected gene-name column, so genes named only there aren't dropped | open |
 | [bioio-devs/bioio](https://github.com/bioio-devs/bioio) | [#236](https://github.com/bioio-devs/bioio/pull/236) | bug fix | bugfix/preserve-xarray-metadata | open, 1 reply |
-| [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1037](https://github.com/biotite-dev/biotite/pull/1037) | bug fix | Fix `check_in_box()` returning atoms inside the box | open, 1 reply |
-| [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1038](https://github.com/biotite-dev/biotite/pull/1038) | bug fix | Reject GRO stacks with unequal model lengths | open |
-| [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1039](https://github.com/biotite-dev/biotite/pull/1039) | bug fix | Fix GFF annotation grouping for discontinuous features | open, 1 reply |
-| [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1040](https://github.com/biotite-dev/biotite/pull/1040) | bug fix | Fix `to_sequence()` chain selection for atom array stacks | open |
+| [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1037](https://github.com/biotite-dev/biotite/pull/1037) | bug fix | Fix `check_in_box()` returning atoms inside the box | open, 2 replies |
+| [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1038](https://github.com/biotite-dev/biotite/pull/1038) | bug fix | Reject GRO stacks with unequal model lengths | open, 1 reply |
+| [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1039](https://github.com/biotite-dev/biotite/pull/1039) | bug fix | Fix GFF annotation grouping for discontinuous features | open, 2 replies |
+| [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1040](https://github.com/biotite-dev/biotite/pull/1040) | bug fix | Fix `to_sequence()` chain selection for atom array stacks | open, 1 reply |
 | [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#437](https://github.com/chaidiscovery/chai-lab/pull/437) | bug fix | Merging A3M files from the same database keeps every file's hits | merged 2026-11-19 |
 | [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#438](https://github.com/chaidiscovery/chai-lab/pull/438) | bug fix | Template lookup keeps chain names like 001 or NA as strings | open |
 | [daler/pybedtools](https://github.com/daler/pybedtools) | [#434](https://github.com/daler/pybedtools/pull/434) | bug fix | preserve input rows when indexing presorted files | open |
@@ -144,7 +144,7 @@ All fields, including physics, materials and general tools: [https://github.com/
 | [latchbio/latch](https://github.com/latchbio/latch) | [#627](https://github.com/latchbio/latch/pull/627) | bug fix | file_glob: put a slash between remote_directory and the file name | open |
 | [latchbio/scbench](https://github.com/latchbio/scbench) | [#8](https://github.com/latchbio/scbench/pull/8) | bug fix | scbench batch skips evals/manifest.json instead of counting it as a failed eval | open |
 | [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#238](https://github.com/levitsky/pyteomics/pull/238) | bug fix | Write MGF retention-time ranges | merged 2026-11-26 |
-| [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#239](https://github.com/levitsky/pyteomics/pull/239) | bug fix | Apply fixed ProForma modifications at the specified terminus | open |
+| [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#239](https://github.com/levitsky/pyteomics/pull/239) | bug fix | Apply fixed ProForma modifications at the specified terminus | merged 2026-11-26 |
 | [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#240](https://github.com/levitsky/pyteomics/pull/240) | bug fix | Check spectrum IDs in MzMLb membership tests | merged 2026-11-26 |
 | [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#241](https://github.com/levitsky/pyteomics/pull/241) | bug fix | Use the charge state passed to ProForma.composition | merged 2026-11-26 |
 | [levitsky/pyteomics](https://github.com/levitsky/pyteomics) | [#242](https://github.com/levitsky/pyteomics/pull/242) | bug fix | Keep PSM identities when streaming FDR-filtered results | open |
@@ -155,10 +155,10 @@ All fields, including physics, materials and general tools: [https://github.com/
 | [mdtraj/mdtraj](https://github.com/mdtraj/mdtraj) | [#2239](https://github.com/mdtraj/mdtraj/pull/2239) | bug fix | Restore integral bond orders when reading HDF5 topology | open |
 | [mdtraj/mdtraj](https://github.com/mdtraj/mdtraj) | [#2240](https://github.com/mdtraj/mdtraj/pull/2240) | bug fix | Use written atom serials in PDB CONECT records | open |
 | [mdtraj/mdtraj](https://github.com/mdtraj/mdtraj) | [#2241](https://github.com/mdtraj/mdtraj/pull/2241) | speedup | Build and reduce contact distance groups in bulk | open |
-| [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3736](https://github.com/MultiQC/MultiQC/pull/3736) | bug fix | A module set only in top_modules no longer runs a second time on all logs | open |
-| [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3738](https://github.com/MultiQC/MultiQC/pull/3738) | bug fix | Fix grouped sample values in get_general_stats_data | open |
-| [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3739](https://github.com/MultiQC/MultiQC/pull/3739) | bug fix | Fix module and data-key selection in get_module_data | open |
-| [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3740](https://github.com/MultiQC/MultiQC/pull/3740) | bug fix | Preserve section order when merging parquet reports | open |
+| [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3736](https://github.com/MultiQC/MultiQC/pull/3736) | bug fix | A module set only in top_modules no longer runs a second time on all logs | merged 2026-11-26 |
+| [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3738](https://github.com/MultiQC/MultiQC/pull/3738) | bug fix | Fix grouped sample values in get_general_stats_data | merged 2026-11-26 |
+| [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3739](https://github.com/MultiQC/MultiQC/pull/3739) | bug fix | Fix module and data-key selection in get_module_data | merged 2026-11-26 |
+| [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3740](https://github.com/MultiQC/MultiQC/pull/3740) | bug fix | Preserve section order when merging parquet reports | merged 2026-11-26 |
 | [nf-core/tools](https://github.com/nf-core/tools) | [#4619](https://github.com/nf-core/tools/pull/4619) | bug fix | create-params-file includes parameters defined at the schema's top level | merged 2026-11-24 |
 | [nf-core/tools](https://github.com/nf-core/tools) | [#4620](https://github.com/nf-core/tools/pull/4620) | bug fix | Schema build keeps 0 and 0.0 defaults from the pipeline config | merged 2026-11-18 |
 | [nipy/nibabel](https://github.com/nipy/nibabel) | [#1637](https://github.com/nipy/nibabel/pull/1637) | bug fix | BF: Use output position when slicing frames of an ECAT array proxy | open, 3 replies |
@@ -183,9 +183,9 @@ All fields, including physics, materials and general tools: [https://github.com/
 | [scikit-bio/scikit-bio](https://github.com/scikit-bio/scikit-bio) | [#2678](https://github.com/scikit-bio/scikit-bio/pull/2678) | bug fix | BUG: drop gap columns across all sequences in AlignPath.to_indices | open |
 | [scikit-bio/scikit-bio](https://github.com/scikit-bio/scikit-bio) | [#2679](https://github.com/scikit-bio/scikit-bio/pull/2679) | bug fix | BUG: update stored IDs in OrdinationResults.rename | open |
 | [scikit-bio/scikit-bio](https://github.com/scikit-bio/scikit-bio) | [#2680](https://github.com/scikit-bio/scikit-bio/pull/2680) | bug fix | BUG: treat missing lengths as zero while climbing in root_at_midpoint | open |
-| [scverse/scanpy](https://github.com/scverse/scanpy) | [#4531](https://github.com/scverse/scanpy/pull/4531) | bug fix | fix: match expression layers before reusing marker statistics | open |
+| [scverse/scanpy](https://github.com/scverse/scanpy) | [#4531](https://github.com/scverse/scanpy/pull/4531) | bug fix | fix: match expression layers before reusing marker statistics | merged 2026-11-26 |
 | [scverse/scanpy](https://github.com/scverse/scanpy) | [#4532](https://github.com/scverse/scanpy/pull/4532) | bug fix | fix: keep legacy graph metrics usable without anndata.acc | merged 2026-11-26 |
-| [scverse/scanpy](https://github.com/scverse/scanpy) | [#4533](https://github.com/scverse/scanpy/pull/4533) | bug fix | fix: derive PCA defaults from the selected representation | open, 1 reply |
+| [scverse/scanpy](https://github.com/scverse/scanpy) | [#4533](https://github.com/scverse/scanpy/pull/4533) | bug fix | fix: derive PCA defaults from the selected representation | merged 2026-11-26 |
 | [scverse/scanpy](https://github.com/scverse/scanpy) | [#4534](https://github.com/scverse/scanpy/pull/4534) | bug fix | fix: preserve gene pool alignment in score_genes | open |
 | [seqeralabs/nf-metro](https://github.com/seqeralabs/nf-metro) | [#2172](https://github.com/seqeralabs/nf-metro/pull/2172) | bug fix | Converted metro maps keep edges into dead-end processes in other sections | merged 2026-11-22 |
 | [seqeralabs/nf-metro](https://github.com/seqeralabs/nf-metro) | [#2173](https://github.com/seqeralabs/nf-metro/pull/2173) | bug fix | Subworkflows with the same short name get separate sections instead of overwriting each other | merged 2026-11-22 |
@@ -206,12 +206,24 @@ All fields, including physics, materials and general tools: [https://github.com/
 | [laminlabs/readfcs](https://github.com/laminlabs/readfcs) | [#50](https://github.com/laminlabs/readfcs/pull/50) | bug fix | Read FCS files that have channel names but no marker names ($PnS) | open |
 | [pymzml/pymzML](https://github.com/pymzml/pymzML) | [#420](https://github.com/pymzml/pymzML/pull/420) | bug fix | Iterating a Reader after run[id] no longer raises ParseError | open, 1 reply |
 | [nf-core/tools](https://github.com/nf-core/tools) | [#4642](https://github.com/nf-core/tools/pull/4642) | bug fix | Fix offline and --no-pull handling in component and pipeline linting (#4613, #4584) | open |
-| [bioio-devs/bioio-base](https://github.com/bioio-devs/bioio-base) | [#90](https://github.com/bioio-devs/bioio-base/pull/90) | bug fix | Percent-encode spaces and non-ASCII characters in HTTP(S) URL paths in pathlike_to_fs | open |
+| [bioio-devs/bioio-base](https://github.com/bioio-devs/bioio-base) | [#90](https://github.com/bioio-devs/bioio-base/pull/90) | bug fix | Percent-encode spaces and non-ASCII characters in HTTP(S) URL paths in pathlike_to_fs | open, 1 reply |
 | [whitews/FlowKit](https://github.com/whitews/FlowKit) | [#287](https://github.com/whitews/FlowKit/pull/287) | bug fix | Support 1-based numeric channel indices in FCS $SPILLOVER/$SPILL headers (#264) | open |
 | [CompOmics/psm_utils](https://github.com/CompOmics/psm_utils) | [#156](https://github.com/CompOmics/psm_utils/pull/156) | bug fix | Map MaxQuant modification labels to ProForma tags in MSMSReader (#138) | open |
-| [bioio-devs/bioio-ome-tiff](https://github.com/bioio-devs/bioio-ome-tiff) | [#59](https://github.com/bioio-devs/bioio-ome-tiff/pull/59) | bug fix | Use native TIFF tile/strip dask chunks without open file handles (#43) | open |
+| [bioio-devs/bioio-ome-tiff](https://github.com/bioio-devs/bioio-ome-tiff) | [#59](https://github.com/bioio-devs/bioio-ome-tiff/pull/59) | bug fix | Use native TIFF tile/strip dask chunks without open file handles (#43) | open, 1 reply |
 | [CompOmics/deeplc](https://github.com/CompOmics/deeplc) | [#139](https://github.com/CompOmics/deeplc/pull/139) | bug fix | Make CPU predictions thread-count invariant and floor nonnegative linear fallback (#136) | open |
 | [CompOmics/ms2rescore](https://github.com/CompOmics/ms2rescore) | [#284](https://github.com/CompOmics/ms2rescore/pull/284) | bug fix | Handle missing Precursor (None) in spectrum parsing, annotation, and MS2PIP features (#280) | open |
+| [laminlabs/lamindb-setup](https://github.com/laminlabs/lamindb-setup) | [#1448](https://github.com/laminlabs/lamindb-setup/pull/1448) | bug fix | Resolve symlinked cache roots in cache containment and set_cache_dir (lamindb#4045) | open |
+| [laminlabs/bionty](https://github.com/laminlabs/bionty) | [#399](https://github.com/laminlabs/bionty/pull/399) | bug fix | Infer organism and source for Protein.from_source(uniprotkb_id=...) (#392) | open |
+| [open2c/pairtools](https://github.com/open2c/pairtools) | [#288](https://github.com/open2c/pairtools/pull/288) | bug fix | Initialize AlignedSegment in makeAlignedSegmentPairtoolized and handle missing SEQ (#281) | open |
+| [open2c/pairtools](https://github.com/open2c/pairtools) | [#289](https://github.com/open2c/pairtools/pull/289) | bug fix | Fix pairtools select column indexing with --remove-columns and AST condition binding (#279) | open |
+| [MannLabs/alphadia](https://github.com/MannLabs/alphadia) | [#976](https://github.com/MannLabs/alphadia/pull/976) | bug fix | Fix target-decoy master protein leakage in heuristic protein grouping (grouping.py) | open |
+| [BioPandas/biopandas](https://github.com/BioPandas/biopandas) | [#172](https://github.com/BioPandas/biopandas/pull/172) | bug fix | Preserve insertion codes, alt_loc, formal charges, and encounter-order chain offsets in convert_to_pandas_pdb | open |
+| [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3759](https://github.com/MultiQC/MultiQC/pull/3759) | bug fix | Kraken: fix ZeroDivisionError on zero distinct minimizers (str '0' != 0 guard) | open |
+| [nextstrain/augur](https://github.com/nextstrain/augur) | [#2076](https://github.com/nextstrain/augur/pull/2076) | bug fix | filter: pass na_filter=False in read_weights_file to preserve literal NA group values | open |
+| [biodatageeks/polars-bio](https://github.com/biodatageeks/polars-bio) | [#526](https://github.com/biodatageeks/polars-bio/pull/526) | bug fix | fix: align cols1/cols2 order, sweep-line quoting, and coordinate metadata in coverage() and count_overlaps() | open |
+| [MannLabs/alphabase](https://github.com/MannLabs/alphabase) | [#479](https://github.com/MannLabs/alphabase/pull/479) | bug fix | Fix LibraryReaderBase silently dropping precursors with partial None/NaN metadata (+ categorical handling) | open |
+| [mdshw5/pyfaidx](https://github.com/mdshw5/pyfaidx) | [#262](https://github.com/mdshw5/pyfaidx/pull/262) | bug fix | Fix off-by-one bisect_left BGZF block-boundary seek in Faidx.from_file and _long_name_from_bgzf | open |
+| [deeptools/pyBigWig](https://github.com/deeptools/pyBigWig) | [#175](https://github.com/deeptools/pyBigWig/pull/175) | bug fix | Fix zoom-level blockSum truncation, nBases division, and zero-sum handling in libBigWig/bwStats.c | open |
 <!-- /auto -->
 
 ## How this was run
