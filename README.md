@@ -96,7 +96,7 @@ Scientists I know publish code with their papers. I asked each of them whether a
 Pull requests to biology code: AI-for-biology companies and open-source tools. Each bug was found by one model and confirmed by a referee from a different model family, with a failing test before the fix; speedups were checked for identical outputs. This table has the biology rows only. All my pull requests on other people's research code, in every field, are in [fixing-research-software](https://github.com/rpinho/fixing-research-software#pull-requests), which renders this table too (`tools/render_prs.py`, refreshed daily). "Replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:bio-prs -->
-123 PRs to 50 repositories: 32 merged, 86 open, 5 closed.
+134 PRs to 52 repositories: 39 merged, 90 open, 5 closed.
 All fields, including physics, materials and general tools: [https://github.com/rpinho/fixing-research-software](https://github.com/rpinho/fixing-research-software#pull-requests).
 
 | Repo | PR | Type | What it does | Status |
@@ -120,9 +120,9 @@ All fields, including physics, materials and general tools: [https://github.com/
 | [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1040](https://github.com/biotite-dev/biotite/pull/1040) | bug fix | Fix `to_sequence()` chain selection for atom array stacks | open, 1 reply |
 | [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#437](https://github.com/chaidiscovery/chai-lab/pull/437) | bug fix | Merging A3M files from the same database keeps every file's hits | merged 2026-11-19 |
 | [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#438](https://github.com/chaidiscovery/chai-lab/pull/438) | bug fix | Template lookup keeps chain names like 001 or NA as strings | open |
-| [daler/pybedtools](https://github.com/daler/pybedtools) | [#434](https://github.com/daler/pybedtools/pull/434) | bug fix | preserve input rows when indexing presorted files | open |
-| [daler/pybedtools](https://github.com/daler/pybedtools) | [#435](https://github.com/daler/pybedtools/pull/435) | bug fix | fix generator completion in randomstats | open |
-| [daler/pybedtools](https://github.com/daler/pybedtools) | [#436](https://github.com/daler/pybedtools/pull/436) | bug fix | accept pathlib paths in intersection database lists | open |
+| [daler/pybedtools](https://github.com/daler/pybedtools) | [#434](https://github.com/daler/pybedtools/pull/434) | bug fix | preserve input rows when indexing presorted files | merged 2026-11-27 |
+| [daler/pybedtools](https://github.com/daler/pybedtools) | [#435](https://github.com/daler/pybedtools/pull/435) | bug fix | fix generator completion in randomstats | merged 2026-11-28 |
+| [daler/pybedtools](https://github.com/daler/pybedtools) | [#436](https://github.com/daler/pybedtools/pull/436) | bug fix | accept pathlib paths in intersection database lists | open, 1 reply |
 | [daler/pybedtools](https://github.com/daler/pybedtools) | [#437](https://github.com/daler/pybedtools/pull/437) | bug fix | preserve mate position 1 when iterating over BAM | open |
 | [daler/pybedtools](https://github.com/daler/pybedtools) | [#438](https://github.com/daler/pybedtools/pull/438) | speedup | count BAM and CRAM records without converting intervals | open |
 | [deeptools/deepTools](https://github.com/deeptools/deepTools) | [#1502](https://github.com/deeptools/deepTools/pull/1502) | bug fix | fix: keep computeMatrix groups distinct when filenames match | open |
@@ -218,12 +218,23 @@ All fields, including physics, materials and general tools: [https://github.com/
 | [open2c/pairtools](https://github.com/open2c/pairtools) | [#289](https://github.com/open2c/pairtools/pull/289) | bug fix | Fix pairtools select column indexing with --remove-columns and AST condition binding (#279) | open |
 | [MannLabs/alphadia](https://github.com/MannLabs/alphadia) | [#976](https://github.com/MannLabs/alphadia/pull/976) | bug fix | Fix target-decoy master protein leakage in heuristic protein grouping (grouping.py) | open |
 | [BioPandas/biopandas](https://github.com/BioPandas/biopandas) | [#172](https://github.com/BioPandas/biopandas/pull/172) | bug fix | Preserve insertion codes, alt_loc, formal charges, and encounter-order chain offsets in convert_to_pandas_pdb | open |
-| [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3759](https://github.com/MultiQC/MultiQC/pull/3759) | bug fix | Kraken: fix ZeroDivisionError on zero distinct minimizers (str '0' != 0 guard) | open |
+| [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3759](https://github.com/MultiQC/MultiQC/pull/3759) | bug fix | Kraken: fix ZeroDivisionError on zero distinct minimizers (str '0' != 0 guard) | open, 1 reply |
 | [nextstrain/augur](https://github.com/nextstrain/augur) | [#2076](https://github.com/nextstrain/augur/pull/2076) | bug fix | filter: pass na_filter=False in read_weights_file to preserve literal NA group values | open |
-| [biodatageeks/polars-bio](https://github.com/biodatageeks/polars-bio) | [#526](https://github.com/biodatageeks/polars-bio/pull/526) | bug fix | fix: align cols1/cols2 order, sweep-line quoting, and coordinate metadata in coverage() and count_overlaps() | open |
+| [biodatageeks/polars-bio](https://github.com/biodatageeks/polars-bio) | [#526](https://github.com/biodatageeks/polars-bio/pull/526) | bug fix | fix: align cols1/cols2 order, sweep-line quoting, and coordinate metadata in coverage() and count_overlaps() | open, 2 replies |
 | [MannLabs/alphabase](https://github.com/MannLabs/alphabase) | [#479](https://github.com/MannLabs/alphabase/pull/479) | bug fix | Fix LibraryReaderBase silently dropping precursors with partial None/NaN metadata (+ categorical handling) | open |
-| [mdshw5/pyfaidx](https://github.com/mdshw5/pyfaidx) | [#262](https://github.com/mdshw5/pyfaidx/pull/262) | bug fix | Fix off-by-one bisect_left BGZF block-boundary seek in Faidx.from_file and _long_name_from_bgzf | open |
+| [mdshw5/pyfaidx](https://github.com/mdshw5/pyfaidx) | [#262](https://github.com/mdshw5/pyfaidx/pull/262) | bug fix | Fix off-by-one bisect_left BGZF block-boundary seek in Faidx.from_file and _long_name_from_bgzf | merged 2026-11-27 |
 | [deeptools/pyBigWig](https://github.com/deeptools/pyBigWig) | [#175](https://github.com/deeptools/pyBigWig/pull/175) | bug fix | Fix zoom-level blockSum truncation, nBases division, and zero-sum handling in libBigWig/bwStats.c | open |
+| [brentp/cyvcf2](https://github.com/brentp/cyvcf2) | [#342](https://github.com/brentp/cyvcf2/pull/342) | bug fix | Missing GL values became PL 0 (best genotype) in gt_phred_ll_* for GL-only VCFs | open |
+| [mdshw5/pyfaidx](https://github.com/mdshw5/pyfaidx) | [#266](https://github.com/mdshw5/pyfaidx/pull/266) | bug fix | FastaVariant used the first ALT whatever the genotype called (wrong consensus base on multiallelic SNPs); variant_sites raised on contigs absent from the VCF | merged 2026-11-28 |
+| [mdshw5/pyfaidx](https://github.com/mdshw5/pyfaidx) | [#267](https://github.com/mdshw5/pyfaidx/pull/267) | bug fix | get_seq(rc=True) raised TypeError with as_raw=True | merged 2026-11-28 |
+| [mdshw5/pyfaidx](https://github.com/mdshw5/pyfaidx) | [#269](https://github.com/mdshw5/pyfaidx/pull/269) | bug fix | faidx --auto-strand printed nothing or raised on descending regions | merged 2026-11-28 |
+| [mdshw5/pyfaidx](https://github.com/mdshw5/pyfaidx) | [#270](https://github.com/mdshw5/pyfaidx/pull/270) | bug fix | faidx --long-names dropped the defline with a region; --split-files nucleotide tables lost their header | merged 2026-11-28 |
+| [MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) | [#3764](https://github.com/MultiQC/MultiQC/pull/3764) | bug fix | fastp top overrepresented sequences table showed a fraction in the '% of all reads' column (100x too small) | open |
+| [mdshw5/pyfaidx](https://github.com/mdshw5/pyfaidx) | [#271](https://github.com/mdshw5/pyfaidx/pull/271) | bug fix | MutableFastaRecord treated record[:0] as the whole record (empty write raised; full-length write overwrote it) | open |
+| [mdshw5/pyfaidx](https://github.com/mdshw5/pyfaidx) | [#272](https://github.com/mdshw5/pyfaidx/pull/272) | bug fix | FastaVariant.get_spliced_seq returned the reference bases, not the sample consensus | open |
+| [biodatageeks/polars-bio](https://github.com/biodatageeks/polars-bio) | [#528](https://github.com/biodatageeks/polars-bio/pull/528) | bug fix | scan_gff lost an earlier filter (and computed values) on a second select | open |
+| [biodatageeks/datafusion-bio-formats](https://github.com/biodatageeks/datafusion-bio-formats) | [#279](https://github.com/biodatageeks/datafusion-bio-formats/pull/279) | bug fix | GFF pushed start filters compared 0-based queries to 1-based starts (silently dropped rows); start/end IN lists dropped every row | open |
+| [biodatageeks/datafusion-bio-formats](https://github.com/biodatageeks/datafusion-bio-formats) | [#280](https://github.com/biodatageeks/datafusion-bio-formats/pull/280) | bug fix | GFF attribute values left %25 and other escapes undecoded | open |
 <!-- /auto -->
 
 ## How this was run
